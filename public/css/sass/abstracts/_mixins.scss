@@ -1,0 +1,67 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin middle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+  }
+  
+@mixin zero {
+    margin: 0px;
+    border: 0;
+    padding: 0;
+}
+
+  
+@mixin basebackground {
+    max-width: $grid-width;
+    background-color: #f7f7f7;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin small-phone-screen {
+    @media (max-width: 14em) {@content};
+};
+@mixin medium-phone-screen {
+    @media (max-width: 18em) {@content};
+};
+@mixin big-phone-screen {
+    @media (max-width: 28em) {@content};
+};
+@mixin phone-screen {
+    @media (max-width: 37.5em ) {@content};
+};
+@mixin tablet-screen {
+    @media (max-width: 44em) {@content};
+};
+@mixin phoneLand-screen {
+    @media (max-width: 56.25em) {@content};
+};
+@mixin laptop-screen {
+    @media (max-width:75em) {@content};
+};
+@mixin desktop-screen {
+    @media (min-width: 75em) {@content};
+};
+
+// @mixin desktop-screen {
+//     @media (min-width: 112.5em) {@content};
+// };
+
+

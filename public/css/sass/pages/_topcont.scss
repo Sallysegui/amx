@@ -1,0 +1,60 @@
+
+.containerTopCont {
+   width: 100%;
+   display: flex;
+  justify-content: space-between;
+  background-color:$top-background;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  color: $top-text-color;
+
+}
+.logoContainer {
+    padding: auto;
+    // background-color: rgb(162, 162, 198);
+}
+.logo {
+    padding: 0.5rem;
+    padding-left:1rem;
+    padding-top: 0.5rem;
+    width: 8rem;
+    //-webkit-filter: drop-shadow(5px 5px 5px #d3d3d3);
+    //filter: drop-shadow(1px 1px 1px #eeeeee);
+}
+.aobContactContainer{
+
+    display: flex;
+    align-items:  center ;
+}
+
+.aobContact {
+    padding-right:1rem;
+    
+    img {
+       vertical-align:middle;
+       height: 1.5rem;
+    }
+    p {
+        display:inline-block;
+        vertical-align:middle;
+
+    } 
+    .strongText{
+        font-weight: 900;
+        color: $logo-red;
+    }
+}
+.contactIcon{
+    height: 2rem;
+}
+
+.flying{
+    padding-right: max(15rem);
+    color: $flying;
+    // background-image: ;
+}
+
+// .aobOnly{
+//     padding-left: 37rem;
+//     margin-bottom: 0.5rem;
+// }

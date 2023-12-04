@@ -1,0 +1,109 @@
+
+.menu-container{
+  display: flex;
+  margin:0.5rem;
+  gap: 10px;
+
+}
+
+.menu-button-container {
+  position: relative;
+  // text-align: center;
+  color:$menu-color;
+  a {
+    color:$menu-color;
+   
+  }
+
+  
+}
+
+
+///The dropdown menu itself.
+.menu {
+  background: #ffffff;
+  border-radius: 8px;
+  position: absolute;
+  left: 5px;
+  right: 0;
+  width: 300px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  margin-top: 1px;
+  
+  
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  :hover {
+    color: $logo-red;
+  }
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+  // :hover {
+  //   color: $logo-red;
+  // }
+}
+
+.menu li a {
+  text-decoration: none;
+  color: $menu-color;
+  padding: 15px 20px;
+  display: block;
+  // :hover {
+  //   color: $logo-red;
+  // }
+}
+
+
+///////////////////downtown trigger
+/// 
+/// 
+.menu-trigger {
+  width:6rem;
+  background: #ffffff;
+  border-radius: 90px;
+  cursor: pointer;
+  align-items: center;
+  padding: 4px 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  vertical-align: middle;
+  transition: box-shadow 0.4s ease;
+  :hover {
+    color: $logo-red;
+  }
+  
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger span {
+  font-weight: 300;
+  vertical-align: middle;
+  font-size: 0.9rem;
+  
+}
+
+a {
+  text-decoration: none;
+}
+// .menu-trigger img {
+//   border-radius: 90px;
+// }

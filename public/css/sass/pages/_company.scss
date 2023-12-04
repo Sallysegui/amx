@@ -1,0 +1,50 @@
+
+.companyContainer {
+    background-color: $top-background;
+}
+.logo_link mbHideTooltip{
+    opacity: 0 !important;
+}
+.mapLink { 
+    display: block;
+    
+        iframe{
+            height: 20rem;
+            width: 30rem;
+            overflow: hidden;
+            position: relative;
+        }
+}
+
+.videoWrapper {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   justify-content: center;
+   align-items: center
+}
+
+.cover {
+   position: absolute;
+   height: 3rem;
+   width: 32rem;;
+   background: green;
+   opacity: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 20px;
+   text-align: center;
+   z-index: 289;
+   background-color: $top-background;
+}
+
+header {
+   top: 0;
+}
+
+footer {
+   bottom: 0;
+}

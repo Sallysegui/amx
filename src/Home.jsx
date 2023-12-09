@@ -9,6 +9,11 @@ import PhotoMain from './components/mainPage/photoMain'
 const App = () => {
   return (
   <div className='fullPage'>
+      {/* <video className="background-video"  autoPlay={true}
+      onMouseOver={event => event.target.play()}
+      >
+        <source src="../clouds.mp4" type="video/mp4"/>
+      </video> */}
     <TopCont/>
     <MenuFunct/>
     <PhotoMain/>

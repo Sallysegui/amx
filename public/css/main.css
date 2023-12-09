@@ -1,3 +1,7 @@
+.fullPage {
+  position: relative;
+}
+
 .hangerFull {
   background-image: url("../../../../src/assets/hangarFull.jpeg");
   background-size: cover;
@@ -99,7 +103,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: rgba(245, 245, 245, 0.206);
   margin-top: 0.3rem;
   border-radius: 5px;
   color: rgb(30, 29, 27);

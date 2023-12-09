@@ -3,7 +3,7 @@
    width: 100%;
    display: flex;
   justify-content: space-between;
-  background-color:$top-background;
+  background-color:rgba(245, 245, 245, 0.206);
   margin-top: 0.3rem;
   border-radius: 5px;
   color: $top-text-color;
@@ -51,10 +51,7 @@
 .flying{
     padding-right: max(15rem);
     color: $flying;
-    // background-image: ;
+   // background-image: url('../../../End-of-Life\ Tribute\ Mobile\ Video\ in\ Sky\ Blue\ White\ Elegant\ Photocentric\ Style.mp4');
+   
 }
 
-// .aobOnly{
-//     padding-left: 37rem;
-//     margin-bottom: 0.5rem;
-// }

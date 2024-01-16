@@ -1,0 +1,45 @@
+@keyframes slidein {
+    from {
+      margin-left: 20%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+
+  }
+  
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideDown {
+    0% {transform: translateY(-40px);opacity:0;}
+    100% {transform: translateY(0);opacity:1;}
+  }
+
+//   @keyframes slideDown {
+//     top:-40px;
+//     left:5px;
+//     animation: slideDown ease .4s forwards .6s;
+@keyframes slideRight {
+
+  
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

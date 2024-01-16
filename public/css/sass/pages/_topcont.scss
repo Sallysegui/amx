@@ -3,12 +3,19 @@
    width: 100%;
    display: flex;
   justify-content: space-between;
-  background-color:rgba(245, 245, 245, 0.206);
-  margin-top: 0.3rem;
+  //background-color:rgba(245, 245, 245, 0.206);
+  //margin-top: 0.3rem;
   border-radius: 5px;
   color: $top-text-color;
+  margin-top: 0;
 
+//   animation-duration: 2.5s;
+//   animation-name: slidein, appear;
+//   top:40px;
+//   left:-5px;
+  animation: slideDown ease 1.5s forwards 1s;
 }
+
 .logoContainer {
     padding: auto;
     // background-color: rgb(162, 162, 198);
@@ -25,6 +32,10 @@
 
     display: flex;
     align-items:  center ;
+    // letter-spacing: .03571em;
+    font-family: "Avenir Next W02" !important;
+    font-weight: 100;
+    // background-color: pink;
 }
 
 .aobContact {
@@ -46,12 +57,5 @@
 }
 .contactIcon{
     height: 2rem;
-}
-
-.flying{
-    padding-right: max(15rem);
-    color: $flying;
-   // background-image: url('../../../End-of-Life\ Tribute\ Mobile\ Video\ in\ Sky\ Blue\ White\ Elegant\ Photocentric\ Style.mp4');
-   
 }
 

@@ -5,19 +5,18 @@ import MenuFunct from './components/mainPage/MenuFunct';
 
 import Welcome from './components/mainPage/welcome'
 import PhotoMain from './components/mainPage/photoMain'
+import Company from './components/Company/company';
 
 const App = () => {
   return (
   <div className='fullPage'>
-      {/* <video className="background-video"  autoPlay={true}
-      onMouseOver={event => event.target.play()}
-      >
-        <source src="../clouds.mp4" type="video/mp4"/>
-      </video> */}
-    <TopCont/>
-    <MenuFunct/>
-    <PhotoMain/>
+    <div className='portada'>
+      <TopCont/>
+      <MenuFunct/>
+      <PhotoMain/>
+    </div>
     <Welcome/>
+    <Company/>
   </div>
   )
 }

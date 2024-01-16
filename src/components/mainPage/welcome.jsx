@@ -1,10 +1,14 @@
 const Welcome = () => {
     return (
-    <div >
-        <p>
-            Business Aviation Maintenance Facility
-        </p>
+    <div className="wecomeContainer" >
+        <div className="title">
+            <h1>
+                Business Aviation Maintenance Facility
+            </h1>
+        </div>
     </div>
+
+   
     )
   }
   

@@ -7,12 +7,19 @@ $top-text-color:rgb(30, 29, 27);
 $flying:#4a68a0;
 $nice-white:#fff;
 $menu-color:rgb(30, 29, 27);
+$grey-blueish:#f7f7f8;
+$celestial-blue:#4D9DE0;
+$gosh-white:#F7F7FF;
 //$menu-color:rgb(105, 96, 0);
 
 
 
 
 
+@font-face {
+    font-family: "bodoniBold";
+    src: url('fonts/bodoni/BodoniFLF-Bold.ttf') format('truetype');
+}
 // $gutter-main: 1.5rem;
 // // GRID
 // $grid-width: 80rem;

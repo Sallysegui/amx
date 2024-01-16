@@ -1,36 +1,139 @@
-.fullPage {
-  position: relative;
+@font-face {
+  font-family: "bodoniBold";
+  src: url("fonts/bodoni/BodoniFLF-Bold.ttf") format("truetype");
 }
-
-.hangerFull {
-  background-image: url("../../../../src/assets/hangarFull.jpeg");
+@keyframes slidein {
+  from {
+    margin-left: 20%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.mainPhoto {
+  background-image: url("../../../../src/assets/planesunny.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25rem;
+  height: 32rem;
+  margin-top: 0;
+}
+
+.flying {
+  padding-left: 2rem;
+  padding-top: 28rem;
+  color: #4a68a0;
+  text-shadow: rgb(255, 255, 255) 3px 3px 4px;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  text-shadow: 0 1px 0 #ffffff, 0 1px 0 rgb(255, 255, 255), 1px 1px 1px #ffffff, 1px 2px 1px rgb(255, 255, 255), 0 -1px 0 #ffffff, 0 -1px 0 rgb(255, 255, 255), -1px 1px 1px #ffffff, 1px -1px 1px rgb(255, 255, 255);
+  font-family: "bodoniBold";
+  font-size: 1.1rem;
+  animation: 3s slideRight;
+}
+
+.bitPadding {
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.wecomeContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  margin: auto;
+  height: 5rem;
+  background-color: #f7f7f8;
+}
+.wecomeContainer .title {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  width: 21.5rem;
+  height: 3rem;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+.wecomeContainer h1 {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: auto;
+  text-align: center;
+  white-space: nowrap;
+  padding-bottom: 13px;
+  font-family: "Avenir Next W02" !important;
+}
+.wecomeContainer h1:before {
+  background-color: #A52323;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 40%;
+  margin-bottom: 5px;
+}
+.wecomeContainer h1:after {
+  background-color: #A52323;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  width: 40%;
+  margin-bottom: 0.25em;
 }
 
 .menu-container {
   display: flex;
   margin: 0.5rem;
-  gap: 10px;
+  gap: 3rem;
+  margin-bottom: 0.3rem;
+  animation: slideDown ease 2s forwards 1s;
 }
 
 .menu-button-container {
   position: relative;
-  color: rgb(30, 29, 27);
-}
-.menu-button-container a {
-  color: rgb(30, 29, 27);
 }
 
 .menu {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.6901960784);
   border-radius: 8px;
   position: absolute;
-  left: 5px;
+  left: 4px;
   right: 0;
-  width: 300px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  width: 10rem;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
@@ -65,13 +168,12 @@
 }
 
 .menu-trigger {
-  width: 6rem;
-  background: #ffffff;
+  background: inherit;
   border-radius: 90px;
+  margin-bottom: 0.2rem;
   cursor: pointer;
   align-items: center;
   padding: 4px 6px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   border: none;
   vertical-align: middle;
   transition: box-shadow 0.4s ease;
@@ -79,15 +181,37 @@
 .menu-trigger :hover {
   color: #A52323;
 }
+.menu-trigger::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #143264;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
 
 .menu-trigger:hover {
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  color: #143264;
+}
+.menu-trigger:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .menu-trigger span {
-  font-weight: 300;
+  font-family: "Avenir Next W02" !important;
+  font-weight: 550;
   vertical-align: middle;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  color: #3f3f3f;
+  text-shadow: 2px #143264;
 }
 
 a {
@@ -95,18 +219,26 @@ a {
 }
 
 .fullPage {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  position: relative;
+  background-color: #fff;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 0;
+}
+
+.portada {
+  padding-top: 0.7rem;
+  background-color: #f7f7f8;
 }
 
 .containerTopCont {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(245, 245, 245, 0.206);
-  margin-top: 0.3rem;
   border-radius: 5px;
   color: rgb(30, 29, 27);
+  margin-top: 0;
+  animation: slideDown ease 1.5s forwards 1s;
 }
 
 .logoContainer {
@@ -123,6 +255,8 @@ a {
 .aobContactContainer {
   display: flex;
   align-items: center;
+  font-family: "Avenir Next W02" !important;
+  font-weight: 100;
 }
 
 .aobContact {
@@ -145,66 +279,79 @@ a {
   height: 2rem;
 }
 
-.flying {
-  padding-right: 15rem;
-  color: #4a68a0;
-}
-
 .companyContainer {
-  background-color: #fff;
-}
-
-.logo_link mbHideTooltip {
-  opacity: 0 !important;
-}
-
-.mapLink {
-  display: block;
-}
-.mapLink iframe {
-  height: 20rem;
-  width: 30rem;
-  overflow: hidden;
-  position: relative;
-}
-
-.videoWrapper {
-  position: relative;
+  margin-top: 6rem;
   display: flex;
+  padding-top: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   flex-direction: column;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
+  gap: 4rem;
+}
+.companyContainer img {
+  max-height: 21rem;
 }
 
-.cover {
-  position: absolute;
-  height: 3rem;
-  width: 32rem;
-  background: green;
-  opacity: 1;
+.companyList {
+  display: flex;
+}
+.companyList h2 {
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.companyList p {
+  padding-top: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-family: "Avenir Next W02" !important;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
+.locationContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  z-index: 289;
-  background-color: #fff;
+  margin: auto;
 }
 
-header {
-  top: 0;
+.google-map {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  height: 25rem;
+  width: 25rem;
+  border: 0;
 }
 
-footer {
-  bottom: 0;
+.google-map iframe {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 25rem;
+  width: 25rem;
 }
 
+@font-face {
+  font-family: "AvenirHeavy";
+  src: url("../../css/fonts/Avenir/Avenir_Heavy/Avenir_Heavy.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirReg";
+  src: url("../../css/fonts/Avenir/Avenir_Regular/Avenir_Regular.ttf") format("truetype");
+}
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   cursor: pointer;
+}
+
+html, body {
+  margin: 0 !important;
+  padding-top: 0;
+  display: inline;
 }
 
 /*# sourceMappingURL=main.css.map */

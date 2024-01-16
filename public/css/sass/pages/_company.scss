@@ -1,50 +1,83 @@
 
 .companyContainer {
-    background-color: $top-background;
-}
-.logo_link mbHideTooltip{
-    opacity: 0 !important;
-}
-.mapLink { 
-    display: block;
-    
-        iframe{
-            height: 20rem;
-            width: 30rem;
-            overflow: hidden;
-            position: relative;
-        }
+    margin-top: 6rem;
+    display: flex;
+    padding-top: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+     flex-direction: column;
+     gap: 4rem;
+
+    //  background-color: red;
+    //  column-gap: 20px;
+    img {
+        max-height: 21rem;
+    }
+   
 }
 
-.videoWrapper {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   overflow: hidden;
-   justify-content: center;
-   align-items: center
+.companyList{
+    // background-color: rgba(222, 168, 201, 0.851);
+    display: flex;
+    // gap: 1rem;
+    h2{
+        margin: auto;
+        margin-top: 2rem;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    p{
+        padding-top: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        font-family: "Avenir Next W02" !important;
+        line-height: 1.8rem;
+        font-size: 1.1rem;
+    }
+
+
 }
 
-.cover {
-   position: absolute;
-   height: 3rem;
-   width: 32rem;;
-   background: green;
-   opacity: 1;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
-   font-size: 20px;
-   text-align: center;
-   z-index: 289;
-   background-color: $top-background;
+
+
+
+
+//////////////////////////////About us ////////////////////////////
+/// 
+
+
+/////////////////////////////////map/////////////////
+
+
+.locationContainer{
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
-header {
-   top: 0;
+.google-map {
+    align-self:center;
+    margin: 0;
+    padding: 0;
+    height: 25rem;
+    width: 25rem;
+    // position: relative;
+    border:0;
+    // max-width: 30rem;
+    // max-height: 30rem;
 }
 
-footer {
-   bottom: 0;
+.google-map  {
+    iframe{
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 25rem;
+    width: 25rem;
+    // left: 0;
+    // top: 0;
+    // position: absolute;
+    }
 }
+
+

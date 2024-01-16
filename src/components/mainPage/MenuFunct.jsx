@@ -1,6 +1,6 @@
 import MenuCompany from "./MenuCompany";
-import MenuServices from "./MenuServices";
-import MenuContact from "./MenuContact"
+import MenuServices from "../Services/MenuServices";
+import MenuContact from "../Contact/MenuContact"
 
 const MenuFunct = () => {
 

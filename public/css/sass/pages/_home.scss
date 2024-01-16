@@ -1,27 +1,103 @@
 
-.fullPage {
-    position: relative;
-    // background-color: red;
-}
 
-.hangerFull {
-    background-image: url('../../../../src/assets/hangarFull.jpeg');
+.mainPhoto {
+    background-image: url('../../../../src/assets/planesunny.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 25rem;
+    height: 32rem;
+    margin-top: 0;
 }
 
 
+.flying{
+    padding-left: 2rem;
+    padding-top: 28rem;
+    color: $flying;
+    text-shadow: rgb(255, 255, 255) 3px 3px 4px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    text-shadow: 
+        0 1px 0 #ffffff,
+        0 1px 0 rgb(255, 255, 255),
+        1px 1px 1px #ffffff,
+        1px 2px 1px rgb(255, 255, 255),
+        0 -1px 0 #ffffff,
+        0 -1px 0 rgb(255, 255, 255),
+        -1px 1px 1px #ffffff,
+        1px -1px 1px rgb(255, 255, 255);
+    font-family: 'bodoniBold';
+    font-size: 1.1rem;
+    animation: 3s slideRight;
 
-// .background-video {
-//     width: 100vw;
-//     height: 100vh;
-//     object-fit: cover;
-//     position: fixed;
-//     left: 0;
-//     right: 0;
-//     top: 0;
-//     bottom: 0;
-//     z-index: -90;
-//     opacity: 0.4;
-//   }
+}
+
+.bitPadding{
+    padding:1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.wecomeContainer {
+    // margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    // font-family: "Avenir Next W02" !important;
+    // background-color: aquamarine;
+    margin:auto; 
+    height: 5rem;
+    background-color: #f7f7f8;
+    .title {
+        position: relative;
+        display:flex;
+        padding: 0;
+        margin: auto;
+        text-align:center; 
+        width: 21.5rem;
+        height: 3rem;
+        margin: auto;
+        padding-bottom: 1rem;
+        // font-family: "Avenir Next W02" !important;
+        // background-color: rgb(239, 25, 61);
+
+    }
+
+    h1{
+    position: absolute;
+    font-size:1.2rem; 
+    font-weight:300;  
+    letter-spacing:1px; 
+    margin: auto;
+    
+    // text-transform:uppercase; 
+    // width: 50%;
+    text-align:center; 
+    //margin:auto; 
+    white-space:nowrap;
+    padding-bottom:13px;
+    font-family: "Avenir Next W02" !important;
+    // background-color: rgb(183, 159, 206);
+    }
+    h1:before {
+        background-color: $logo-red;
+        content: '';
+        display: block;
+        height: 3px;
+        width: 40%;
+        margin-bottom: 5px;
+        // font-family: 'Times New Roman', Times, serif;
+       
+    }
+    h1:after {
+        background-color: $logo-red;
+        content: '';
+        display: block;
+        position:absolute; right:0; bottom:0;
+        height: 3px;
+        width: 40%;
+        margin-bottom: 0.25em;
+        // font-family: 'Times New Roman', Times, serif;
+        
+    }
+    
+}
+
+

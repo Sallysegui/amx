@@ -1,6 +1,13 @@
+import Flying from "./topMenu/flying"
+
 const PhotoMain=()=>{
     return(
-    <div className='hangerFull'></div>
+    <div>
+        <div className='mainPhoto'>
+            <Flying/>
+        </div>
+        <div className="bitPadding"></div>
+    </div>
 )}
 
 export default PhotoMain

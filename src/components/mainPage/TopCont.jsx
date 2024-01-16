@@ -11,21 +11,13 @@ const LogoTop = () => {
     )
 }
 
-const Flying = () =>{
-    return(
-        <div className='aobContactContainer flying'>
-            <div className='aobContact'>
-                We keep you flying
-            </div>
-        </div>
-    )
-}
+
 
 const TopCont = () => {
     return(
     <div  className='containerTopCont'>
         <LogoTop/>
-        <Flying />
+        
         <Aob/>
         {/* <Menu/> */}
     </div>)

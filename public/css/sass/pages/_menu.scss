@@ -2,38 +2,39 @@
 .menu-container{
   display: flex;
   margin:0.5rem;
-  gap: 10px;
+  gap: 3rem;
+  margin-bottom: 0.3rem;
+
+  
+  //justify-content:center;
+  ///////////////////
+ /// background-color: $logo-red;
+ animation: slideDown ease 2s forwards 1s;
 
 }
 
 .menu-button-container {
   position: relative;
   // text-align: center;
-  color:$menu-color;
-  a {
-    color:$menu-color;
-   
-  }
+ //color:$menu-color;
 
-  
 }
 
 
 ///The dropdown menu itself.
 .menu {
-  background: #ffffff;
+  background: #ffffffb0;
   border-radius: 8px;
   position: absolute;
-  left: 5px;
+  left: 4px;
   right: 0;
-  width: 300px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  width: 10rem;
+  // box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
   margin-top: 1px;
-  
   
 }
 
@@ -54,16 +55,15 @@
 
 .menu li {
   border-bottom: 1px solid #dddddd;
-  // :hover {
-  //   color: $logo-red;
-  // }
 }
 
 .menu li a {
   text-decoration: none;
   color: $menu-color;
+  // color: $logo-blue;
   padding: 15px 20px;
   display: block;
+ 
   // :hover {
   //   color: $logo-red;
   // }
@@ -74,30 +74,61 @@
 /// 
 /// 
 .menu-trigger {
-  width:6rem;
-  background: #ffffff;
+  /////////////////////////////
+  background: inherit;
+  
   border-radius: 90px;
+  margin-bottom: 0.2rem;
   cursor: pointer;
   align-items: center;
   padding: 4px 6px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   border: none;
   vertical-align: middle;
   transition: box-shadow 0.4s ease;
   :hover {
     color: $logo-red;
   }
+  &::before {
+    content: ""; 
+    position: absolute;
+    width: 100%;
+    // width:3rem;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $logo-blue;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.4s ease-in-out 0s; 
+    transition: all 0.4s ease-in-out 0s; 
+  }
   
 }
 
 .menu-trigger:hover {
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  // box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  /////////////////////////////////////////// 
+  color: $logo-blue;
+
+  &::before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+  }   
 }
 
 .menu-trigger span {
-  font-weight: 300;
+  font-family: "Avenir Next W02" !important;
+  font-weight: 550;
   vertical-align: middle;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  ///////////////////////
+  //  text-shadow: 1px 1px #dbdbdb;
+  color: #3f3f3f;
+  // color:$logo-blue ;
+  text-shadow: 2px $logo-blue;
   
 }
 

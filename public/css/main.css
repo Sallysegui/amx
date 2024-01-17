@@ -41,7 +41,7 @@
   }
 }
 .mainPhoto {
-  background-image: url("../../../../src/assets/planesunny.jpeg");
+  background: url("./images/planesunny.jpeg") no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 32rem;

@@ -38,13 +38,14 @@
 
 .wecomeContainer {
     // margin-top: 3rem;
+    // height: 20rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     position: relative;
     // font-family: "Avenir Next W02" !important;
     // background-color: aquamarine;
     margin:auto; 
-    height: 5rem;
+    min-height: 5rem;
     background-color: #f7f7f8;
     .title {
         position: relative;

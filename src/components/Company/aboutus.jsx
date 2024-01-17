@@ -2,8 +2,7 @@ import working from '../../assets/working.png'
 const AboutUs = () =>{
     return(
         <div className="aboutContainer companyList">
-            
-                <div>
+                <div className='columCompany'>
                     <h2 >
                         About Us
                     </h2>
@@ -16,7 +15,9 @@ const AboutUs = () =>{
                     our MOC contact details.
                     </p>
                 </div>
-                <img src={working} alt="working on an airplane" />
+                <div className='columCompany'>
+                    <img src={working} alt="working on an airplane" />
+                </div>
         </div>)
 
 }

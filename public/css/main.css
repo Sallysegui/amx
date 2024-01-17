@@ -67,10 +67,10 @@
 
 .wecomeContainer {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   position: relative;
   margin: auto;
-  height: 5rem;
+  min-height: 5rem;
   background-color: #f7f7f8;
 }
 .wecomeContainer .title {
@@ -283,32 +283,49 @@ a {
   margin-top: 6rem;
   display: flex;
   padding-top: 1rem;
-  margin-right: 2rem;
-  margin-left: 2rem;
   flex-direction: column;
-  gap: 4rem;
-}
-.companyContainer img {
-  max-height: 21rem;
+  gap: 16rem;
 }
 
 .companyList {
   display: flex;
+  background-color: #f7f7f8;
+}
+.companyList .columCompany {
+  width: 50%;
+  position: relative;
+  min-height: 30rem;
 }
 .companyList h2 {
+  padding-top: 2rem;
   margin: auto;
-  margin-top: 2rem;
   text-align: center;
   display: block;
   width: 100%;
+  color: #143264;
+  font-size: 1.3rem;
 }
 .companyList p {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   padding-left: 4rem;
   padding-right: 4rem;
   font-family: "Avenir Next W02" !important;
   line-height: 1.8rem;
   font-size: 1.1rem;
+  padding-bottom: 2rem;
+}
+.companyList img {
+  display: block;
+  object-fit: cover;
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .locationContainer {

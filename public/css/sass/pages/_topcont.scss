@@ -13,18 +13,29 @@
 //   animation-name: slidein, appear;
 //   top:40px;
 //   left:-5px;
-  animation: slideDown ease 1.5s forwards 1s;
+  
 }
 
+// .logoBox {
+
+
+// }
+.AogSelector{
+    animation: fadeIn ease-in 3s;
+
+}
 .logoContainer {
     padding: auto;
     // background-color: rgb(162, 162, 198);
 }
 .logo {
+    // position: absolute;
     padding: 0.5rem;
-    padding-left:1rem;
+    padding-left:2rem;
+    padding-bottom: 1rem;
     padding-top: 0.5rem;
-    width: 8rem;
+    width: 12rem;
+    animation: slideFadeLeft ease 3s ;
     //-webkit-filter: drop-shadow(5px 5px 5px #d3d3d3);
     //filter: drop-shadow(1px 1px 1px #eeeeee);
 }
@@ -36,10 +47,14 @@
     font-family: "Avenir Next W02" !important;
     font-weight: 100;
     // background-color: pink;
+    // animation: slideDown ease 1.5s forwards 1s;
 }
 
 .aobContact {
     padding-right:1rem;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    // animation: slideDown ease 1.5s forwards 1s;
     
     img {
        vertical-align:middle;
@@ -57,5 +72,6 @@
 }
 .contactIcon{
     height: 2rem;
+
 }
 

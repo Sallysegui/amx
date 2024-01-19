@@ -16,9 +16,12 @@ const LogoTop = () => {
 const TopCont = () => {
     return(
     <div  className='containerTopCont'>
-        <LogoTop/>
-        
-        <Aob/>
+        <div className='logoBox'>
+            <LogoTop/>
+        </div>
+        <div className='AogSelector'>
+            <Aob/>
+        </div>
         {/* <Menu/> */}
     </div>)
 }

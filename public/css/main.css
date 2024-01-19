@@ -1,6 +1,6 @@
 @font-face {
   font-family: "bodoniBold";
-  src: url("fonts/bodoni/BodoniFLF-Bold.ttf") format("truetype");
+  src: url("fonts/bodoni/BodoniFLF-BoldItalic.ttf") format("truetype");
 }
 @keyframes slidein {
   from {
@@ -40,6 +40,24 @@
     width: 100%;
   }
 }
+@keyframes slideFadeLeft {
+  from {
+    margin-left: 30%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .mainPhoto {
   background: url("./images/planesunny.jpeg") no-repeat center center;
   background-size: cover;
@@ -50,13 +68,13 @@
 
 .flying {
   padding-left: 2rem;
-  padding-top: 28rem;
+  padding-top: 22rem;
   color: #4a68a0;
-  text-shadow: rgb(255, 255, 255) 3px 3px 4px;
-  text-shadow: 1px 1px 1px rgb(255, 255, 255);
-  text-shadow: 0 1px 0 #ffffff, 0 1px 0 rgb(255, 255, 255), 1px 1px 1px #ffffff, 1px 2px 1px rgb(255, 255, 255), 0 -1px 0 #ffffff, 0 -1px 0 rgb(255, 255, 255), -1px 1px 1px #ffffff, 1px -1px 1px rgb(255, 255, 255);
+  text-shadow: rgb(255, 234, 0) 3px 3px 4px;
+  text-shadow: 1px 1px 1px rgb(255, 234, 0);
+  text-shadow: 0 1px 0 #ffffff, 0 1px 0 rgb(255, 234, 0), 1px 1px 1px #ffffff, 1px 2px 1px rgb(255, 234, 0) 0 -1px 0 #ffffff, 0 -1px 0 rgb(255, 234, 0), -1px 1px 1px rgb(255, 234, 0), 1px -1px 1px rgb(255, 234, 0);
   font-family: "bodoniBold";
-  font-size: 1.1rem;
+  font-size: 2.5rem;
   animation: 3s slideRight;
 }
 
@@ -120,7 +138,7 @@
   margin: 0.5rem;
   gap: 3rem;
   margin-bottom: 0.3rem;
-  animation: slideDown ease 2s forwards 1s;
+  animation: fadeIn ease-in 3s;
 }
 
 .menu-button-container {
@@ -238,7 +256,10 @@ a {
   border-radius: 5px;
   color: rgb(30, 29, 27);
   margin-top: 0;
-  animation: slideDown ease 1.5s forwards 1s;
+}
+
+.AogSelector {
+  animation: fadeIn ease-in 3s;
 }
 
 .logoContainer {
@@ -247,9 +268,11 @@ a {
 
 .logo {
   padding: 0.5rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
   padding-top: 0.5rem;
-  width: 8rem;
+  width: 12rem;
+  animation: slideFadeLeft ease 3s;
 }
 
 .aobContactContainer {
@@ -261,6 +284,8 @@ a {
 
 .aobContact {
   padding-right: 1rem;
+  font-size: 1.2rem;
+  padding-top: 1rem;
 }
 .aobContact img {
   vertical-align: middle;
@@ -290,11 +315,14 @@ a {
 .companyList {
   display: flex;
   background-color: #f7f7f8;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .companyList .columCompany {
-  width: 50%;
-  position: relative;
-  min-height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .companyList h2 {
   padding-top: 2rem;
@@ -308,24 +336,17 @@ a {
 .companyList p {
   padding-top: 1.5rem;
   padding-left: 4rem;
-  padding-right: 4rem;
+  padding-right: 3rem;
   font-family: "Avenir Next W02" !important;
   line-height: 1.8rem;
   font-size: 1.1rem;
   padding-bottom: 2rem;
 }
 .companyList img {
-  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   object-fit: cover;
   width: 80%;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .locationContainer {

@@ -23,10 +23,19 @@
     background-color: $grey-blueish;
     // gap: 1rem;
     // grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    
     .columCompany{ 
-        width: 50%;
-        position: relative;
-        min-height: 30rem;
+        // width: 50%;
+        // position: relative;
+        // min-height: 30rem;
+        // height: 100%;
+        // width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         
         
     
@@ -47,7 +56,7 @@
     p{
         padding-top: 1.5rem;
         padding-left: 4rem;
-        padding-right: 4rem;
+        padding-right: 3rem;
         font-family: "Avenir Next W02" !important;
         line-height: 1.8rem;
         font-size: 1.1rem;
@@ -56,20 +65,23 @@
     }
     img {
         // max-height: 21rem;
-        display:block;
+        // display:block;
         // background-color: rgba(0, 255, 128, 0.163);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         object-fit: cover;
         width:80%;
-        margin: auto;
-        // margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
+        // margin: auto;
+        // // margin: 0;
+        // // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // -ms-transform: translate(-50%, -50%);
       
-        transform: translate(-50%, -50%);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        // transform: translate(-50%, -50%);
+        // padding-top: 1rem;
+        // padding-bottom: 1rem;
+        // // object-fit: contain;
     
        
     }

@@ -1,8 +1,11 @@
+
+import { Fade } from "react-awesome-reveal";
 import working from '../../assets/working.png'
 const AboutUs = () =>{
     return(
         <div className="aboutContainer companyList">
-                <div className='columCompany'>
+                <Fade >
+                <div className='columCompany part1'>
                     <h2 >
                         About Us
                     </h2>
@@ -15,9 +18,12 @@ const AboutUs = () =>{
                     our MOC contact details.
                     </p>
                 </div>
-                <div className='columCompany'>
+                </Fade>
+                <Fade >
+                <div className='columCompany part2'> 
                     <img src={working} alt="working on an airplane" />
                 </div>
+                </Fade>
         </div>)
 
 }

@@ -32,8 +32,8 @@
 }
 @keyframes slideRight {
   from {
-    margin-left: -100%;
-    width: 300%;
+    margin-left: -6rem;
+    width: 100%;
   }
   to {
     margin-left: 0%;
@@ -75,7 +75,7 @@
   text-shadow: 0 1px 0 #ffffff, 0 1px 0 rgb(255, 234, 0), 1px 1px 1px #ffffff, 1px 2px 1px rgb(255, 234, 0) 0 -1px 0 #ffffff, 0 -1px 0 rgb(255, 234, 0), -1px 1px 1px rgb(255, 234, 0), 1px -1px 1px rgb(255, 234, 0);
   font-family: "bodoniBold";
   font-size: 2.5rem;
-  animation: 3s slideRight;
+  animation: 1.5s ease-in slideRight;
 }
 
 .bitPadding {
@@ -138,7 +138,7 @@
   margin: 0.5rem;
   gap: 3rem;
   margin-bottom: 0.3rem;
-  animation: fadeIn ease-in 3s;
+  animation: fadeIn ease-in 1.5s;
 }
 
 .menu-button-container {
@@ -259,7 +259,7 @@ a {
 }
 
 .AogSelector {
-  animation: fadeIn ease-in 3s;
+  animation: fadeIn ease-in 1.5s;
 }
 
 .logoContainer {
@@ -272,7 +272,7 @@ a {
   padding-bottom: 1rem;
   padding-top: 0.5rem;
   width: 12rem;
-  animation: slideFadeLeft ease 3s;
+  animation: slideFadeLeft ease 1.5s;
 }
 
 .aobContactContainer {
@@ -305,11 +305,11 @@ a {
 }
 
 .companyContainer {
-  margin-top: 6rem;
+  margin-top: 2rem;
   display: flex;
   padding-top: 1rem;
   flex-direction: column;
-  gap: 16rem;
+  gap: 6rem;
 }
 
 .companyList {
@@ -319,18 +319,17 @@ a {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .companyList .columCompany {
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-content: center;
 }
 .companyList h2 {
   padding-top: 2rem;
-  margin: auto;
+  padding-bottom: 1rem;
   text-align: center;
-  display: block;
-  width: 100%;
-  color: #143264;
+  color: #A52323;
   font-size: 1.3rem;
 }
 .companyList p {
@@ -345,8 +344,47 @@ a {
 .companyList img {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin: 1rem;
   object-fit: cover;
-  width: 80%;
+}
+
+.aboutContainer {
+  width: 100%;
+}
+.aboutContainer p {
+  width: 100%;
+  background-color: #f7f7f8;
+  font-family: "Avenir Next W02" !important;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.aboutUsPhoto {
+  height: 20rem;
+  background-color: #f7f7f8;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.aboutUsPhoto .aboutUs1 {
+  height: 12rem;
+}
+.aboutUsPhoto .aboutUs2 {
+  height: 17rem;
+}
+.aboutUsPhoto .aboutUs3 {
+  height: 20rem;
+}
+.aboutUsPhoto img {
+  place-self: center;
+  background-color: rgb(255, 255, 255);
+  object-fit: cover;
+  justify-self: stretch;
+  padding: 1rem;
 }
 
 .locationContainer {

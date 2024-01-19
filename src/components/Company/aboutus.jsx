@@ -1,29 +1,52 @@
 
-import { Fade } from "react-awesome-reveal";
-import working from '../../assets/working.png'
+import { keyframes } from "@emotion/react";
+import { Reveal } from "react-awesome-reveal";
+// import working from '../../assets/working.png'
+
+
+const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate(0, 80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+`;
+
+// const customAnimationImg = keyframes`
+//   from {
+//     opacity: 0;
+//     transform: translate(0, 80px);
+//   }
+
+//   to {
+//     opacity: 1;
+//     transform: translate(0, 0);
+//   }
+// `;
 const AboutUs = () =>{
     return(
-        <div className="aboutContainer companyList">
-                <Fade >
-                <div className='columCompany part1'>
-                    <h2 >
-                        About Us
-                    </h2>
-                    <p>
-                    We are an independent MRO specialising in maintenance and repairs for Bombardier and Embraer 
-                    Business Aviation aircraft. Our Main Base is located at Vienna Airport, Austria and our hangar 
-                    has the capacity to conduct multiple Base Maintenance inspections simultaneously. 
-                    We also provide Line Maintenance support in Vienna and in Nice Cote d’Azur Airport, France. 
-                    Additionally, we provide urgent AOG support for your aircraft which can be arranged via 
-                    our MOC contact details.
-                    </p>
-                </div>
-                </Fade>
-                <Fade >
-                <div className='columCompany part2'> 
+        <div>
+        
+            <Reveal keyframes={customAnimation} >
+            <div className="aboutContainer">
+                <p>
+                Situated in the classical music heart of Europe, we are an independent aviation MRO 
+                specialising in Bombardier and Embraer Business Aviation aircraft. Established by 
+                aviation professionals with extensive experience in engineering and quality assurance, 
+                sales and marketing, flight support and operations within the Business Aviation market,
+                 AMX Support continues to grow in to one of Europe’s leading MRO’s. Our aviation specialists 
+                 are dedicated to providing an exceptional service with a rewarding customer experience 7 
+                 days a week. Fly with confidence, and with AMX Support we keep you flying!
+                </p>
+            </div>
+            </Reveal>
+                {/* <Reveal keyframes={customAnimationImg}delay={200} >
                     <img src={working} alt="working on an airplane" />
-                </div>
-                </Fade>
+                </Reveal> */}
         </div>)
 
 }

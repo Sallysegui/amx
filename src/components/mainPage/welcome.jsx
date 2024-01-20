@@ -8,7 +8,6 @@ const Welcome = () => {
         </div>
     </div>
 
-   
     )
   }
   

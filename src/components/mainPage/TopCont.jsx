@@ -1,12 +1,13 @@
 import logo from '../../assets/logo.png'
-//import hangar from '../../assets/hungerFullCapacity.jpeg'
-//import Menu from './Menu'
 import Aob from './Aob'
+
 
 const LogoTop = () => {
     return(
-            <div className='logoContainer'>
-                <img src={logo} className="logo" alt="AMX logo" />
+            <div className='logoContainer' >
+                <a href={'/'}>
+                    <img src={logo} className="logo" alt="AMX logo" />
+                </a>
             </div>
     )
 }

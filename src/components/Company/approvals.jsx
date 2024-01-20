@@ -31,13 +31,7 @@ const customAnimationImg = keyframes`
 const Approvals = () =>{
     return(
         <div className="approContainer companyList">
-            <Reveal keyframes={customAnimationImg}delay={200} >
-                {/* <Fade > */}
-                <div className='columCompany part2'> 
-                  <img src={controlPlane} alt="control panel on an airplane" />
-                </div>
-            </Reveal>
-            <Reveal keyframes={customAnimation} >
+             <Reveal keyframes={customAnimation} >
                 <div className='columCompany part1'>
                   {/* <div> */}
                     <h2 >
@@ -51,6 +45,13 @@ const Approvals = () =>{
                   {/* </div> */}
                 </div>
             </Reveal>
+            <Reveal keyframes={customAnimationImg}delay={200} >
+                {/* <Fade > */}
+                <div className='columCompany part2'> 
+                  <img src={controlPlane} alt="control panel on an airplane" />
+                </div>
+            </Reveal>
+         
         </div>)
 
 }

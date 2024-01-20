@@ -90,6 +90,7 @@
   margin: auto;
   min-height: 5rem;
   background-color: #f7f7f8;
+  background-color: #f8f7f7;
 }
 .wecomeContainer .title {
   position: relative;
@@ -270,8 +271,8 @@ a {
   padding: 0.5rem;
   padding-left: 2rem;
   padding-bottom: 1rem;
-  padding-top: 0.5rem;
-  width: 12rem;
+  padding-top: 0.8rem;
+  width: 10rem;
   animation: slideFadeLeft ease 1.5s;
 }
 
@@ -284,7 +285,7 @@ a {
 
 .aobContact {
   padding-right: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-top: 1rem;
 }
 .aobContact img {
@@ -347,6 +348,14 @@ a {
   margin: 1rem;
   object-fit: cover;
 }
+.companyList iframe {
+  margin: 2rem;
+  padding: 0 !important;
+  height: 25rem;
+  width: 25rem;
+  object-fit: cover;
+  height: 25rem;
+}
 
 .aboutContainer {
   width: 100%;
@@ -362,51 +371,33 @@ a {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.aboutContainer p span {
+  font-style: italic;
+  font-stretch: expanded;
+  font-size: 1.1rem;
+}
 
 .aboutUsPhoto {
-  height: 20rem;
   background-color: #f7f7f8;
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
-}
-.aboutUsPhoto .aboutUs1 {
-  height: 12rem;
-}
-.aboutUsPhoto .aboutUs2 {
-  height: 17rem;
-}
-.aboutUsPhoto .aboutUs3 {
-  height: 20rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  justify-content: center; /* centers items horizontally */
+  align-items: center;
 }
 .aboutUsPhoto img {
+  height: 18rem;
+  width: 100%;
   place-self: center;
-  background-color: rgb(255, 255, 255);
-  object-fit: cover;
-  justify-self: stretch;
-  padding: 1rem;
 }
 
-.locationContainer {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-.google-map {
-  align-self: center;
-  margin: 0;
-  padding: 0;
-  height: 25rem;
-  width: 25rem;
-  border: 0;
-}
-
-.google-map iframe {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 25rem;
-  width: 25rem;
+.locationsP span {
+  font-weight: 600;
+  color: #143264;
 }
 
 @font-face {

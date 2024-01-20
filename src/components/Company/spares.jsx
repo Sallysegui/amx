@@ -30,6 +30,11 @@ const customAnimationImg = keyframes`
 const Spares = () =>{
     return(
         <div className="aboutContainer companyList">
+          <Reveal keyframes={customAnimationImg} delay={200} >
+            <div className='columCompany part2'> 
+              <img src={spares} alt="Spares department photo" />
+            </div>
+          </Reveal>
         <Reveal keyframes={customAnimation} >
         <div className='columCompany part1'>
             {/* <div>
@@ -43,19 +48,13 @@ const Spares = () =>{
                 Spares
             </h2>
             <p>
-                Our Spares department has a wide range of parts available to purchase for your aircraft and 
-                we are happy to supply you with what you need. We also have an extensive range of tooling and 
-                test equipment that can be rented on request so let us know what you require and 
-                we’ll do our best to provide you with what you need.
+            Our Spares department has a wide range of parts available at competitive prices. We also have an extensive range of tooling and test equipment that can be rented on request 
+             so contact our Spares team and we’ll do our best to provide you with what you need.
             </p>
             
         </div>
         </Reveal>
-            <Reveal keyframes={customAnimationImg} delay={200} >
-                <div className='columCompany part2'> 
-                    <img src={spares} alt="Spares department photo" />
-                </div>
-            </Reveal>
+         
                 {/* </Fade> */}
 
         </div>)

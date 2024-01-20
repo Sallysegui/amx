@@ -31,9 +31,7 @@
         flex-direction: column;   
         // align-self:centre; 
         align-content: center;
-        // background-color: aquamarine;
-        // flex-wrap: nowrap 
-        // align-items: flex-start;
+
         
     }
 
@@ -54,7 +52,6 @@
        
        
     p{
-        // background-color: pink;
         padding-top: 1.5rem;
         padding-left: 4rem;
         padding-right: 3rem;
@@ -63,34 +60,33 @@
         font-size: 1.1rem;
         padding-bottom: 2rem;
 
-
-
-
-
-
-
-        // align-self: flex-start;
-        
-        // max-width: 50%;
-        // background-color: rgba(127, 255, 212, 0.197);
     }
     img {
         padding-top: 2rem;
         padding-bottom: 2rem;
         margin: 1rem;
-        object-fit: cover;
-    
-       
+        object-fit: cover;  
+    }
+
+    iframe {
+        margin: 2rem;
+        padding: 0 !important;
+        height: 25rem;
+        width: 25rem;
+        object-fit: cover; 
+        height: 25rem;
+
     }
 
 
 }
 
 
-
+// .locationsP
 
 
 //////////////////////////////About us ////////////////////////////
+/// 
 .aboutContainer {
     width: 100%;
     p{
@@ -104,74 +100,81 @@
         padding-left: 3rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
-
-    //     padding-left: 8rem;
-    // }   padding-right: 8rem;
+        span{
+            font-style: italic;
+            font-stretch:expanded;
+            font-size: 1.1rem;
+        }
+        // background-color: red;
     }
 }
 
 ////////////////////////////////////aboutUsPhptp
 
 .aboutUsPhoto{
-    height: 20rem;
+    // height: 20rem;
     background-color: $grey-blueish;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: repeat(3,1fr);
-    .aboutUs1{
-        height: 12rem;
-    }
-    .aboutUs2{
-        height: 17rem;
-    }
-    .aboutUs3{
-        height: 20rem;
-    }
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    justify-content: center; /* centers items horizontally */
+    align-items: center;
+    // .aboutUs2{
+    //     width:25rem;
+    // }
+ 
     img {
+        height: 18rem;
+        width:100%;
         place-self: center;
-        background-color: rgb(255, 255, 255);
-        // height: 18rem;
-        object-fit: cover;
-        justify-self: stretch;
-        padding: 1rem;
+        // padding-bottom: 2rem;
 
     }
 }
 
 
 
-
+.locationsP {
+    span{
+        font-weight: 600;
+        color: $logo-blue;
+    }
+}
 /////////////////////////////////map/////////////////
 
 
-.locationContainer{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
+// .locationContainer{
+//     display: flex;
+//     justify-content: center;
+//     margin: auto;
+// }
 
-.google-map {
-    align-self:center;
-    margin: 0;
-    padding: 0;
-    height: 25rem;
-    width: 25rem;
-    // position: relative;
-    border:0;
-    // max-width: 30rem;
-    // max-height: 30rem;
-}
+// .google-map {
+//     align-self:center;
+//     margin: 0;
+//     padding: 0;
+//     height: 25rem;
+//     width: 25rem;
+//     // position: relative;
+//     border:0;
+//     // max-width: 30rem;
+//     // max-height: 30rem;
+// }
 
-.google-map  {
-    iframe{
-    margin: 0 !important;
-    padding: 0 !important;
-    height: 25rem;
-    width: 25rem;
-    // left: 0;
-    // top: 0;
-    // position: absolute;
-    }
-}
+// .google-map  {
+//     iframe{
+//     margin: 0 !important;
+//     padding: 0 !important;
+//     height: 25rem;
+//     width: 25rem;
+//     // left: 0;
+//     // top: 0;
+//     // position: absolute;
+//     }
+// }
 
 

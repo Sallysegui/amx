@@ -1,6 +1,6 @@
 const Welcome = () => {
     return (
-    <div className="wecomeContainer" >
+    <div className="wecomeContainer" id="about" >
         <div className="title">
             <h1>
                 Business Aviation Maintenance Facility

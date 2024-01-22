@@ -9,7 +9,7 @@ import Locations from "./components/Company/locations";
 import AboutUs from "./components/Company/aboutus";
 import Approvals from "./components/Company/approvals";
 import Spares from "./components/Company/spares";
-import AboutUsPhoto from "./components/Company/abouUsPhotos";
+// import AboutUsPhoto from "./components/Company/abouUsPhotos";
 
 const App = () => {
   return (
@@ -17,12 +17,14 @@ const App = () => {
     <div className='portada'>
       <TopCont/>
       <MenuFunct/>
-      <PhotoMain/> 
+      <PhotoMain/>
+      </div> 
       <Welcome/>
-      </div>
+      
+    
       <div className="companyContainer">
         <AboutUs/>
-        <AboutUsPhoto/>
+        {/* <AboutUsPhoto/> */}
         <Approvals/>
         <Spares/>
         <Locations/>

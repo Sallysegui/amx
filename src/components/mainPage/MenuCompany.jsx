@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import  { useRef } from "react";
+import { HashLink } from 'react-router-hash-link';
 
 
 const MenuCompany = () => {
@@ -17,12 +18,18 @@ const MenuCompany = () => {
           </button>
           <nav ref={dropdownRefComp} className={`menu ${isActive ? 'active' : 'inactive'}`}>
             <ul>
-              <li><a href="/aboutus">About us</a></li>
-              <li><a href="/aprovals">Approvals</a></li>
-              <li><a href="/spares">Spares</a></li>
-              <li><a href="/locations">Locations</a></li>
+              {/* <li><a href="/aboutus">About us</a></li> */}
+              <li>  <HashLink smooth  to="/company#about"  >About us</HashLink ></li>
+              <li>  <HashLink  to="/company#aprovals" smooth >Approvals</HashLink ></li>        
+              <li>  <HashLink  to="/company#spares" smooth >Spares</HashLink ></li>
+              <li>  <HashLink  smooth  to="/company#locations">Locations</HashLink ></li>
+             
             </ul>
           </nav>
+          {/* <HashLink  to="/company#sectionS" reloadPage >
+              lalalaala
+              </HashLink> */}
+           
         </div>
       );
  };

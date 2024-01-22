@@ -1,7 +1,7 @@
 
 import { keyframes } from "@emotion/react";
 import { Reveal } from "react-awesome-reveal";
-
+import AboutUsPhoto from "./abouUsPhotos";
 
 const customAnimation = keyframes`
   from {
@@ -29,7 +29,7 @@ const customAnimation = keyframes`
 
 const AboutUs = () =>{
     return(
-        <div className="aboutContainer">
+        <div className="aboutContainer" >
         
             <Reveal keyframes={customAnimation} >
             <div >
@@ -43,7 +43,9 @@ const AboutUs = () =>{
                  days a week. <span>Fly with confidence, and with AMX Support we keep you flying!</span>
                 </p>
             </div>
+            
             </Reveal>
+            <AboutUsPhoto/>
         </div>)
 
 }

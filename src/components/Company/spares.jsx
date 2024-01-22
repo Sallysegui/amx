@@ -1,7 +1,8 @@
 
 import { keyframes } from "@emotion/react";
 import { Reveal } from "react-awesome-reveal";
-import spares from '../../assets/spares2.webp'
+import spares from '../../assets/spares2.webp';
+
 
 const customAnimation = keyframes`
   from {
@@ -29,7 +30,7 @@ const customAnimationImg = keyframes`
 
 const Spares = () =>{
     return(
-        <div className="aboutContainer companyList">
+        <div className="sparesContainer companyList" id="spares">
           <Reveal keyframes={customAnimationImg} delay={200} >
             <div className='columCompany part2'> 
               <img src={spares} alt="Spares department photo" />
@@ -37,13 +38,6 @@ const Spares = () =>{
           </Reveal>
         <Reveal keyframes={customAnimation} >
         <div className='columCompany part1'>
-            {/* <div>
-                lalal
-            </div>
-            <div>
-                lololo
-            </div> */}
-            
             <h2>
                 Spares
             </h2>
@@ -54,9 +48,6 @@ const Spares = () =>{
             
         </div>
         </Reveal>
-         
-                {/* </Fade> */}
-
         </div>)
 
 }

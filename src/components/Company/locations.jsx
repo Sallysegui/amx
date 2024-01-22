@@ -29,7 +29,7 @@ const customAnimationImg = keyframes`
 
 
 const Locations = () =>{
-    return(<div className="approContainer companyList">
+    return(<div className="approContainer companyList" id="locations">
     <Reveal keyframes={customAnimation} >
        <div className='columCompany part1'>
          {/* <div> */}

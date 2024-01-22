@@ -19,9 +19,10 @@
     padding: 0 ;
     margin: 0;
     box-sizing: border-box; 
-    cursor: pointer;
+    // cursor: pointer;
    // color: rgb(1, 5, 85);
     // font-family: AvenirReg;
+    scroll-behavior: smooth;
 
   }
     
@@ -29,6 +30,7 @@
     margin:0!important; 
     padding-top: 0;
     display: inline;
+    // 
   }
 
  

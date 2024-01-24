@@ -6,30 +6,28 @@ import Spares from "./spares";
 import TopCont from '../mainPage/TopCont';
 import MenuFunct from '../mainPage/MenuFunct';
 import Welcome from '../mainPage/welcome';
-// import AboutUsPhoto from './abouUsPhotos';
-//AMX Support GmbH is an EASA Part 145 MRO specialising in Business aircraft maintenance. We specialise in AOG support, Line and Base Maintenance on Embraer Bombardier aircraft types and are able to support your aircraft requirements at out Base Maintenance facility in Vienna, Austria and provide AOG support globally.
+import Footer from "../Footer/footer";
 const Company = () =>{
-    return(
-         <div className='fullPage'>
-            {/* <div className='portada'> */}
-            <div className='portada'>
-            <TopCont/>
-      <MenuFunct/>
-      
-                {/* <TopCont/>
-                <MenuFunct/> */}
-                <Welcome/>
-                </div>
-                <div className="companyContainer">
-                <AboutUs/>
-                {/* <AboutUsPhoto/> */}
-                <Approvals/>
-                <Spares/>
-                <Locations/>
+    return(<div className='fullPage'>
+        <div className='portada'>
+            <div className='header'>
+            <div className="headerInner">
+                <TopCont/>
+                <MenuFunct/>
             </div>
+            </div>
+            <div className='supportMenu'></div>
         </div>
-    // </div>
-    )
+        <div className="bitMargin"></div>
+        <Welcome/>
+        <div className="companyContainer">
+            <AboutUs/>
+            <Approvals/>
+            <Spares/>
+            <Locations/>
+        </div>
+        <Footer/>
+    </div>)
 
 }
 export default Company

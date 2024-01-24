@@ -58,29 +58,57 @@
     opacity: 1;
   }
 }
+.supportMenu {
+  height: 5rem;
+}
+
 .mainPhoto {
   background: url("./images/planesunny.jpeg") no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 32rem;
-  margin-top: 0;
+  margin-top: 6.8rem;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  margin-right: 5rem;
+  padding-right: 5rem;
+  top: 0;
+  left: 5rem;
+  right: 5rem;
+  z-index: 10;
+}
+
+.headerInner {
+  position: relative;
+  margin-right: 5rem;
+  background-color: #f7f7f8;
 }
 
 .flying {
   padding-left: 2rem;
   padding-top: 22rem;
   color: #4a68a0;
-  text-shadow: rgb(255, 234, 0) 3px 3px 4px;
-  text-shadow: 1px 1px 1px rgb(255, 234, 0);
-  text-shadow: 0 1px 0 #ffffff, 0 1px 0 rgb(255, 234, 0), 1px 1px 1px #ffffff, 1px 2px 1px rgb(255, 234, 0) 0 -1px 0 #ffffff, 0 -1px 0 rgb(255, 234, 0), -1px 1px 1px rgb(255, 234, 0), 1px -1px 1px rgb(255, 234, 0);
+  text-shadow: rgb(255, 255, 253) 3px 3px 4px;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  text-shadow: 0 1px 0 #ffffff, 0 1px 0 rgb(252, 252, 252), 1px 1px 1px #ffffff, 1px 2px 1px rgb(255, 234, 0) 0 -1px 0 #ffffff, 0 -1px 0 rgb(255, 255, 255), -1px 1px 1px rgb(255, 255, 255), 1px -1px 1px rgb(255, 255, 255);
+  -webkit-text-stroke: 1px #4a68a0;
   font-family: "bodoniBold";
+  font-style: italic;
+  font-family: sans-serif;
   font-size: 2.5rem;
   animation: 1.5s ease-in slideRight;
+  font-family: "Avenir Next W02" !important;
 }
 
 .bitPadding {
-  padding: 1.5rem;
   margin-bottom: 2.5rem;
+}
+
+.bitMargin {
+  margin-bottom: 2rem;
 }
 
 .wecomeContainer {
@@ -398,6 +426,49 @@ a {
 .locationsP span {
   font-weight: 600;
   color: #143264;
+}
+
+.boroscopePhotoCont img {
+  width: 15rem;
+  margin-left: 10rem;
+}
+
+.inquiries {
+  margin: 3rem;
+  padding: 3rem;
+  font-family: "Avenir Next W02" !important;
+}
+
+.contacts {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 3fr 3fr;
+  max-width: 35rem;
+  padding-bottom: 3rem;
+  position: relative;
+  margin: auto;
+  font-family: "Avenir Next W02" !important;
+}
+.contacts .contactTitle {
+  font-weight: 800;
+}
+
+.address {
+  padding-top: 3rem;
+}
+
+.footerConainer {
+  margin-top: 2rem;
+  background-color: #143264;
+  height: 15rem;
+  color: #F7F7FF;
+}
+
+.footerList {
+  color: #F7F7FF;
+}
+.footerList p {
+  color: #F7F7FF;
 }
 
 @font-face {

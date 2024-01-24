@@ -4,6 +4,7 @@ import App from './Home';
 import Company from './components/Company/company';
 import Contact from './components/Contact/contact';
 import Services from './components/Services/services';
+import Careers from './components/Careers/careers';
 
 const Routes = () => {
     return (
@@ -13,6 +14,7 @@ const Routes = () => {
           <Route exact path="/company" component={Company} />
           <Route path="/services" component={Services} />
           <Route path="/contact" component={Contact} />
+          <Route path="/careers" component={Careers} />
         </Switch>
       </Router>
     );

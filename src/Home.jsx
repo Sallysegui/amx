@@ -10,29 +10,28 @@ import AboutUs from "./components/Company/aboutus";
 import Approvals from "./components/Company/approvals";
 import Spares from "./components/Company/spares";
 // import AboutUsPhoto from "./components/Company/abouUsPhotos";
+import Footer  from './components/Footer/footer';
 
 const App = () => {
-  return (
-  <div className='fullPage'>
+  return (<div className='fullPage'>
     <div className='portada'>
-      <TopCont/>
-      <MenuFunct/>
-      <PhotoMain/>
-      </div> 
-      <Welcome/>
-      
-    
-      <div className="companyContainer">
-        <AboutUs/>
-        {/* <AboutUsPhoto/> */}
-        <Approvals/>
-        <Spares/>
-        <Locations/>
+      <div className='header'>
+      <div className="headerInner">
+        <TopCont/>
+        <MenuFunct/>
+        </div>
       </div>
-      
- 
-  </div>
-  )
+      <PhotoMain/>
+    </div> 
+      <Welcome/>
+    <div className="companyContainer">
+      <AboutUs/>
+      <Approvals/>
+      <Spares/>
+      <Locations/>
+    </div>
+    <Footer/>    
+  </div>)
 }
 
 export default App

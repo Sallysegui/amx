@@ -1,14 +1,7 @@
 import  { useState } from 'react';
 import  { useRef } from "react";
+import { HashLink } from 'react-router-hash-link';
 
-
-// const optionsList = [
-//     'lalalaal',
-//     'Services',
-//     'Spares',
-//     'Contact'
-
-// ]
 
 
 const MenuServices = () => {
@@ -27,10 +20,14 @@ const MenuServices = () => {
           </button>
           <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
             <ul>
-              <li><a href="/messages">AOG Response</a></li>
+              <li>  <HashLink smooth  to="/services#aog"  >AOG Response</HashLink ></li>
+              <li>  <HashLink  to="/services#lineMainte" smooth >Line Maintenance</HashLink ></li>        
+              <li>  <HashLink  to="/services#baseMainte" smooth >Base Maintenance</HashLink ></li>
+              <li>  <HashLink  smooth  to="/services#boroscope">Engine Borescope</HashLink ></li>
+              {/* <li><a href="/messages">AOG Response</a></li>
               <li><a href="/trips">Line Maintenance</a></li>
               <li><a href="/saved">Base Maintenance</a></li>
-              <li><a href="/saved">Engine Boroscope</a></li>
+              <li><a href="/saved">Engine Boroscope</a></li> */}
             </ul>
           </nav>
         </div>

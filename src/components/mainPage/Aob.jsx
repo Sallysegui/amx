@@ -1,6 +1,6 @@
 const Aob = () => {
     return(
-        <div className='aobContactContainer'>
+        <div className='aobContactContainer' id="aog">
             <p className='aobContact aobOnly'>
                 <span className='strongText'>AOG</span> response:&nbsp;
                 <img className='contactIcon' src="https://si.nccdn.net/pictograms-gray/48/icon_02.png"></img>

@@ -37,7 +37,7 @@ const Locations = () =>{
              Locations
            </h2>
            <p className="locationsP">
-           Our headquarters and hangar are located in <span>Vienna Airport</span>, Austria and we also have a Line Stations
+           Our headquarters and hangar are located in <span>Vienna</span>, Austria. We also have Line Stations
             at <span>Nice Cote d’Azur Airport</span>, France and <span>London Luton Airport</span>, United Kingdom. 
            </p>
          {/* </div> */}
@@ -46,8 +46,11 @@ const Locations = () =>{
    <Reveal keyframes={customAnimationImg}delay={200} >
        {/* <Fade > */}
        <div className='columCompany part2'> 
-       <iframe src="https://www.google.com/maps/d/embed?mid=1fzRdPhsjwLhryGIyqcAguIIAq-r9WBY&ehbc=2E312F"
-                allowfullscreen="" loading="lazy"></iframe> 
+
+          <iframe src="https://www.google.com/maps/d/embed?mid=1Tx_7KT7l4v6b56oypRO6CrDyKPraRpg&ehbc=2E312F&noprof=1"
+           allowfullscreen="" loading="lazy">
+
+           </iframe>
        </div>
    </Reveal>
         </div>

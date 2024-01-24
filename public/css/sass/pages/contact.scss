@@ -1,0 +1,25 @@
+.inquiries{
+    margin: 3rem;
+    padding: 3rem;
+    font-family: "Avenir Next W02" !important;
+}
+
+.contacts{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 3fr 3fr;
+    max-width: 35rem;
+    padding-bottom: 3rem;
+    position: relative;
+    margin: auto;
+    font-family: "Avenir Next W02" !important;
+    .contactTitle{
+        font-weight: 800;
+    }
+}
+
+
+.address{
+    padding-top: 3rem;
+}
+

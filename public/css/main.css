@@ -477,19 +477,22 @@ a {
   flex-wrap: nowrap;
 }
 .footerConainer .footerColumn {
+  margin-top: 3rem;
   flex: 1 1 7rem;
   margin-left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  border-right: 1px solid rgb(255, 255, 255);
+  height: 8rem;
 }
 .footerConainer .footerColumn .footerList {
   margin: 1.5rem 0;
 }
 .footerConainer .imageFooter {
   align-self: flex-start;
-  margin-top: 4rem;
+  border-right: 0;
 }
 .footerConainer .logoFooter {
   height: 2.5rem;

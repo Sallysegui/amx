@@ -58,6 +58,14 @@
     opacity: 1;
   }
 }
+@keyframes shadow {
+  from {
+    box-shadow: 0;
+  }
+  to {
+    box-shadow: 0 10px 6px -6px #cecece;
+  }
+}
 .supportMenu {
   height: 5rem;
 }
@@ -85,6 +93,8 @@
   position: relative;
   margin-right: 5rem;
   background-color: #f7f7f8;
+  animation: shadow linear;
+  animation-timeline: scroll();
 }
 
 .flying {
@@ -463,12 +473,47 @@ a {
   height: 15rem;
   color: #F7F7FF;
 }
+.footerConainer .logoFooter {
+  width: 6rem;
+}
 
 .footerList {
   color: #F7F7FF;
 }
 .footerList p {
   color: #F7F7FF;
+}
+
+.whyAmxText {
+  line-height: 1.8rem;
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  margin-top: 3rem;
+  padding: 3rem;
+  background: #f7f7f8;
+}
+.whyAmxText .whyAmxTextTitle {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  color: #A52323;
+  font-size: 1.3rem;
+}
+.whyAmxText p {
+  margin-bottom: 10px;
+}
+.whyAmxText p span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #A52323;
+  color: #fff;
+  margin-right: 1rem;
+}
+.whyAmxText p {
+  margin-top: 2rem;
 }
 
 @font-face {

@@ -5,6 +5,7 @@ import Company from './components/Company/company';
 import Contact from './components/Contact/contact';
 import Services from './components/Services/services';
 import Careers from './components/Careers/careers';
+import WhyAmx from './components/Footer/whyAmx';
 
 const Routes = () => {
     return (
@@ -15,6 +16,7 @@ const Routes = () => {
           <Route path="/services" component={Services} />
           <Route path="/contact" component={Contact} />
           <Route path="/careers" component={Careers} />
+          <Route path="/whyamx" component={WhyAmx} />
         </Switch>
       </Router>
     );

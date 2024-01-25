@@ -69,3 +69,15 @@
   }
 
 }
+
+@keyframes shadow {
+  from {
+    box-shadow: 0;
+    // box-shadow: 0 10px 6px -6px #cecece;
+  }
+  to {
+    // box-shadow: 0;
+    box-shadow: 0 10px 6px -6px #cecece;
+  }
+
+}

@@ -26,22 +26,28 @@ const ContactForm = () => {
     }
   
   return (
-    <div>
-      <h1>Send us a message</h1>
+    <div className='contactFormContainer'>
+      {/* <h1>Send us a message</h1> */}
       <form onSubmit={addForm}>
         <input
+            className='fontField'
             value={name}
             onChange={handleNameChange}
+            placeholder='Name'
          />
-         <input
+    
+         <input 
+            className='fontField'
             value={email}
             onChange={handleEmailChange}
+            placeholder='Email'
          />
          <input
             value={question}
             onChange={handleQuesitonChange}
+            placeholder='Equiry'
          />
-        <button type="submit">Send</button>
+        <button type="submit">Send your enquiry</button>
       </form>  
     </div>
   )

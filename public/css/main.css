@@ -472,9 +472,28 @@ a {
   background-color: #143264;
   height: 15rem;
   color: #F7F7FF;
+  display: flex;
+  justify-content: space;
+  flex-wrap: nowrap;
+}
+.footerConainer .footerColumn {
+  flex: 1 1 7rem;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footerConainer .footerColumn .footerList {
+  margin: 1.5rem 0;
+}
+.footerConainer .imageFooter {
+  align-self: flex-start;
+  margin-top: 4rem;
 }
 .footerConainer .logoFooter {
-  width: 6rem;
+  height: 2.5rem;
+  margin: 0;
 }
 
 .footerList {

@@ -3,34 +3,45 @@ import logo from '../../assets/amxWhite.png';
 
 const Footer = () =>{
     return(<div className='footerConainer'>
-        <img src={logo} className='logoFooter' alt="AMX logo" />
+        <div className='footerColumn imageFooter'>
+            <img src={logo} className='logoFooter' alt="AMX logo" />
+        </div>
+        <div className='footerColumn'>
         
-        <div className='footerList'><HashLink smooth  to="/whyamx"><p>
+        <div>
+            <div className='footerList'><HashLink smooth  to="/whyamx"><p>
             Why choose AMX support?
-        </p></HashLink ></div>
-        <p>	&#169; copyright 2024</p>
-        <div className='footerList'><HashLink smooth  to="/company"><p>
-            Company
-        </p></HashLink ></div>
-        <div className='footerList'><HashLink smooth  to="/services"><p>
-            Services
-        </p></HashLink ></div>
-        <div className='footerList'><HashLink smooth  to="/careers"><p>
-            Careers
-        </p></HashLink ></div>
-     
-        <div className='footerList'><HashLink smooth  to="/services#aog"><p>
-            AOG Response
-        </p></HashLink ></div>
-        <div className='footerList'><HashLink smooth  to="/services#aog"><p>
-            AOG Response
-        </p></HashLink ></div>
-        <a href="/contact" className='footerList'><p>
-            Contact us
-        </p></a>
-        <a href="/terms" className='footerList'><p>
+            </p></HashLink ></div>
+            <div className='footerList'><HashLink smooth  to="/terms" ><p>
             Terms and Conditions
-        </p></a>
+            </p></HashLink ></div>
+            <p>	&#169; copyright 2024</p>
+        </div>
+        </div>
+        <div className='footerColumn'>
+        <div>
+            <div className='footerList'><HashLink smooth  to="/company"><p>
+                Company
+            </p></HashLink ></div>
+            <div className='footerList'><HashLink smooth  to="/services"><p>
+                Services
+            </p></HashLink ></div>
+            <div className='footerList'><HashLink smooth  to="/careers"><p>
+                Careers
+            </p></HashLink ></div>
+        </div>
+        </div>
+        <div className='footerColumn'>
+        <div>
+            <div className='footerList'><HashLink smooth  to="/services"><p className='aogFooter'>
+                AOG Response
+            </p></HashLink ></div>
+            <div className='footerList'><HashLink smooth  to="/contact"><p>
+                Contact us
+            </p></HashLink ></div>
+
+        </div>
+        </div>
     </div>)
 
 }

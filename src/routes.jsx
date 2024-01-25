@@ -6,6 +6,7 @@ import Contact from './components/Contact/contact';
 import Services from './components/Services/services';
 import Careers from './components/Careers/careers';
 import WhyAmx from './components/Footer/whyAmx';
+import Terms from './components/Footer/terms';
 
 const Routes = () => {
     return (
@@ -17,6 +18,7 @@ const Routes = () => {
           <Route path="/contact" component={Contact} />
           <Route path="/careers" component={Careers} />
           <Route path="/whyamx" component={WhyAmx} />
+          <Route path="/terms" component={Terms} />
         </Switch>
       </Router>
     );

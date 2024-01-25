@@ -43,6 +43,7 @@ const ContactForm = () => {
             placeholder='Email'
          />
          <input
+            className='fontField'
             value={question}
             onChange={handleQuesitonChange}
             placeholder='Equiry'

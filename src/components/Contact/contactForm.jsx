@@ -44,10 +44,10 @@ const ContactForm = () => {
             placeholder='Email'
          />
          <input
-            className='fontField'
+            className='fontField enquiry'
             value={question}
             onChange={handleQuesitonChange}
-            placeholder='Equiry'
+            placeholder='Enquiry'
          />
         <button type="submit">Send</button>
       </form> 

@@ -8,21 +8,23 @@ import Footer from "../Footer/footer";
 
 const Contact = () =>{
     return(<div className='fullPage'>
-        <div className='portada'>
-            <div className='header'>
+          <div className='header'>
             <div className="headerInner">
                 <TopCont/>
                 <MenuFunct/>
             </div>
             </div>
+        <div className='portada'>
+          
         <div className='supportMenu'></div>
-    </div>
+
     <div className="bitMargin"></div>
             <ContactUs/>
-            Contact Form
             <ContactForm/>
             < Address />
+            </div>
             <Footer/>
+         
     </div>)
 
 }

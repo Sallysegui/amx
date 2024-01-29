@@ -1,7 +1,7 @@
 .footerConainer{
     margin-top: 2rem;
     background-color: $logo-blue;
-    height: 15rem;
+    height: 12rem;
     color: $gosh-white;
     display: flex;
     justify-content: space;
@@ -57,7 +57,7 @@
 .whyAmxText {
     line-height: 1.8rem;
     font-size: clamp(0.9rem, 2vw, 1.05rem);
-    margin-top: 3rem;
+    margin-top: 4rem;
     padding: 3rem;
     // padding-left: 2rem ;
     // padding-right: 2rem ;
@@ -77,12 +77,13 @@
         display:inline-flex;
         align-items:center;
         justify-content:center;
-        width:20px;
-        height:20px;
+        width:17px;
+        height:17px;
         border-radius:50%;
         background-color:$logo-red;
         color:#fff;
         margin-right: 1rem;
+        font-size: 0.8rem;
       }
 
     p{

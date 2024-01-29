@@ -7,15 +7,16 @@ const Footer = () =>{
             <img src={logo} className='logoFooter' alt="AMX logo" />
         </div>
         <div className='footerColumn'>
-        
         <div>
             <div className='footerList'><HashLink smooth  to="/whyamx"><p>
-            Why choose AMX support?
-            </p></HashLink ></div>
+            Why choose AMX Support?</p></HashLink ></div>
             <div className='footerList'><HashLink smooth  to="/terms" ><p>
-            Terms and Conditions
-            </p></HashLink ></div>
+            Terms and Conditions</p></HashLink ></div>
+            <div className='footerList'><HashLink smooth  ><p>
+            &#169; copyright 2024</p></HashLink ></div>
+            {/* <div>
             <p>	&#169; copyright 2024</p>
+            </div> */}
         </div>
         </div>
         <div className='footerColumn'>

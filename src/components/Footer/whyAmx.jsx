@@ -5,18 +5,18 @@ import Footer from "../Footer/footer";
 
 const WhyAmx = () =>{
     return(<div className='fullPage'>
-            <div className='portada'>
-                <div className='header'>
+             <div className='header'>
                 <div className="headerInner">
                     <TopCont/>
                     <MenuFunct/>
                 </div>
                 </div>
-            </div>
+            <div className='portada'>
+           
             <div className='supportMenu'></div>   
         <div className='whyAmxText'>
             <h2 className='whyAmxTextTitle'>
-                Why choose AMX support?
+                Why choose AMX Support?
             </h2>
         <div>
         <p><span>1</span>Expertise: Our passionate engineers and technicians possess a wealth of expertise in the maintenance and repair of Challenger and Global series
@@ -43,6 +43,7 @@ const WhyAmx = () =>{
         Transparent Quoting: At AMX Support, we believe in transparency. We are happy to provide a 
         quote at any time for your specific maintenance needs. Our detailed and competitive quotes ensure you
         have a clear understanding of the costs involved.</p>
+        </div>
         </div>
         </div>
         <Footer/>

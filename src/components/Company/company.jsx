@@ -9,22 +9,25 @@ import Welcome from '../mainPage/welcome';
 import Footer from "../Footer/footer";
 const Company = () =>{
     return(<div className='fullPage'>
-        <div className='portada'>
-            <div className='header'>
+         <div className='header'>
             <div className="headerInner">
                 <TopCont/>
                 <MenuFunct/>
             </div>
-            </div>
-            <div className='supportMenu'></div>
         </div>
+        <div className='portada'>
+            <div className='supportMenu'></div>
+       
         <div className="bitMargin"></div>
         <Welcome/>
         <div className="companyContainer">
             <AboutUs/>
+         
             <Approvals/>
             <Spares/>
+      
             <Locations/>
+        </div>
         </div>
         <Footer/>
     </div>)

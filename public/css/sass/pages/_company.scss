@@ -9,7 +9,10 @@
      line-height: 1.8rem;
      gap: 6rem;
    
+
+   
 }
+
 
 .companyList{
     // background-color: rgba(222, 168, 201, 0.851);
@@ -68,6 +71,14 @@
         padding-bottom: 2rem;
         margin: 1rem;
         object-fit: cover;  
+        @include desktop-screen{
+            // padding-top: 8rem;
+            // padding-bottom: 8rem;
+            padding: 8rem;
+            // background-color: red;
+            // background-color: red;
+            // width: 24em;
+        }
     }
 
     iframe {

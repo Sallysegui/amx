@@ -14,15 +14,15 @@ import Footer  from './components/Footer/footer';
 
 const App = () => {
   return (<div className='fullPage'>
-    <div className='portada'>
-      <div className='header'>
-      <div className="headerInner">
+       <div className='header'>
+        <div className="headerInner">
         <TopCont/>
         <MenuFunct/>
         </div>
-      </div>
+        </div>
+    <div className='portada'>
       <PhotoMain/>
-    </div> 
+    
       <Welcome/>
     <div className="companyContainer">
       <AboutUs/>
@@ -30,6 +30,7 @@ const App = () => {
       <Spares/>
       <Locations/>
     </div>
+    </div> 
     <Footer/>    
   </div>)
 }

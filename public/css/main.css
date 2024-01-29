@@ -85,16 +85,14 @@
 .header {
   position: fixed;
   width: 100%;
-  margin-right: 5rem;
-  padding-right: 5rem;
-  left: 5rem;
-  right: 5rem;
   z-index: 10;
+  background-color: #f7f7f8;
 }
 
 .headerInner {
   position: relative;
-  margin-right: 5rem;
+  padding-right: 6.5rem;
+  padding-left: 6.5rem;
   background-color: #f7f7f8;
   animation: shadow linear;
   animation-timeline: scroll();
@@ -131,6 +129,7 @@
   min-height: 5rem;
   background-color: #f7f7f8;
   background-color: #f8f7f7;
+  margin-top: 3rem;
 }
 .wecomeContainer .title {
   position: relative;
@@ -281,15 +280,14 @@ a {
 
 .fullPage {
   position: relative;
+  padding-top: 0.7rem;
   background-color: #fff;
-  margin-left: 5rem;
-  margin-right: 5rem;
   margin-top: 0;
 }
 
 .portada {
-  padding-top: 0.7rem;
-  background-color: #f7f7f8;
+  margin-left: 6.5rem;
+  margin-right: 6.5rem;
 }
 
 .containerTopCont {
@@ -391,6 +389,11 @@ a {
   margin: 1rem;
   object-fit: cover;
 }
+@media (min-width: 86em) {
+  .companyList img {
+    padding: 8rem;
+  }
+}
 .companyList iframe {
   margin: 2rem;
   padding: 0 !important;
@@ -473,49 +476,27 @@ a {
 }
 
 .contactFormContainer {
-  height: 100vh;
+  height: 80vh;
   min-width: 15rem;
-}
-.contactFormContainer:focus {
-  background-color: #f2f6f8;
-  border: none;
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
-}
-.contactFormContainer ::placeholder {
-  font-size: 1.1em;
-  color: #838788;
+  opacity: 0.5;
+  background-color: #b3f0ff;
   position: relative;
-  left: 0;
-}
-.contactFormContainer button {
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  padding: 0 3rem;
-  border: 0;
-  border-radius: 3rem;
-  background-image: linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
-  background-size: 300% 100%;
-  transition: all 0.3s ease-in-out;
-}
-.contactFormContainer button :hover:enabled {
-  box-shadow: 0 0.5em 0.5em -0.4em rgba(255, 146, 60, 0.7294117647);
-  background-size: 100% 100%;
-  transform: translateY(-0.15em);
 }
 .contactFormContainer form {
+  opacity: 1;
   position: absolute;
-  height: 27rem;
+  height: 30rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgb(246, 163, 227);
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
   width: 25rem;
   padding: 0 40px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
 }
 .contactFormContainer h1 {
   text-align: center;
@@ -530,11 +511,47 @@ a {
   height: 2rem;
   padding: 1rem 2.5rem;
 }
+.contactFormContainer .enquiry {
+  height: 6rem;
+}
+.contactFormContainer:focus {
+  background-color: #f2f6f8;
+  border: none;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+}
+.contactFormContainer ::placeholder {
+  font-size: 1.1em;
+  color: #838788;
+  position: relative;
+  left: 0;
+}
+.contactFormContainer input {
+  margin-top: 2.5rem;
+}
+.contactFormContainer button {
+  margin-top: 3rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 3rem;
+  border: 0;
+  border-radius: 3rem;
+  background-image: linear-gradient(131deg, #a8c9dc, #4c87a8, #1f5574, #09334c);
+  background-size: 300% 100%;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 3rem;
+}
+.contactFormContainer button :hover {
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(36, 28, 22, 0.7294117647);
+  background-size: 100% 100%;
+  transform: translateY(-0.15em);
+}
 
 .footerConainer {
   margin-top: 2rem;
   background-color: #143264;
-  height: 15rem;
+  height: 12rem;
   color: #F7F7FF;
   display: flex;
   justify-content: space;
@@ -573,7 +590,7 @@ a {
 .whyAmxText {
   line-height: 1.8rem;
   font-size: clamp(0.9rem, 2vw, 1.05rem);
-  margin-top: 3rem;
+  margin-top: 4rem;
   padding: 3rem;
   background: #f7f7f8;
 }
@@ -591,12 +608,13 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   background-color: #A52323;
   color: #fff;
   margin-right: 1rem;
+  font-size: 0.8rem;
 }
 .whyAmxText p {
   margin-top: 2rem;

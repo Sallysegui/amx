@@ -2,20 +2,23 @@
 
 .fullPage {
     position: relative;
+    padding-top: 0.7rem;
     // background-color: red;
     background-color: $nice-white;
     // padding-left: 0.5rem;
     // padding-right: 0.5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+ 
     margin-top: 0;
     // padding-top: 0.7rem;
-    
 
 }
 
 .portada {
     // position: relative;
-    padding-top: 0.7rem;
-    background-color: $grey-blueish;
+    
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+    // background-color: $grey-blueish;
+
+    // background-color: red;
 }

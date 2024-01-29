@@ -27,8 +27,9 @@ const ContactForm = () => {
   
   return (
     <div className='contactFormContainer'>
-      {/* <h1>Send us a message</h1> */}
+      <div>
       <form onSubmit={addForm}>
+        <h1>Send us an message</h1>
         <input
             className='fontField'
             value={name}
@@ -48,8 +49,9 @@ const ContactForm = () => {
             onChange={handleQuesitonChange}
             placeholder='Equiry'
          />
-        <button type="submit">Send your enquiry</button>
-      </form>  
+        <button type="submit">Send</button>
+      </form> 
+      </div> 
     </div>
   )
 }

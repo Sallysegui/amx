@@ -61,6 +61,8 @@
 .menu li a {
   text-decoration: none;
   color: $menu-color;
+  font-size: 0.8em;
+  font-weight: 600;
   // color: $logo-blue;
   padding: 15px 20px;
   display: block;
@@ -121,8 +123,8 @@
 }
 
 .menu-trigger span {
-  font-family: "Avenir Next W02" !important;
-  font-weight: 550;
+  font-family: "AvenirNext" !important;
+  font-weight: 600;
   vertical-align: middle;
   font-size: 0.85rem;
   ///////////////////////

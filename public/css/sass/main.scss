@@ -14,8 +14,8 @@
   src: url("../../css/fonts/Avenir/Avenir_Heavy/Avenir_Heavy.ttf") format("truetype");
 }
 @font-face{
-  font-family: "AvenirReg";
-  src: url("../../css/fonts/Avenir/Avenir_Regular/Avenir_Regular.ttf") format("truetype");
+  font-family: "AvenirNextReg";
+  src: url("fonts/AvenirNext_Regular.ttf") format("truetype");
 }
 *{
     padding: 0 ;
@@ -23,8 +23,10 @@
     box-sizing: border-box; 
     // cursor: pointer;
    // color: rgb(1, 5, 85);
-    // font-family: AvenirReg;
+    //font-family: AvenirReg;
     scroll-behavior: smooth;
+    font-family: "AvenirNext";
+
 
   }
     

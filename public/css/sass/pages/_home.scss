@@ -44,6 +44,7 @@
     padding-left: 2rem;
     padding-top: 22rem;
     color: $flying;
+    color: #141415;
     text-shadow: rgb(255, 255, 253)3px 3px 4px;
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
     text-shadow: 
@@ -57,16 +58,10 @@
         1px -1px 1px rgb(255, 255, 255);
         -webkit-text-stroke: 1px $flying;
 
-
-
-
-
-    font-family: 'bodoniBold';
     font-style: italic;
-    font-family: sans-serif;
     font-size: 2.5rem;
     animation: 1.5s ease-in slideRight;
-    font-family: "Avenir Next W02" !important;
+    font-family: "AvenirNext" !important;
 
 }
 

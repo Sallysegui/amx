@@ -57,9 +57,13 @@
     @media (max-width:75em) {@content};
 };
 @mixin desktop-screen {
-    @media  (min-width: 86em) {@content};
+    @media screen and (min-width: 1520px) {@content};
 };
 
+
+ // @media screen and (min-width: 1520px){
+        //     padding: 8rem;
+        // }
 //@include desktop-screen
 
 // @mixin desktop-screen {

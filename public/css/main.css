@@ -389,7 +389,7 @@ a {
   margin: 1rem;
   object-fit: cover;
 }
-@media (min-width: 86em) {
+@media screen and (min-width: 1520px) {
   .companyList img {
     padding: 8rem;
   }

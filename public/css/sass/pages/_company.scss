@@ -71,13 +71,13 @@
         padding-bottom: 2rem;
         margin: 1rem;
         object-fit: cover;  
-        @include desktop-screen{
-            // padding-top: 8rem;
-            // padding-bottom: 8rem;
+        // @include desktop-screen{
+    
+        //     padding: 8rem;
+     
+        // }
+        @media screen and (min-width: 1520px){
             padding: 8rem;
-            // background-color: red;
-            // background-color: red;
-            // width: 24em;
         }
     }
 

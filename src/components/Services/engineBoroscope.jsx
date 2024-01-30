@@ -1,7 +1,7 @@
 
 import { keyframes } from "@emotion/react";
 import { Reveal } from "react-awesome-reveal";
-import boroscope from '../../assets/engineBorescope.jpg';
+import boroscope from '../../assets/enginefoto.jpg';
 
 const customAnimation = keyframes`
   from {

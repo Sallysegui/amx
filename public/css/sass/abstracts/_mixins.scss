@@ -39,25 +39,25 @@
     @media (max-width: 14em) {@content};
 };
 @mixin medium-phone-screen {
-    @media (max-width: 18em) {@content};
+    @media screen and (max-width: 18em) {@content};
 };
 @mixin big-phone-screen {
-    @media (max-width: 28em) {@content};
+    @media screen and (max-width: 28em) {@content};
 };
 @mixin phone-screen {
-    @media (max-width: 37.5em ) {@content};
+    @media screen and (max-width: 37.5em ) {@content};
 };
 @mixin tablet-screen {
-    @media (max-width: 44em) {@content};
+    @media screen and (max-width: 44em) {@content};
 };
 @mixin phoneLand-screen {
-    @media (max-width: 56.25em) {@content};
+    @media screen and (max-width: 56.25em) {@content};
 };
 @mixin laptop-screen {
-    @media (max-width:75em) {@content};
+    @media screen and (max-width:75em) {@content};
 };
 @mixin desktop-screen {
-    @media screen and (min-width: 1520px) {@content};
+    @media screen and (min-width: 86em) {@content};
 };
 
 

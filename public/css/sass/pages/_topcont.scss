@@ -100,7 +100,8 @@
 .contactIcon{
     height: 2rem;
     @include phone-screen {
-        height: 0.6rem;
+       display: none;
+
     //     width: 0.5rem;
     }
     

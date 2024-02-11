@@ -451,7 +451,7 @@ a {
 }
 @media screen and (max-width: 37.5em) {
   .contactIcon {
-    height: 0.6rem;
+    display: none;
   }
 }
 

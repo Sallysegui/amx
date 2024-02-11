@@ -88,6 +88,12 @@
   z-index: 10;
   background-color: #f7f7f8;
 }
+@media screen and (max-width: 37.5em) {
+  .header {
+    position: fixed;
+    top: 0;
+  }
+}
 
 .headerInner {
   position: relative;
@@ -96,6 +102,13 @@
   background-color: #f7f7f8;
   animation: shadow linear;
   animation-timeline: scroll();
+}
+@media screen and (max-width: 37.5em) {
+  .headerInner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 }
 
 .flying {
@@ -173,12 +186,54 @@
   margin-bottom: 0.25em;
 }
 
+@media screen and (max-width: 37.5em) {
+  .navstyleOpen {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .navstyleClose {
+    margin-top: 0.2em;
+    display: flex;
+    height: 70em;
+    z-index: 40;
+    background-color: #fff;
+  }
+}
+
 .menu-container {
   display: flex;
   margin: 0.5rem;
-  gap: 3rem;
+  gap: 1rem;
   margin-bottom: 0.3rem;
   animation: fadeIn ease-in 1.5s;
+}
+@media screen and (max-width: 37.5em) {
+  .menu-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.4rem;
+    background-color: #fff;
+  }
+  .menu-container * {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    background-color: #fff;
+  }
+  .menu-container * span {
+    padding: 1rem;
+    font-size: 5em;
+    color: #143264;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .menu-container {
+    animation: fadeIn ease-in 0.3s;
+  }
 }
 
 .menu-button-container {
@@ -197,6 +252,11 @@
   transform: translateY(-20px);
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
   margin-top: 1px;
+}
+@media screen and (max-width: 37.5em) {
+  .menu {
+    background-color: #fff;
+  }
 }
 
 .menu.active {
@@ -269,9 +329,14 @@
   font-family: "AvenirNext" !important;
   font-weight: 600;
   vertical-align: middle;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #3f3f3f;
   text-shadow: 2px #143264;
+}
+@media screen and (max-width: 37.5em) {
+  .menu-trigger span {
+    color: #143264;
+  }
 }
 
 a {
@@ -289,6 +354,12 @@ a {
   margin-left: 6.5rem;
   margin-right: 6.5rem;
 }
+@media screen and (max-width: 37.5em) {
+  .portada {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
 
 .containerTopCont {
   width: 100%;
@@ -297,6 +368,15 @@ a {
   border-radius: 5px;
   color: rgb(30, 29, 27);
   margin-top: 0;
+}
+@media screen and (max-width: 37.5em) {
+  .containerTopCont {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.9em;
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 .AogSelector {
@@ -315,6 +395,13 @@ a {
   width: 10rem;
   animation: slideFadeLeft ease 1.5s;
 }
+@media screen and (max-width: 37.5em) {
+  .logo {
+    width: 7rem;
+    padding-left: 1em;
+    padding-bottom: 0em;
+  }
+}
 
 .aobContactContainer {
   display: flex;
@@ -322,11 +409,29 @@ a {
   font-family: "AvenirNext" !important;
   font-weight: 100;
 }
+@media screen and (max-width: 37.5em) {
+  .aobContactContainer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-top: 0.8rem;
+    justify-content: center;
+  }
+}
 
 .aobContact {
   padding-right: 1rem;
   font-size: 1rem;
   padding-top: 1rem;
+}
+@media screen and (max-width: 37.5em) {
+  .aobContact {
+    margin: 0;
+    padding-left: 1rem;
+    padding-top: 0;
+    font-size: 0.9em;
+    width: 100%;
+  }
 }
 .aobContact img {
   vertical-align: middle;
@@ -343,6 +448,65 @@ a {
 
 .contactIcon {
   height: 2rem;
+}
+@media screen and (max-width: 37.5em) {
+  .contactIcon {
+    height: 0.6rem;
+  }
+}
+
+.hamburger {
+  width: 1.5rem;
+  height: 1.8rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+  display: none;
+}
+@media screen and (max-width: 37.5em) {
+  .hamburger {
+    display: flex;
+    position: fixed;
+    right: 1rem;
+    top: 1em;
+    padding-top: 10px;
+    margin-left: 2rem;
+    z-index: 20;
+  }
+}
+.hamburger .burger {
+  width: 1.5rem;
+  height: 0.12rem;
+  border-radius: 10px;
+  background-color: rgb(70, 70, 70);
+  transform-origin: 3px;
+}
+
+.hamburgerStyleOpen {
+  display: inline;
+}
+
+.hamburgerStyleClose .burger1 {
+  transform: rotate(0);
+}
+.hamburgerStyleClose .burger2 {
+  transform: translateX(0);
+  opacity: 1;
+}
+.hamburgerStyleClose .burger3 {
+  transform: rotate(0);
+}
+
+.hamburgerStyleOpen .burger1 {
+  transform: rotate(45deg);
+}
+.hamburgerStyleOpen .burger2 {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.hamburgerStyleOpen .burger3 {
+  transform: rotate(-45deg);
 }
 
 .companyContainer {
@@ -388,10 +552,11 @@ a {
   padding-bottom: 2rem;
   margin: 1rem;
   object-fit: cover;
+  padding: 3rem;
 }
 @media screen and (min-width: 86em) {
   .companyList img {
-    padding: 8rem;
+    padding: 4rem;
   }
 }
 .companyList iframe {

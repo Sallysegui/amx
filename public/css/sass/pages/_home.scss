@@ -5,9 +5,7 @@
 .mainPhoto {
     // background-image: url('../../../../src/assets/planesunny.jpeg');
     background: url("./images/planesunny.jpeg") no-repeat center center;
-    //background: url("./images/mainpage.png") no-repeat center center;
-    // background: url("./images/plainMain.jpg") no-repeat center center;
-    // padding-top: 20rem;
+
     background-size: cover;
     background-repeat: no-repeat;
     height: 32rem;
@@ -26,6 +24,11 @@
     // right: 5rem;
     z-index: 10;
     background-color:$grey-blueish;
+    @include phone-screen {
+        position: fixed;
+        top:0;
+    }
+
     
     
 }
@@ -38,6 +41,15 @@
     animation: shadow linear;
     animation-timeline: scroll();
         //  box-shadow: 0 10px 6px -6px #cecece;
+    @include phone-screen {
+        margin:0;
+        padding: 0;
+        // background-color: pink;
+        width: 100%;
+        // background-color: red;
+            // display: block;
+          
+    }    
   
 
 }

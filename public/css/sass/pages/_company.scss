@@ -23,6 +23,7 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     
+    
     .columCompany{ 
         // width: 50%;
         // position: relative;
@@ -35,8 +36,7 @@
         flex-direction: column;   
         // align-self:centre; 
         align-content: center;
-
-        
+         
     }
 
     
@@ -71,13 +71,14 @@
         padding-bottom: 2rem;
         margin: 1rem;
         object-fit: cover;  
-        @include desktop-screen{
-    
-            padding: 8rem;
-     
+        padding: 3rem;
+        @include desktop-screen {
+            padding: 4rem;
+
         }
+        // background-color: pink;
         // @media screen and (min-width: 1520px){
-        //     padding: 8rem;
+        //     background-color: pink;
         // }
     }
 

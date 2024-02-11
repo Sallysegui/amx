@@ -1,23 +1,69 @@
+.navstyleOpen{
+  @include phone-screen {
+    display: none;
+  }
+}
+
+.navstyleClose{
+  @include phone-screen {
+    margin-top: 0.2em;
+    display: flex;
+    height:70em;
+    z-index: 40;
+    background-color: $nice-white;
+
+  }
+}
 
 .menu-container{
   display: flex;
   margin:0.5rem;
-  gap: 3rem;
+  gap: 1rem;
   margin-bottom: 0.3rem;
- 
-
+  // flex-direction: column;
   
-  //justify-content:center;
-  ///////////////////
- /// background-color: $logo-red;
+  @include phone-screen {
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.4rem;
+    // height: 50px;
+    background-color:$nice-white;
+
+    * {
+      display:flex;
+      // padding: 1rem;
+      // position: fixed;
+      width: 100%;
+      // padding:1rem;
+      // font-size: 5em;
+      list-style-type: none;
+      background-color: $nice-white;
+     
+      
+
+      span{
+        padding: 1rem;
+        font-size: 5em;
+        color: $logo-blue;
+        // background-color: $logo-blue;
+        
+      }
+    }
+  
+    
+  }
  animation: fadeIn ease-in 1.5s;
-
+ @include phone-screen {
+  animation: fadeIn ease-in 0.3s;
+ }
 }
-
 .menu-button-container {
+
+
   position: relative;
-  // text-align: center;
- //color:$menu-color;
+
 
 }
 
@@ -31,11 +77,17 @@
   right: 0;
   width: 10rem;
   // box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
   margin-top: 1px;
+  // background-color: red;
+  @include phone-screen {
+    background-color: $nice-white;
+  }
+
   
 }
 
@@ -56,6 +108,7 @@
 
 .menu li {
   border-bottom: 1px solid #dddddd;
+ 
 }
 
 .menu li a {
@@ -77,8 +130,9 @@
 /// 
 /// 
 .menu-trigger {
-  /////////////////////////////
+  
   background: inherit;
+  //////////////
   
   border-radius: 90px;
   margin-bottom: 0.2rem;
@@ -89,6 +143,7 @@
   border: none;
   vertical-align: middle;
   transition: box-shadow 0.4s ease;
+
   :hover {
     color: $logo-red;
   }
@@ -126,7 +181,11 @@
   font-family: "AvenirNext" !important;
   font-weight: 600;
   vertical-align: middle;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  @include phone-screen {
+    color: $logo-blue;
+  }
+
   ///////////////////////
   //  text-shadow: 1px 1px #dbdbdb;
   color: #3f3f3f;

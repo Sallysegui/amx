@@ -14,7 +14,6 @@ const MenuContact = () => {
         className="menu-button-container">
           <button className="menu-trigger">
           <a href="/contact"><span>CONTACT US</span></a>
-            {/* <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/df/df7789f313571604c0e4fb82154f7ee93d9989c6.jpg" alt="User avatar" /> */}
           </button>
           {/* <nav ref={dropdownRefComp} className={`menu ${isActive ? 'active' : 'inactive'}`}>
             <ul>

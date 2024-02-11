@@ -28,6 +28,7 @@ const customAnimation = keyframes`
 // `;
 
 const AboutUs = () =>{
+  // console.log('about us')
     return(
         <div className="aboutContainer" >
         

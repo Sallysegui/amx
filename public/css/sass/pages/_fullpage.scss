@@ -1,7 +1,7 @@
 
 
 .fullPage {
-    position: relative;
+    // position: relative;
     padding-top: 0.7rem;
     // background-color: red;
     background-color: $nice-white;
@@ -14,13 +14,14 @@
 }
 
 .portada {
-    // position: relative;
+    
     
     margin-left: 6.5rem;
     margin-right: 6.5rem;
     @include phone-screen {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        
+        margin-left: 1rem;
+        margin-right:1rem;
       
     }
 }

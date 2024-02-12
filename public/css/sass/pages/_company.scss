@@ -8,6 +8,10 @@
      flex-direction: column;
      line-height: 1.8rem;
      gap: 6rem;
+     @include phone-screen{
+        margin-top: 0;
+        padding-top: 0;
+     }
    
 
    
@@ -22,8 +26,12 @@
     // grid-gap: 1rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    @include phone-screen{
+      display: flex;
+      flex-direction: column;
+    }
     
-    
+
     .columCompany{ 
         // width: 50%;
         // position: relative;
@@ -64,6 +72,9 @@
         line-height: 1.8rem;
         font-size: 1.1rem;
         padding-bottom: 2rem;
+        @include phone-screen{
+            padding:0;
+        }
 
     }
     img {
@@ -72,23 +83,25 @@
         margin: 1rem;
         object-fit: cover;  
         padding: 3rem;
-        @include desktop-screen {
-            padding: 4rem;
-
+        @include phone-screen{
+            padding: 0;
+            margin: 0;
+            margin-top: 1rem;
         }
-        // background-color: pink;
-        // @media screen and (min-width: 1520px){
-        //     background-color: pink;
-        // }
     }
 
     iframe {
-        margin: 2rem;
-        padding: 0 !important;
+        margin: 0.5rem;
+        // padding: 0 !important;
         height: 25rem;
         width: 25rem;
         object-fit: cover; 
-        height: 25rem;
+        @include phone-screen{
+            margin: 0;
+            width: 100%;
+
+        }
+
 
     }
 
@@ -115,8 +128,13 @@
         padding-left: 3rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        // font-weight: 10;
-        // color:red;
+        @include phone-screen {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+        }
         span{
             font-style: italic;
             font-stretch:expanded;
@@ -124,6 +142,39 @@
         }
         // background-color: red;
     }
+    .textSmall{
+        @include phone-screen{
+            display: relative;
+            padding-top: 0;
+            margin-top: 0;
+        }
+        @media screen and (min-width: 37.5em ) {
+            display: none;
+
+        }
+    }
+    .longText {
+        margin-top: 0;
+        @include phone-screen{
+            display: none;
+        }
+        p{
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+//   .text{
+//     margin-top: 0;
+//     padding-top: 0.5rem;
+//     display: none;
+//     // margin-left: 0;
+//   }
+  .read-or-hide{
+    color: $logo-blue;
+    font-style: normal;   
+    font-weight: 600;
+  }
+
 }
 
 ////////////////////////////////////aboutUsPhptp
@@ -151,6 +202,9 @@
         // padding-bottom: 2rem;
 
     }
+    @include phone-screen{
+        display: none;
+    }
 }
 
 
@@ -163,37 +217,3 @@
 }
 /////////////////////////////////map/////////////////
 
-
-// .locationContainer{
-//     display: flex;
-//     justify-content: center;
-//     margin: auto;
-// }
-
-// .google-map {
-//     align-self:center;
-//     margin: 0;
-//     padding: 0;
-//     height: 25rem;
-//     width: 25rem;
-//     // position: relative;
-//     border:0;
-//     // max-width: 30rem;
-//     // max-height: 30rem;
-// }
-
-// .google-map  {
-//     iframe{
-//     margin: 0 !important;
-//     padding: 0 !important;
-//     height: 25rem;
-//     width: 25rem;
-//     // left: 0;
-//     // top: 0;
-//     // position: absolute;
-//     }
-// }
-
-
-// p{
-//     font-weight: 200;}

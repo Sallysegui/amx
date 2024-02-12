@@ -90,8 +90,8 @@
 }
 @media screen and (max-width: 37.5em) {
   .header {
-    position: fixed;
     top: 0;
+    padding-top: 0.5em;
   }
 }
 
@@ -125,6 +125,11 @@
   animation: 1.5s ease-in slideRight;
   font-family: "AvenirNext" !important;
 }
+@media screen and (max-width: 37.5em) {
+  .flying {
+    font-size: 2rem;
+  }
+}
 
 .bitPadding {
   margin-bottom: 2.5rem;
@@ -143,6 +148,13 @@
   background-color: #f7f7f8;
   background-color: #f8f7f7;
   margin-top: 3rem;
+}
+@media screen and (max-width: 37.5em) {
+  .wecomeContainer {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
 }
 .wecomeContainer .title {
   position: relative;
@@ -344,7 +356,6 @@ a {
 }
 
 .fullPage {
-  position: relative;
   padding-top: 0.7rem;
   background-color: #fff;
   margin-top: 0;
@@ -356,8 +367,8 @@ a {
 }
 @media screen and (max-width: 37.5em) {
   .portada {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -483,10 +494,6 @@ a {
   transform-origin: 3px;
 }
 
-.hamburgerStyleOpen {
-  display: inline;
-}
-
 .hamburgerStyleClose .burger1 {
   transform: rotate(0);
 }
@@ -517,12 +524,24 @@ a {
   line-height: 1.8rem;
   gap: 6rem;
 }
+@media screen and (max-width: 37.5em) {
+  .companyContainer {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
 
 .companyList {
   display: flex;
   background-color: #f7f7f8;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media screen and (max-width: 37.5em) {
+  .companyList {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .companyList .columCompany {
   height: 100%;
@@ -547,6 +566,11 @@ a {
   font-size: 1.1rem;
   padding-bottom: 2rem;
 }
+@media screen and (max-width: 37.5em) {
+  .companyList p {
+    padding: 0;
+  }
+}
 .companyList img {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -554,18 +578,24 @@ a {
   object-fit: cover;
   padding: 3rem;
 }
-@media screen and (min-width: 86em) {
+@media screen and (max-width: 37.5em) {
   .companyList img {
-    padding: 4rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
   }
 }
 .companyList iframe {
-  margin: 2rem;
-  padding: 0 !important;
+  margin: 0.5rem;
   height: 25rem;
   width: 25rem;
   object-fit: cover;
-  height: 25rem;
+}
+@media screen and (max-width: 37.5em) {
+  .companyList iframe {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .aboutContainer {
@@ -582,10 +612,47 @@ a {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+@media screen and (max-width: 37.5em) {
+  .aboutContainer p {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
 .aboutContainer p span {
   font-style: italic;
   font-stretch: expanded;
   font-size: 1.1rem;
+}
+@media screen and (max-width: 37.5em) {
+  .aboutContainer .textSmall {
+    display: relative;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 37.5em) {
+  .aboutContainer .textSmall {
+    display: none;
+  }
+}
+.aboutContainer .longText {
+  margin-top: 0;
+}
+@media screen and (max-width: 37.5em) {
+  .aboutContainer .longText {
+    display: none;
+  }
+}
+.aboutContainer .longText p {
+  margin-top: 0;
+  padding-top: 0;
+}
+.aboutContainer .read-or-hide {
+  color: #143264;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .aboutUsPhoto {
@@ -604,6 +671,11 @@ a {
   height: 18rem;
   width: 100%;
   place-self: center;
+}
+@media screen and (max-width: 37.5em) {
+  .aboutUsPhoto {
+    display: none;
+  }
 }
 
 .locationsP span {

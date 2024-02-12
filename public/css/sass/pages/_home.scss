@@ -25,9 +25,10 @@
     z-index: 10;
     background-color:$grey-blueish;
     @include phone-screen {
-        position: fixed;
         top:0;
-    }
+        padding-top: 0.5em;
+          
+    }    
 
     
     
@@ -50,8 +51,6 @@
             // display: block;
           
     }    
-  
-
 }
 
 .flying{
@@ -76,6 +75,9 @@
     font-size: 2.5rem;
     animation: 1.5s ease-in slideRight;
     font-family: "AvenirNext" !important;
+    @include phone-screen{
+        font-size: 2rem;
+    }
 
 }
 
@@ -99,6 +101,12 @@
     background-color: #f7f7f8;
     background-color: #f8f7f7;
     margin-top: 3rem;
+    @include phone-screen{
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        margin-top: 1rem;
+
+    }
     .title {
         position: relative;
         display:flex;

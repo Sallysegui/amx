@@ -22,7 +22,6 @@ const App = () => {
         </div>
     <div className='portada'>
       <PhotoMain/>
-    
       <Welcome/>
     <div className="companyContainer">
       <AboutUs/>

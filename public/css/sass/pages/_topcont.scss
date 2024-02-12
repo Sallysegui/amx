@@ -8,6 +8,8 @@
   border-radius: 5px;
   color: $top-text-color;
   margin-top: 0;
+//   position:absolute;
+    
   
   @include phone-screen {
     margin:0;
@@ -117,7 +119,7 @@
     flex-flow: column nowrap;
     z-index: 10;
     display: none;
-    
+  
 
     @include phone-screen {
         display: flex;
@@ -146,11 +148,12 @@
 
 // .menu-container
 
-.hamburgerStyleOpen {  
-    display: inline;
-}
+// .hamburgerStyleOpen {  
+//     display: inline;
+// }
 
 .hamburgerStyleClose {
+   
 
     .burger1{
         transform:rotate(0);
@@ -168,6 +171,7 @@
 
 
 .hamburgerStyleOpen{
+    
     .burger1{
         transform: rotate(45deg);
     }

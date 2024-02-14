@@ -1,9 +1,20 @@
-.boroscopePhotoCont {
-    img{
-        // height: 25rem ;
-    width: 15rem;
-    margin-left: 10rem;
+// .boroscopePhotoCont {
+//     img{
+//         // height: 25rem ;
+//     width: 20rem;
+//     margin-left: 10rem;
 
-}
+// }
     
+// }
+.lineContainer{
+    @include phone-screen{
+        flex-direction: column-reverse;
+    }
+}
+.borosContainer{
+    @include phone-screen{
+        flex-direction: column-reverse;
+        margin-bottom: 2rem;
+    }
 }

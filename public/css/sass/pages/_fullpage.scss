@@ -13,15 +13,12 @@
 
 }
 
-.portada {
-    
-    
+.portada { 
     margin-left: 6.5rem;
     margin-right: 6.5rem;
     @include phone-screen {
-        
-        margin-left: 1rem;
-        margin-right:1rem;
-      
+        margin-left: 0rem;
+        margin-right:0rem;
     }
 }
+    

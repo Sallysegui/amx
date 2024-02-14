@@ -104,6 +104,10 @@
   :hover {
     color: $logo-red;
   }
+  @include phone-screen{
+    display: none;
+  }
+  
 }
 
 .menu li {

@@ -43,12 +43,14 @@ const ContactForm = () => {
             onChange={handleEmailChange}
             placeholder='Email'
          />
-         <input
+         {/* <input
             className='fontField enquiry'
+            multiline={true} 
             value={question}
             onChange={handleQuesitonChange}
             placeholder='Enquiry'
-         />
+         /> */}
+         <textarea className='fontField enquiry' value={question} onChange={handleQuesitonChange}  placeholder='Enquiry' />
         <button type="submit">Send</button>
       </form> 
       </div> 

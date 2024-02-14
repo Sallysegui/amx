@@ -19,7 +19,7 @@ const Footer = () =>{
             </div> */}
         </div>
         </div>
-        <div className='footerColumn'>
+        <div className='footerColumn menuFooter'>
         <div>
             <div className='footerList'><HashLink smooth  to="/company"><p>
                 Company

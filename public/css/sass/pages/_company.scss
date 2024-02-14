@@ -1,8 +1,9 @@
 
 .companyContainer {
-    margin-top: 1rem;
+    // padding-top: 1rem;
     display: flex;
-    padding-top: 1rem;
+    padding-top: 2rem;
+    // background-color: $grey-blueish;
     // margin-right: 2rem;
     // margin-left: 2rem;
      flex-direction: column;
@@ -11,6 +12,9 @@
      @include phone-screen{
         margin-top: 0;
         padding-top: 0;
+        gap: 2rem;
+        padding-left: 1rem ;
+        padding-right: 1rem ;
      }
    
 
@@ -29,13 +33,11 @@
     @include phone-screen{
       display: flex;
       flex-direction: column;
+      background-color: inherit;
     }
     
 
     .columCompany{ 
-        // width: 50%;
-        // position: relative;
-        // min-height: 30rem;
         height: 100%;
         // width: 50%;
         display: flex;
@@ -58,22 +60,27 @@
   
         color: $logo-red;
         font-size: 1.3rem;
-        // max-width: 50%;
-        // background-color: red;
-    }
+        @include phone-screen{
+            display: flex;
+            flex-direction: column;
+            background-color: inherit;
+            font-size: 1.5rem;
+            font-weight: 200;
+    }}
        
        
     p{
         padding-top: 1.5rem;
         padding-left: 4rem;
         padding-right: 3rem;
-        font-family: 'AvenirNext' !important;
+        // font-family: 'AvenirNext' !important;
         
         line-height: 1.8rem;
         font-size: 1.1rem;
         padding-bottom: 2rem;
         @include phone-screen{
-            padding:0;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
 
     }
@@ -117,10 +124,18 @@
 .aboutContainer {
     width: 100%;
     // box-shadow: 0 10px 6px -6px #cecece;
+    @include phone-screen {
+        // padding-right: 1rem;
+        // padding-left: 1rem;
+        // padding-top: 2rem;
+        // padding-bottom: 1rem;
+        // margin-top: 3rem;
+
+    }
     p{
         width: 100%;
         background-color: $grey-blueish;
-        font-family: 'AvenirNext' !important;
+        font-family: 'AvenirNext';
         font-size: 17px;
         // padding:2rem;
         line-height: 1.8rem;
@@ -131,8 +146,9 @@
         @include phone-screen {
             padding-right: 1rem;
             padding-left: 1rem;
-            padding-top: 1rem;
+            // padding-top: 2rem;
             padding-bottom: 1rem;
+            // margin-top: 3rem;
 
         }
         span{
@@ -163,12 +179,7 @@
             padding-top: 0;
         }
     }
-//   .text{
-//     margin-top: 0;
-//     padding-top: 0.5rem;
-//     display: none;
-//     // margin-left: 0;
-//   }
+
   .read-or-hide{
     color: $logo-blue;
     font-style: normal;   
@@ -217,3 +228,8 @@
 }
 /////////////////////////////////map/////////////////
 
+.sparesContainer {
+    @include phone-screen{
+        flex-direction: column-reverse;
+    }
+}

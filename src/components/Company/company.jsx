@@ -20,12 +20,11 @@ const Company = () =>{
        
         <div className="bitMargin"></div>
         <Welcome/>
+        <AboutUs/>
         <div className="companyContainer">
-            <AboutUs/>
-         
+            
             <Approvals/>
             <Spares/>
-      
             <Locations/>
         </div>
         </div>

@@ -10,6 +10,13 @@
     background-repeat: no-repeat;
     height: 32rem;
     margin-top: 6.8rem;
+    @include phone-screen{
+        height: 20rem;
+        // background: url("./images/planesunny.jpeg") ;
+        // background-size: contain;
+        margin-top: 6rem;
+       
+    }
 }
 
 .header{
@@ -74,8 +81,9 @@
     font-style: italic;
     font-size: 2.5rem;
     animation: 1.5s ease-in slideRight;
-    font-family: "AvenirNext" !important;
+    font-family: "AvenirNext";
     @include phone-screen{
+        padding-top: 14rem;
         font-size: 2rem;
     }
 
@@ -102,42 +110,56 @@
     background-color: #f8f7f7;
     margin-top: 3rem;
     @include phone-screen{
-        padding-top: 1rem;
+        padding-top: 0;
         padding-bottom: 0.5rem;
-        margin-top: 1rem;
+        margin-top: 0rem;
+        margin:0;
+        margin-right: 1rem;
+        margin-left: 1rem;
 
     }
     .title {
         position: relative;
         display:flex;
         padding: 0;
-        margin: auto;
         text-align:center; 
-        width: 21.5rem;
+        max-width: 21.5rem;
         height: 3rem;
         margin: auto;
         padding-bottom: 1rem;
         // font-family: "Avenir Next W02" !important;
         // background-color: rgb(239, 25, 61);
+        @include phone-screen{
+           padding-top: 1em;
+           max-width: 50em;
+           height: 5rem;
+           padding-bottom: 1rem;
+           margin-right: 1rem;
+           margin-left: 1rem;
+          
+        }
 
     }
 
     h1{
-    position: absolute;
+    
     font-size:1.2rem; 
-    font-weight:300;  
+    font-weight:400;  
     letter-spacing:1px; 
     margin: auto;
-    
-    // text-transform:uppercase; 
-    // width: 50%;
     text-align:center; 
-    //margin:auto; 
     white-space:nowrap;
     padding-bottom:13px;
     font-family: "Avenir Next W02" !important;
-    // background-color: rgb(183, 159, 206);
+
+        @include phone-screen{
+            position: relative;
+            white-space: pre-line;
+            padding-bottom:1px;
+            with:100%
+        }
     }
+
     h1:before {
         background-color: $logo-red;
         content: '';
@@ -145,18 +167,28 @@
         height: 3px;
         width: 40%;
         margin-bottom: 5px;
-        // font-family: 'Times New Roman', Times, serif;
+        @include phone-screen{
+            with:60%
+        }
        
     }
     h1:after {
         background-color: $logo-red;
         content: '';
         display: block;
-        position:absolute; right:0; bottom:0;
+        position:absolute; 
+        right:0; 
+        bottom:0rem;
         height: 3px;
         width: 40%;
         margin-bottom: 0.25em;
-        // font-family: 'Times New Roman', Times, serif;
+        @include phone-screen{
+            with:60%;
+            // position:absolute; 
+            // right:0; 
+            bottom:-1rem;
+        }
+
         
     }
     

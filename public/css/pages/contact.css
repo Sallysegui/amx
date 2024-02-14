@@ -1,98 +1,18 @@
-.inquiries {
-  margin: 3rem;
-  padding: 3rem;
-  font-family: "Avenir Next W02" !important;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 57 | /     @include phone-screen{
+ * 58 | |        width: 100%;
+ * 59 | \     }
+ *    '
+ *   public\css\sass\pages\contact.scss 57:5  root stylesheet */
 
-.contacts {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 1fr 3fr 3fr;
-  max-width: 35rem;
-  padding-bottom: 3rem;
-  position: relative;
-  margin: auto;
-  font-family: "Avenir Next W02" !important;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 57 \2502  \250c      @include phone-screen{\a 58 \2502  \2502         width: 100%;\a 59 \2502  \2514      }\a    \2575 \a   public\\css\\sass\\pages\\contact.scss 57:5  root stylesheet";
 }
-.contacts .contactTitle {
-  font-weight: 800;
-}
-
-.address {
-  padding-top: 3rem;
-}
-
-.contactFormContainer {
-  height: 80vh;
-  min-width: 15rem;
-  opacity: 0.5;
-  background-color: #b3f0ff;
-  position: relative;
-}
-.contactFormContainer form {
-  opacity: 1;
-  position: absolute;
-  height: 30rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
-  width: 25rem;
-  padding: 0 40px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-}
-.contactFormContainer h1 {
-  text-align: center;
-  padding: 20px 0;
-  border-bottom: 1px solid silver;
-}
-.contactFormContainer .fontField {
-  background-color: #f2f6f8;
-  border-radius: 2rem;
-  border: none;
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
-  height: 2rem;
-  padding: 1rem 2.5rem;
-}
-.contactFormContainer .enquiry {
-  height: 6rem;
-}
-.contactFormContainer:focus {
-  background-color: #f2f6f8;
-  border: none;
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
-}
-.contactFormContainer ::placeholder {
-  font-size: 1.1em;
-  color: #838788;
-  position: relative;
-  left: 0;
-}
-.contactFormContainer input {
-  margin-top: 2.5rem;
-}
-.contactFormContainer button {
-  margin-top: 3rem;
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  padding: 0 3rem;
-  border: 0;
-  border-radius: 3rem;
-  background-image: linear-gradient(131deg, #a8c9dc, #4c87a8, #1f5574, #09334c);
-  background-size: 300% 100%;
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 3rem;
-}
-.contactFormContainer button :hover {
-  box-shadow: 0 0.5em 0.5em -0.4em rgba(36, 28, 22, 0.7294117647);
-  background-size: 100% 100%;
-  transform: translateY(-0.15em);
-}
-
-/*# sourceMappingURL=contact.css.map */

@@ -11,8 +11,10 @@ import Approvals from "./components/Company/approvals";
 import Spares from "./components/Company/spares";
 // import AboutUsPhoto from "./components/Company/abouUsPhotos";
 import Footer  from './components/Footer/footer';
+import ReactGA from "react-ga4";
 
 const App = () => {
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (<div className='fullPage'>
        <div className='header'>
         <div className="headerInner">

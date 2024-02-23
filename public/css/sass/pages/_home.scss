@@ -31,6 +31,8 @@
     // right: 5rem;
     z-index: 10;
     background-color:$grey-blueish;
+    top:0;
+    padding-top: 0.5em;
     @include phone-screen {
         top:0;
         padding-top: 0.5em;
@@ -49,6 +51,7 @@
     animation: shadow linear;
     animation-timeline: scroll();
         //  box-shadow: 0 10px 6px -6px #cecece;
+      
     @include phone-screen {
         margin:0;
         padding: 0;

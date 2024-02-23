@@ -31,7 +31,7 @@ const customAnimationImg = keyframes`
 const Approvals = () =>{
     return(
         <div className="approContainer companyList" id="aprovals">
-             <Reveal keyframes={customAnimation} >
+             <Reveal keyframes={customAnimation}  triggerOnce>
                 <div className='columCompany part1'>
                   {/* <div> */}
                     <h2 >
@@ -45,7 +45,7 @@ const Approvals = () =>{
                   {/* </div> */}
                 </div>
             </Reveal>
-            <Reveal keyframes={customAnimationImg}delay={200} >
+            <Reveal keyframes={customAnimationImg}delay={200}  triggerOnce >
                 {/* <Fade > */}
                 <div className='columCompany part2'> 
                   <img src={controlPlane} alt="control panel on an airplane" />

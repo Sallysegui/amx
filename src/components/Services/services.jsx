@@ -1,4 +1,4 @@
-import TopCont from '../mainPage/TopCont'
+ import TopCont from '../mainPage/TopCont';
 import MenuFunct from '../mainPage/MenuFunct';
 import AogResponse from './AOGresponse';
 import LineMaintenace from './lineMaintenace';

@@ -31,12 +31,12 @@ const customAnimationImg = keyframes`
 const Spares = () =>{
     return(
         <div className="sparesContainer companyList" id="spares">
-          <Reveal keyframes={customAnimationImg} delay={200} >
+          <Reveal keyframes={customAnimationImg} delay={200}  triggerOnce>
             <div className='columCompany part2'> 
               <img src={spares} alt="Spares department photo" />
             </div>
           </Reveal>
-        <Reveal keyframes={customAnimation} >
+        <Reveal keyframes={customAnimation}  triggerOnce>
         <div className='columCompany part1'>
             <h2>
                 Spares

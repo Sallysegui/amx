@@ -27,14 +27,14 @@ const customAnimationImg = keyframes`
 `;
 const LineMaintenace = () =>{
     return(
-        <div className="lineContainer companyList" id="lineMainte">
-            <Reveal keyframes={customAnimationImg} delay={200} >
+        <div className="lineContainer companyList"  id="lineMainte">
+            <Reveal keyframes={customAnimationImg} delay={200}  triggerOnce >
                 <div className='columCompany part2'> 
                     <img src={lineMaintenance} alt="fullHangar photo" />
                 </div>
             </Reveal>
 
-        <Reveal keyframes={customAnimation} >
+        <Reveal keyframes={customAnimation}  triggerOnce >
         <div className='columCompany part1'>
    
             <h2>

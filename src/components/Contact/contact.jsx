@@ -5,6 +5,7 @@ import TopCont from '../mainPage/TopCont';
 import MenuFunct from '../mainPage/MenuFunct';
 import Address from "./adress";
 import Footer from "../Footer/footer";
+import ContactFormTest from './contactTest'
 
 const Contact = () =>{
     return(<div className='fullPage'>
@@ -20,6 +21,7 @@ const Contact = () =>{
 
     <div className="bitMargin"></div>
             <ContactUs/>
+            <ContactFormTest/>
             <ContactForm/>
             < Address />
             </div>

@@ -1,10 +1,16 @@
 /* Error: Undefined mixin.
  *    ,
- * 57 | /     @include phone-screen{
- * 58 | |        width: 100%;
- * 59 | \     }
+ * 7  | /     @include phone-screen{
+ * 8  | |         margin-top: 1rem;
+ * 9  | |         margin-left: 1rem;
+ * 10 | |         margin-right: 1rem;
+ * 11 | |         padding-left: 1rem;
+ * 12 | |         padding-right: 1rem;
+ * 13 | |         padding-top: 1rem;
+ * 14 | |         
+ * 15 | \     }
  *    '
- *   public\css\sass\pages\contact.scss 57:5  root stylesheet */
+ *   public\css\sass\pages\contact.scss 7:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +20,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 57 \2502  \250c      @include phone-screen{\a 58 \2502  \2502         width: 100%;\a 59 \2502  \2514      }\a    \2575 \a   public\\css\\sass\\pages\\contact.scss 57:5  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 7  \2502  \250c      @include phone-screen{\a 8  \2502  \2502          margin-top: 1rem;\a 9  \2502  \2502          margin-left: 1rem;\a 10 \2502  \2502          margin-right: 1rem;\a 11 \2502  \2502          padding-left: 1rem;\a 12 \2502  \2502          padding-right: 1rem;\a 13 \2502  \2502          padding-top: 1rem;\a 14 \2502  \2502          \a 15 \2502  \2514      }\a    \2575 \a   public\\css\\sass\\pages\\contact.scss 7:5  root stylesheet";
 }

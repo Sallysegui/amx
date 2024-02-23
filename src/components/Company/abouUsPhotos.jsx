@@ -32,7 +32,7 @@ const customAnimation = keyframes`
 const AboutUsPhoto = () =>{
     return(
         <div className="aboutUsPhoto">
-           <Reveal keyframes={customAnimation} >
+           <Reveal keyframes={customAnimation}  triggerOnce>
             <img className = "aboutUs1" src={AboutUs1} alt="working on an airplane" />
             <img className = "aboutUs2" src={AboutUs2} alt="working on an airplane" />
             <img className = "aboutUs3" src={AboutUs3} alt="working on an airplane" />

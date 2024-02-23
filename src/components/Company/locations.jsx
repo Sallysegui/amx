@@ -30,7 +30,7 @@ const customAnimationImg = keyframes`
 
 const Locations = () =>{
     return(<div className="approContainer companyList" id="locations">
-    <Reveal keyframes={customAnimation} >
+    <Reveal keyframes={customAnimation}  triggerOnce>
        <div className='columCompany part1'>
          {/* <div> */}
            <h2 >
@@ -43,7 +43,7 @@ const Locations = () =>{
          {/* </div> */}
        </div>
    </Reveal>
-   <Reveal keyframes={customAnimationImg}delay={200} >
+   <Reveal keyframes={customAnimationImg}delay={200}  triggerOnce>
        {/* <Fade > */}
        <div className='columCompany part2'> 
 

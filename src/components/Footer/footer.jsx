@@ -12,8 +12,8 @@ const Footer = () =>{
             Why choose AMX Support?</p></HashLink ></div>
             <div className='footerList'><HashLink smooth  to="/terms" ><p>
             Terms and Conditions</p></HashLink ></div>
-            <div className='footerList'><HashLink smooth  ><p>
-            &#169; copyright 2024</p></HashLink ></div>
+            <div className='footerList'><p>
+            &#169; copyright 2024</p></div>
             {/* <div>
             <p>	&#169; copyright 2024</p>
             </div> */}
@@ -34,7 +34,7 @@ const Footer = () =>{
         </div>
         <div className='footerColumn'>
         <div>
-            <div className='footerList'><HashLink smooth  to="/services"><p className='aogFooter'>
+            <div className='footerList'><HashLink smooth  to="/services/#aogres"><p className='aogFooter'>
                 AOG Response
             </p></HashLink ></div>
             <div className='footerList'><HashLink smooth  to="/contact"><p>

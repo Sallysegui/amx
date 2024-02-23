@@ -47,7 +47,7 @@ const AboutUs = () =>{
     return(
         <div className="aboutContainer" >
         
-            <Reveal keyframes={customAnimation} >
+            <Reveal keyframes={customAnimation}  triggerOnce>
             <div className="longText">
                 <p>
                 Situated in the classical music heart of Europe, we are an independent aviation MRO 

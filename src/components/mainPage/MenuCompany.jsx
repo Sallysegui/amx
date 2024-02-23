@@ -1,12 +1,13 @@
 import  { useState } from 'react';
 import  { useRef } from "react";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink} from 'react-router-hash-link';
 
 
 const MenuCompany = () => {
     const dropdownRefComp = useRef(null);
     const [isActive, setIsActive] = useState(false);
-    const onClick = () => setIsActive(!isActive);
+    const onClick = () => setIsActive(!isActive)
+    
     return (
         <div
           onMouseEnter={onClick}
@@ -19,11 +20,26 @@ const MenuCompany = () => {
           <nav ref={dropdownRefComp} className={`menu ${isActive ? 'active' : 'inactive'}`}>
             <ul>
               {/* <li><a href="/aboutus">About us</a></li> */}
-              <li>  <HashLink smooth  to="/company#about"  >About us</HashLink ></li>
-              <li>  <HashLink  to="/company#aprovals" smooth >Approvals</HashLink ></li>        
-              <li>  <HashLink  to="/company#spares" smooth >Spares</HashLink ></li>
-              <li>  <HashLink  smooth  to="/company#locations">Locations</HashLink ></li>
-             
+              <li>  
+                <HashLink smooth  to="/company#about" >About us</HashLink >
+                {/* <Link to="/company#about">Section three</Link> */}
+                {/* <li><a href="/company#about">About us</a></li> */}
+              </li>
+              <li>
+                  <HashLink  to="/company#aprovals" >Approvals</HashLink >
+                  {/* <Link to="/company#aprovals" >Section three</Link> */}
+                  {/* <li><a href="/company#aprovals">About us</a></li> */}
+              </li>        
+              <li>
+                  <HashLink  to="/company#spares" >Spares</HashLink >
+                  {/* <Link to="/company#spares">Section three</Link> */}
+                  {/* <li><a href="/company#spares">About us</a></li> */}
+              </li>
+              <li>  
+                <HashLink  smooth  to="/company#locations">Locations</HashLink >
+                {/* <Link  to="/company#locations">Section three</Link> */}
+                {/* <li><a href="/company#locations">About us</a></li> */}
+              </li>
             </ul>
           </nav>
           {/* <HashLink  to="/company#sectionS" reloadPage >

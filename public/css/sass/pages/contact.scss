@@ -2,20 +2,95 @@
     margin: 3rem;
     padding: 3rem;
     font-family: "Avenir Next W02" !important;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    @include phone-screen{
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        
+    }
 }
 
 .contacts{
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 1fr 3fr 3fr;
-    max-width: 35rem;
-    padding-bottom: 3rem;
-    position: relative;
-    margin: auto;
+    // display: grid;
+    // grid-gap: 2rem;
+    // grid-template-columns: 1fr 3fr 3fr;
+    max-width: 48rem;
+    // padding-bottom: 3rem;
+    // position: relative;
+    // margin: auto;
     font-family: "Avenir Next W02" !important;
+
+    // background: #facaca;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    // margin-top: 1rem;
+    margin-bottom: 1rem;
+
     .contactTitle{
+        flex: 1 1 20%;
         font-weight: 800;
     }
+    .phone{
+        flex: 1 1 40%;
+    }
+    .email{
+        flex: 1 1 40%;
+    }
+    
+    @include phone-screen{
+        // display: flex;
+        // padding-bottom: 1rem;
+        // gap:1rem;
+        // background: #facaca;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 20rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        .contactTitle{
+            flex: 1 1 100%;
+        }
+        .phone{
+            flex: 1 1 50%;
+        }
+        .email{
+            flex: 1 1 50%;
+        }
+        
+  
+      
+    }
+ 
+    p{
+        // flex: 1 1 30%; /*grow | shrink | basis */
+        display: flex;
+        height:5rem;
+        align-items: center;
+        justify-content: center;
+        @include phone-screen{
+            font-size: 0.8rem;
+            height:2.5rem;
+           
+        }
+
+    }
+
+
+
+
+
+
+
 }
 
 
@@ -24,12 +99,17 @@
     margin-right: 3rem;
     margin-left: 3rem;
     padding: 3rem;
+    @include phone-screen{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding: 1rem;
+    }
 }
 
 
 .contactFormContainer{
     height: 80vh;
-    min-width: 15rem;
+    // min-width: 15rem;
    
     background: linear-gradient(
     to bottom,
@@ -38,6 +118,10 @@
   ), url("./images/worldMap.jpg") no-repeat center center;  
     opacity: 0.7;
     position: relative;
+    @include phone-screen{
+        height: 70vh;
+        background: rgb(207, 217, 221);
+    }
    
   form {
     opacity: 1 ;
@@ -55,7 +139,10 @@
     flex-direction: column;
     background-color: #ffffff;    
     @include phone-screen{
-       width: 100%;
+       width: 95%;
+       height: 25rem;
+       max-width: 25rem;
+       padding: 0 1rem;
     }
 
     }    
@@ -63,6 +150,10 @@
         text-align: center;
         padding: 20px 0;
         border-bottom: 1px solid silver;
+        @include phone-screen{
+            font-size: 1.3rem;
+            width: 100%;
+        }
     }
     .fontField {
         background-color: #f2f6f8;
@@ -71,6 +162,9 @@
         box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
         height: 2rem;
         padding: 1rem 2.5rem;
+        @include phone-screen{
+            padding: 1rem 1rem;
+        }
     }
     .enquiry {
         height: 8rem;
@@ -91,9 +185,16 @@
 
     input {
         margin-top: 3rem;
+        @include phone-screen{
+            margin-top: 1.5rem;
+        }
     }
     textarea {
         margin-top: 3rem;
+        @include phone-screen{
+            margin-top: 1.5rem;
+            margin-bottom: 0rem;
+        }
     }
     button {
         margin-top: 3rem;
@@ -113,6 +214,10 @@
         transform: translateY(-0.15em);
       }
       margin-bottom: 3rem;
+      @include phone-screen{
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
     }
 
 

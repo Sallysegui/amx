@@ -1,5 +1,5 @@
-    import { useState } from 'react'
-
+import { useState } from 'react'
+// import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
     const [name, setName] = useState('')
@@ -24,12 +24,28 @@ const ContactForm = () => {
         console.log(event.target.value)
         setQuestion(event.target.value)
     }
+
+    // const sendEmailNow = ( )=> { emailjs.init({
+    //   publicKey: 'service_q4sh36v',
+    //   blockHeadless: true,
+    //   blockList: {
+    //     list: ['sallysegui10@gmail.com', 'bar@emailjs.com'],
+    //   },
+    //   limitRate: {
+    //     throttle: 10000, // 10s
+    //   },
+    // });}
+
+    
+    // const onSubmit = {sendEmailNow}
+
+    
   
   return (
     <div className='contactFormContainer'>
       <div>
       <form onSubmit={addForm}>
-        <h1>Send us an message</h1>
+        <h1>Send us a message</h1>
         <input
             className='fontField'
             value={name}
@@ -51,7 +67,7 @@ const ContactForm = () => {
             placeholder='Enquiry'
          /> */}
          <textarea className='fontField enquiry' value={question} onChange={handleQuesitonChange}  placeholder='Enquiry' />
-        <button type="submit">Send</button>
+        <button type="submit" >Send</button>
       </form> 
       </div> 
     </div>

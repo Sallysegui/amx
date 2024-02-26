@@ -14,6 +14,7 @@ const MenuContact = () => {
         className="menu-button-container">
           <button className="menu-trigger">
           <a href="/contact"><span>CONTACT US</span></a>
+          {/* <HashLink smooth  to="/contact"></HashLink> */}
           </button>
           {/* <nav ref={dropdownRefComp} className={`menu ${isActive ? 'active' : 'inactive'}`}>
             <ul>

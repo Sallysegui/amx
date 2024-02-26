@@ -21,7 +21,10 @@
 
 .header{
     position: fixed;
+    display: block;
     width:100%;
+    height: 8rem;
+    // width: 89rem;
     // margin-left: 5rem;
     // margin-right: 5rem;
     // padding-right: 5rem;
@@ -33,16 +36,19 @@
     background-color:$grey-blueish;
     top:0;
     padding-top: 0.5em;
+    // scroll-padding-top:  8rem; 
     @include phone-screen {
         top:0;
         padding-top: 0.5em;
           
-    }    
-
-    
-    
+    }     
 }
+
+
+
+
 .headerInner{
+    position: fixed;
     position: relative;
     padding-right: 6.5rem;
     padding-left: 6.5rem;
@@ -50,16 +56,12 @@
     background-color:$grey-blueish;
     animation: shadow linear;
     animation-timeline: scroll();
-        //  box-shadow: 0 10px 6px -6px #cecece;
+    // scroll-padding-top:  8rem; 
       
     @include phone-screen {
         margin:0;
         padding: 0;
-        // background-color: pink;
         width: 100%;
-        // background-color: red;
-            // display: block;
-          
     }    
 }
 

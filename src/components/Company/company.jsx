@@ -9,12 +9,12 @@ import Welcome from '../mainPage/welcome';
 import Footer from "../Footer/footer";
 const Company = () =>{
     return(<div className='fullPage'>
-         <div className='header'>
+         <div className='header '>
             <div className="headerInner">
                 <TopCont/>
                 <MenuFunct/>
             </div>
-        </div>
+            </div>
         <div className='portada'>
             <div className='supportMenu'></div>
        

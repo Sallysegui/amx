@@ -1,4 +1,4 @@
- import TopCont from '../mainPage/TopCont';
+import TopCont from '../mainPage/TopCont';
 import MenuFunct from '../mainPage/MenuFunct';
 import AogResponse from './AOGresponse';
 import LineMaintenace from './lineMaintenace';
@@ -7,7 +7,7 @@ import EngineBoroscope from './engineBoroscope';
 import Footer from '../Footer/footer';
 const Services = () =>{
     return(<div className='fullPage'>
-            <div className='header'>
+            <div className='header '>
             <div className="headerInner">
             <TopCont/>
             <MenuFunct/>

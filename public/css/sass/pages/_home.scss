@@ -4,26 +4,32 @@
 
 .mainPhoto {
     // background-image: url('../../../../src/assets/planesunny.jpeg');
-    background: url("./images/planesunny.jpeg") no-repeat center center;
-
+    background: url("./images/greyAirplainHangar.png") no-repeat center center;
+    // z-index: 210;
+    // padding-top: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 32rem;
+    height: 33rem;
     margin-top: 6.8rem;
     @include phone-screen{
         height: 20rem;
         // background: url("./images/planesunny.jpeg") ;
         // background-size: contain;
         margin-top: 6rem;
+        padding-top: 0rem;
        
     }
+    @media screen and (min-width:100rem) {
+        height: 38rem;
+     }
+    position: relative;
 }
 
 .header{
     position: fixed;
     display: block;
     width:100%;
-    height: 8rem;
+    height: 7rem;
     // width: 89rem;
     // margin-left: 5rem;
     // margin-right: 5rem;
@@ -66,29 +72,32 @@
 }
 
 .flying{
-    padding-left: 2rem;
-    padding-top: 22rem;
-    color: $flying;
-    color: #141415;
-    text-shadow: rgb(255, 255, 253)3px 3px 4px;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
-    text-shadow: 
-        0 1px 0 #ffffff,
-        0 1px 0 rgb(252, 252, 252),
-        1px 1px 1px #ffffff,
-        1px 2px 1px rgb(255, 234, 0)
-        0 -1px 0 #ffffff,
-        0 -1px 0 rgb(255, 255, 255),
-        -1px 1px 1px rgb(255, 255, 255),
-        1px -1px 1px rgb(255, 255, 255);
-        -webkit-text-stroke: 1px $flying;
+    // padding-left: 45rem;
+    // padding-top: 3rem;
+    color: $logo-blue;
+    opacity: 1;
+    position: absolute;
+    right: 4rem;
+    top:3rem;
+    // color: #141415;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255),  -1px -1px 1px rgb(255, 255, 255);
+    // text-shadow: 
+    //     0 1px 0 #ffffff,
+    //     0 1px 0 rgb(252, 252, 252),
+    //     1px 2px 1px rgb(255, 234, 0)
+    //     0 -1px 0 #ffffff,
+    //     0 -1px 0 rgb(255, 255, 255),
+    //     -1px 1px 1px rgb(255, 255, 255),
+    //     1px -1px 1px rgb(255, 255, 255);
+    //     -webkit-text-stroke: 1px $flying;
 
     font-style: italic;
     font-size: 2.5rem;
     animation: 1.5s ease-in slideRight;
     font-family: "AvenirNext";
     @include phone-screen{
-        padding-top: 14rem;
+        // padding-top: 14rem;
+        // padding-left: 14rem;
         font-size: 2rem;
     }
 

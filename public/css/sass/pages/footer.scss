@@ -146,3 +146,42 @@
     }
 
 }
+
+.careersContainer{
+    font-family: sans-serif;
+    margin:4rem;
+    color: $logo-blue;
+    // background-color: pink;
+    h1{
+        font-weight: 600;
+        padding-bottom: 1.5rem;
+    }
+    h2{
+        font-weight: 400;
+        padding-bottom: 1rem;
+        color: $logo-red;
+    }
+    .specialise{
+        padding-bottom: 1rem;
+    }
+
+    h3{
+        padding-bottom: 0.8rem;
+        padding-top: 0.5rem;
+    }
+    h4{
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        text-decoration: underline;
+    }
+    li{
+        margin-left: 1rem;
+        color: rgb(72, 72, 72);
+    }
+    .dutties{
+        padding-bottom: 0.3rem;
+    }
+    p{
+        color: rgb(47, 47, 47);
+    }
+}

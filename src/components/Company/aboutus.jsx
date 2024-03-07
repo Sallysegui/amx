@@ -50,13 +50,26 @@ const AboutUs = () =>{
             <Reveal keyframes={customAnimation}  triggerOnce>
             <div className="longText">
                 <p>
-                Situated in the classical music heart of Europe, we are an independent aviation MRO 
+                {/* Situated in the classical music heart of Europe, we are an independent aviation MRO 
                 specialising in Bombardier and Embraer Business Aviation aircraft. Established by 
                 aviation professionals with extensive experience in engineering and quality assurance, 
                 sales and marketing, flight support and operations within the Business Aviation market,
                  AMX Support continues to grow in to one of Europe’s leading MRO’s. Our aviation specialists 
                  are dedicated to providing an exceptional service with a rewarding customer experience 7 
-                 days a week. <span>Fly with confidence, and with AMX Support we keep you flying!</span>
+                 days a week.  */}
+                 
+                Situated in Vienna, known to be the city of music and classical music heart of Europe,
+                AMX Support is an independent aviation MRO specialising in Bombardier and Embraer Business
+                Aviation aircraft. Established by aviation professionals with extensive experience in 
+                engineering and quality assurance, sales and marketing, flight support and operations 
+                within the Business Aviation market, AMX Support continues to grow in to one of Europe’s
+                leading MRO’s. Our aviation specialists are dedicated to providing exceptional service 
+                with a rewarding customer experience 7 days a week.<span>Fly with confidence, and with AMX 
+                Support we keep you flying!</span>
+                 
+                 
+                 
+                 
                 </p>
             </div>
             <ReadMore>

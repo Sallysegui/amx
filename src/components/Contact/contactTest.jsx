@@ -12,33 +12,19 @@ const ContactFormTest = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    console.log(e.target)
     setFormData(prevState => ({
       ...prevState,
       [name]: value
     }));
   }
 
-  // const automaticResponse = () => {
-  //   return (
-  //     <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
-  //       <h2 style={{ color: '#333' }}>Automatic Response - AMX Support</h2>
-  //       <p>Dear Valued Customer,</p>
-  //       <p>Thank you for reaching out to AMX Support. Your message has been received and we are currently reviewing it.</p>
-  //       <p>Our team will get back to you as soon as possible. We appreciate your patience.</p>
-  //       <p>If you have any urgent inquiries, please feel free to contact us at support@amx.com or call us at 1-800-AMX-SUPPORT.</p>
-  //       <p>Thank you for choosing AMX Support.</p>
-  //       <p>Best regards,<br />AMX Support Team</p>
-  //       <hr style={{ border: '1px solid #ccc' }} />
-  //       <p style={{ fontSize: '0.8em', color: '#666' }}>This is an automated message. Please do not reply to this email.</p>
-  //       <image src={logo}/>
-  //     </div>
-  //   );
-  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log('submitting')
     try {
-      const response = await axios.post('/sendEmail', formData);
+      const response = await axios.post('http://localhost:3000/sendemail', formData);
       console.log(response.data);
       alert("Email sent!");
       // Optionally, you can handle success or display a message to the user

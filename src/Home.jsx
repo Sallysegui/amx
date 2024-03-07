@@ -23,10 +23,14 @@ const App = () => {
         </div>
         </div>
     <div className='portada'>
+    {/* <div className='supportMenu'></div>
+       
+       <div className="bitMargin"></div> */}
       <PhotoMain/>
       <Welcome/>
-    <div className="companyContainer">
       <AboutUs/>
+    <div className="companyContainer">
+      
       <Approvals/>
       <Spares/>
       <Locations/>

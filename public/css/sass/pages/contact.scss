@@ -1,16 +1,15 @@
 .inquiries{
     margin: 3rem;
     padding: 3rem;
-    font-family: "Avenir Next W02" !important;
+    font-family: "AvenirNext";
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    @include phone-screen{
+    font-size: 1.1rem;
+    @media screen and (max-width: 37.5em ) {
         margin-top: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
         padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 1rem;
         
     }
 }
@@ -23,7 +22,7 @@
     // padding-bottom: 3rem;
     // position: relative;
     // margin: auto;
-    font-family: "Avenir Next W02" !important;
+    font-family: "AvenirNext";
 
     // background: #facaca;
     display: flex;
@@ -32,7 +31,7 @@
     justify-content: center;
     margin: auto;
     // margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 
     .contactTitle{
         flex: 1 1 20%;
@@ -45,7 +44,7 @@
         flex: 1 1 40%;
     }
     
-    @include phone-screen{
+    @media screen and (max-width: 37.5em ) {
         // display: flex;
         // padding-bottom: 1rem;
         // gap:1rem;
@@ -74,154 +73,280 @@
     p{
         // flex: 1 1 30%; /*grow | shrink | basis */
         display: flex;
-        height:5rem;
+        height:3.5rem;
         align-items: center;
         justify-content: center;
-        @include phone-screen{
+        // padding-bottom: 2.5rem;
+        // padding-top: 1rem;
+        
+        @media screen and (max-width: 37.5em ) {
             font-size: 0.8rem;
-            height:2.5rem;
+            height:2rem;
            
         }
 
     }
 
-
-
-
-
-
-
 }
 
 
-.address{
-    // padding-top: 3rem;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    padding: 3rem;
-    @include phone-screen{
-        margin-right: 1rem;
-        margin-left: 1rem;
-        padding: 1rem;
-    }
-}
 
 
-.contactFormContainer{
-    height: 80vh;
-    // min-width: 15rem;
-   
-    background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.6),
-    rgba(167, 215, 221, 0.4)
-  ), url("./images/worldMap.jpg") no-repeat center center;  
-    opacity: 0.7;
-    position: relative;
-    @include phone-screen{
-        height: 70vh;
-        background: rgb(207, 217, 221);
-    }
-   
-  form {
-    opacity: 1 ;
-    position: absolute;
-    height: 35rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
-    width: 30rem;
-    padding: 0 40px;
-    box-sizing: border-box;
+///////////////contact form///////////////////////////
+
+.all{
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;    
-    @include phone-screen{
-       width: 95%;
-       height: 25rem;
-       max-width: 25rem;
-       padding: 0 1rem;
-    }
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    margin: auto;
+    // background-color: pink;
+    background-color: rgb(253, 253, 253);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    // opacity: 1;
+  
 
-    }    
-    h1{
-        text-align: center;
-        padding: 20px 0;
-        border-bottom: 1px solid silver;
-        @include phone-screen{
-            font-size: 1.3rem;
-            width: 100%;
-        }
-    }
-    .fontField {
-        background-color: #f2f6f8;
-		border-radius: 2rem;
-        border: none;
-        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
-        height: 2rem;
-        padding: 1rem 2.5rem;
-        @include phone-screen{
-            padding: 1rem 1rem;
-        }
-    }
-    .enquiry {
-        height: 8rem;
-    }
-    &:focus {
-        background-color: #f2f6f8;
-        border: none;
-        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
-    }
-    ::placeholder {
-        // font-family: 'Quicksand', sans-serif;
-            // font-weight: 600;
-        font-size: 1.1em;
-        color: #838788;
-        position: relative;
-        left: 0;
-      }
 
-    input {
-        margin-top: 3rem;
-        @include phone-screen{
-            margin-top: 1.5rem;
-        }
+.title
+{
+    margin-top:2rem;
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 1.5% 0;
+    color:$logo-blue;
+  
+}
+
+.title-info
+{
+	padding-bottom: 2%;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 2%;
+}
+
+.input-group, .textarea-group
+{
+    padding: 1% 0;
+}
+
+input, textarea
+{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 1.5%;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus
+{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid #56bbdc;
+}
+
+input::placeholder, textarea::placeholder
+{
+    color: transparent;
+}
+
+label
+{
+    color: #757575;
+    position: relative;
+    left: 0.5em;
+    top: -2em;
+	cursor: auto;
+    transition: 0.3s ease all;
+}
+
+input:focus ~ label, input:not(:placeholder-shown) ~ label
+{
+    top: -4em;
+    color: rgb(237, 237, 237);
+    font-size: 15px;
+}
+
+textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+{
+    top: -5.5em;
+    color: rgb(186, 186, 186);
+    font-size: 15px;
+}
+
+.button-div
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+button
+{
+    padding: 2%;
+    width: 50%;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+    background-color:$logo-blue;
+    color: whitesmoke;
+    box-shadow: 0 0 5px #212121;
+}
+
+button:hover
+{
+    background-color:#56bbdc;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1200px)
+{
+    .form
+    {
+        width: 70%;
     }
-    textarea {
-        margin-top: 3rem;
-        @include phone-screen{
-            margin-top: 1.5rem;
-            margin-bottom: 0rem;
-        }
+}
+
+@media screen and (max-width: 680px)
+{
+    .form
+    {
+		width: 90%;
     }
-    button {
-        margin-top: 3rem;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: bold;
-      height: 2.5rem;
-      line-height: 2.5rem;
-      padding: 0 3rem;
-      border: 0;
-      border-radius: 3rem;
-      background-image:linear-gradient(131deg, #a8c9dc,#4c87a8,#1f5574,#09334c);
-      background-size: 300% 100%;
-      transition: all 0.3s ease-in-out;
-      :hover {
-        box-shadow: 0 0.5em 0.5em -0.4em #241c16ba;
-        background-size: 100% 100%;
-        transform: translateY(-0.15em);
-      }
-      margin-bottom: 3rem;
-      @include phone-screen{
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 500px)
+{
+	.title
+	{
+		font-size: 40px;
+		padding-top: 6%;
+	}
+
+	.title-info
+	{
+		font-size: 13px;
+	}
+	
+	.form
+	{
+		padding: 6% 4%;
+		padding-top: 15%;
+	}
+
+	.input-group, .textarea-group
+    {
+		padding: 3% 0;
+	}
+	
+	input, textarea
+	{
+		font-size: 15px;
+	}
+
+	input:focus ~ label, input:not(:placeholder-shown) ~ label
+	{
+		top: -3.5em;
+		left: 0.1em;
+	}
+	
+	textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+	{
+		top: -8.5em;
+		left: 0.2em;
     }
+    
+    button
+    {
+        font-size: 15px;
     }
+}
 
 
 }
 
 
 
+section
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    width: 75%;
+    margin: auto;
+    opacity: 0.9;
+    border-top: 1px solid #212121;
+    // margin-bottom: 2rem;
+}
+
+section:hover
+{
+    animation: fade 0.3s ease;
+    opacity: 1;
+}
+
+.info
+{
+    height: 4vh;
+    margin-bottom: 2rem;
+    display: flex;
+    span{
+        padding-left: 0.5rem;
+    }
+   
+
+}
+
+// .codecell-img
+// {
+//     height: 10vh;
+// }
+
+@keyframes fade
+{
+    0%
+    {
+        opacity: 0.7;
+    }
+
+    100%
+    {
+        opacity: 0.9;
+    }
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1295px)
+{
+    section
+    {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    section
+    {
+        opacity: 0.9;
+    }
+}

@@ -1,11 +1,12 @@
 
-import ContactForm from "./contactForm";
+// import ContactForm from "./contactForm";
 import ContactUs from "./contactUs";
 import TopCont from '../mainPage/TopCont';
 import MenuFunct from '../mainPage/MenuFunct';
-import Address from "./adress";
+// import Address from "./adress";
 import Footer from "../Footer/footer";
-import ContactFormTest from './contactTest'
+import ContactFormTwo from "./contactForm2";
+// import ContactFormTest from './contactTest'
 
 const Contact = () =>{
     return(<div className='fullPage'>
@@ -21,9 +22,10 @@ const Contact = () =>{
 
     <div className="bitMargin"></div>
             <ContactUs/>
-            <ContactFormTest/>
-            <ContactForm/>
-            < Address />
+            {/* <ContactFormTest/> */}
+            {/* <ContactForm/> */}
+            <ContactFormTwo/>
+            {/* < Address /> */}
             </div>
             <Footer/>
          

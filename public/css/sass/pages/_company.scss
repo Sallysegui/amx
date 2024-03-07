@@ -84,7 +84,7 @@
         }
 
     }
-    img {
+    img,iframe {
         padding-top: 2rem;
         padding-bottom: 2rem;
         margin: 1rem;
@@ -95,19 +95,30 @@
             margin: 0;
             margin-top: 1rem;
         }
+        @media screen and (min-width:100rem) {
+            margin-right: 5rem;
+            margin-left: 5rem;
+           
+         }
+
     }
 
     iframe {
-        margin: 0.5rem;
-        // padding: 0 !important;
-        height: 25rem;
-        width: 25rem;
+        height: 22rem;
+        // margin: 3rem;
+        padding: 0;
+        // height: 25rem;
+        // width: 25rem;
         object-fit: cover; 
         @include phone-screen{
             margin: 0;
             width: 100%;
-
         }
+        @media screen and (min-width:100rem) {
+            margin-right: 7rem;
+            margin-left: 7rem;
+           
+         }
 
 
     }
@@ -193,29 +204,47 @@
 .aboutUsPhoto{
     // height: 20rem;
     background-color: $grey-blueish;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    // gap: 2rem;
+    // grid-template-columns: repeat(3,1fr);
     padding-top: 0.3rem;
     padding-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    justify-content: center; /* centers items horizontally */
-    align-items: center;
+    // padding-left: 4rem;
+    // padding-right: 4rem;
+    justify-content:  space-between;
+    // align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
     // .aboutUs2{
     //     width:25rem;
+
     // }
  
     img {
         height: 18rem;
-        width:100%;
+        width: 22rem;
+        // width:100%;
         place-self: center;
         // padding-bottom: 2rem;
 
     }
     @include phone-screen{
         display: none;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
+    @media screen and (min-width:100rem) {
+        padding-left: 6rem;
+        padding-right: 6rem;
+     }
+
+     @media screen and (max-width:100rem) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        img{
+            max-width: 20rem;
+        }
+     }
 }
 
 

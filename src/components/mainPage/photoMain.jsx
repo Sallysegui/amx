@@ -1,4 +1,4 @@
-import Flying from "./topMenu/flying"
+import Flying from "./flying"
 
 const PhotoMain=()=>{
     return(

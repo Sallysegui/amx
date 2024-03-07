@@ -48,12 +48,10 @@ const Locations = () =>{
        <div className='columCompany part2'> 
 
           <iframe src="https://www.google.com/maps/d/embed?mid=1Tx_7KT7l4v6b56oypRO6CrDyKPraRpg&ehbc=2E312F&noprof=1"
-           allowfullscreen="" loading="lazy">
-
-           </iframe>
+           allowfullscreen="" loading="lazy"></iframe>
        </div>
    </Reveal>
-        </div>
+  </div>
     )
 
 }

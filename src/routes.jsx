@@ -7,7 +7,7 @@ import Services from './components/Services/services';
 import Careers from './components/Careers/careers';
 import WhyAmx from './components/Footer/whyAmx';
 import Terms from './components/Footer/terms';
-import Test from './components/Careers/testLinking';
+
 
 const Routes = () => {
     return (
@@ -20,8 +20,6 @@ const Routes = () => {
           <Route path="/careers" component={Careers} />
           <Route path="/whyamx" component={WhyAmx} />
           <Route path="/terms" component={Terms} />
-          
-          <Route path="/test" component={Test} />
         </Switch>
       </Router>
     );

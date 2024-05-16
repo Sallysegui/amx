@@ -1,211 +1,200 @@
 .supportMenu {
-    height: 5rem;
+  height: 5rem;
 }
 
 .mainPhoto {
-    // background-image: url('../../../../src/assets/planesunny.jpeg');
-    background: url("./images/greyAirplainHangar.png") no-repeat center center;
-    // z-index: 210;
-    // padding-top: 1rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 33rem;
-    margin-top: 6.8rem;
-    @include phone-screen{
-        height: 20rem;
-        // background: url("./images/planesunny.jpeg") ;
-        // background-size: contain;
-        margin-top: 6rem;
-        padding-top: 0rem;
-       
-    }
-    @media screen and (min-width:100rem) {
-        height: 38rem;
-     }
-    position: relative;
+  // first airport foto
+  // background: url("./images/greyAirplainHangar.png") no-repeat center center;
+  background: url("./images/plainAirport.jpg") no-repeat center center;
+
+  // z-index: 210;
+  // padding-top: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 33rem;
+  margin-top: 6.8rem;
+  @include phone-screen {
+    height: 20rem;
+    // background: url("./images/planesunny.jpeg") ;
+    // background-size: contain;
+    margin-top: 6rem;
+    padding-top: 0rem;
+  }
+  @media screen and (min-width: 100rem) {
+    height: 38rem;
+  }
+  position: relative;
 }
 
-.header{
-    position: fixed;
-    display: block;
-    width:100%;
-    height: 7rem;
-    // width: 89rem;
-    // margin-left: 5rem;
-    // margin-right: 5rem;
-    // padding-right: 5rem;
-    // padding-top: 0.2rem;
-    // margin-top: 1rem;
-    // left: 5rem;
-    // right: 5rem;
-    z-index: 10;
-    background-color:$grey-blueish;
-    top:0;
+.header {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 7rem;
+  // width: 89rem;
+  // margin-left: 5rem;
+  // margin-right: 5rem;
+  // padding-right: 5rem;
+  // padding-top: 0.2rem;
+  // margin-top: 1rem;
+  // left: 5rem;
+  // right: 5rem;
+  z-index: 10;
+  background-color: $grey-blueish;
+  top: 0;
+  padding-top: 0.5em;
+  // scroll-padding-top:  8rem;
+  @include phone-screen {
+    top: 0;
     padding-top: 0.5em;
-    // scroll-padding-top:  8rem; 
-    @include phone-screen {
-        top:0;
-        padding-top: 0.5em;
-          
-    }     
+  }
 }
 
-
-
-
-.headerInner{
-    position: fixed;
-    position: relative;
-    padding-right: 6.5rem;
-    padding-left: 6.5rem;
-    // padding-right: 5rem;
-    background-color:$grey-blueish;
-    animation: shadow linear;
-    animation-timeline: scroll();
-    // scroll-padding-top:  8rem; 
-      
-    @include phone-screen {
-        margin:0;
-        padding: 0;
-        width: 100%;
-    }    
+.headerInner {
+  position: fixed;
+  position: relative;
+  padding-right: 6.5rem;
+  padding-left: 6.5rem;
+  // padding-right: 5rem;
+  background-color: $grey-blueish;
+  animation: shadow linear;
+  animation-timeline: scroll();
+  // scroll-padding-top:  8rem;
+  @include phoneLand-screen {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  @include phone-screen {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 }
 
-.flying{
-    // padding-left: 45rem;
-    // padding-top: 3rem;
-    color: $logo-blue;
-    opacity: 1;
-    position: absolute;
-    right: 4rem;
-    top:3rem;
-    // color: #141415;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255),  -1px -1px 1px rgb(255, 255, 255);
-    // text-shadow: 
-    //     0 1px 0 #ffffff,
-    //     0 1px 0 rgb(252, 252, 252),
-    //     1px 2px 1px rgb(255, 234, 0)
-    //     0 -1px 0 #ffffff,
-    //     0 -1px 0 rgb(255, 255, 255),
-    //     -1px 1px 1px rgb(255, 255, 255),
-    //     1px -1px 1px rgb(255, 255, 255);
-    //     -webkit-text-stroke: 1px $flying;
+.flying {
+  // padding-left: 45rem;
+  // padding-top: 3rem;
+  color: $logo-blue;
+  opacity: 1;
+  position: absolute;
+  right: 4rem;
+  top: 3rem;
+  // color: #141415;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255), -1px -1px 1px rgb(255, 255, 255);
+  // text-shadow:
+  //     0 1px 0 #ffffff,
+  //     0 1px 0 rgb(252, 252, 252),
+  //     1px 2px 1px rgb(255, 234, 0)
+  //     0 -1px 0 #ffffff,
+  //     0 -1px 0 rgb(255, 255, 255),
+  //     -1px 1px 1px rgb(255, 255, 255),
+  //     1px -1px 1px rgb(255, 255, 255);
+  //     -webkit-text-stroke: 1px $flying;
 
-    font-style: italic;
-    font-size: 2.5rem;
-    animation: 1.5s ease-in slideRight;
-    font-family: "AvenirNext";
-    @include phone-screen{
-        // padding-top: 14rem;
-        // padding-left: 14rem;
-        font-size: 2rem;
-    }
-
+  font-style: italic;
+  font-size: 2.5rem;
+  animation: 1.5s ease-in slideRight;
+  font-family: "AvenirNext";
+  @include phone-screen {
+    // padding-top: 14rem;
+    // padding-left: 14rem;
+    font-size: 2rem;
+  }
 }
 
-.bitPadding{
-    // padding:1.5rem;
-    margin-bottom: 2.5rem;
+.bitPadding {
+  // padding:1.5rem;
+  margin-bottom: 2.5rem;
 }
 .bitMargin {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .wecomeContainer {
-    // margin-top: 3rem;
-    // height: 20rem;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
+  // margin-top: 3rem;
+  // height: 20rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+  // font-family: "Avenir Next W02" !important;
+  // background-color: aquamarine;
+  margin: auto;
+  min-height: 5rem;
+  background-color: #f7f7f8;
+  background-color: #f8f7f7;
+  margin-top: 3rem;
+  @include phone-screen {
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+    margin-top: 0rem;
+    margin: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .title {
     position: relative;
-    // font-family: "Avenir Next W02" !important;
-    // background-color: aquamarine;
-    margin:auto; 
-    min-height: 5rem;
-    background-color: #f7f7f8;
-    background-color: #f8f7f7;
-    margin-top: 3rem;
-    @include phone-screen{
-        padding-top: 0;
-        padding-bottom: 0.5rem;
-        margin-top: 0rem;
-        margin:0;
-        margin-right: 1rem;
-        margin-left: 1rem;
-
-    }
-    .title {
-        position: relative;
-        display:flex;
-        padding: 0;
-        text-align:center; 
-        max-width: 21.5rem;
-        height: 3rem;
-        margin: auto;
-        padding-bottom: 1rem;
-        // font-family: "Avenir Next W02" !important;
-        // background-color: rgb(239, 25, 61);
-        @include phone-screen{
-           padding-top: 1em;
-           max-width: 50em;
-           height: 5rem;
-           padding-bottom: 1rem;
-           margin-right: 1rem;
-           margin-left: 1rem;
-          
-        }
-
-    }
-
-    h1{
-    
-    font-size:1.2rem; 
-    font-weight:400;  
-    letter-spacing:1px; 
+    display: flex;
+    padding: 0;
+    text-align: center;
+    max-width: 21.5rem;
+    height: 3rem;
     margin: auto;
-    text-align:center; 
-    white-space:nowrap;
-    padding-bottom:13px;
+    padding-bottom: 1rem;
+    // font-family: "Avenir Next W02" !important;
+    // background-color: rgb(239, 25, 61);
+    @include phone-screen {
+      padding-top: 1em;
+      max-width: 50em;
+      height: 5rem;
+      padding-bottom: 1rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+    padding-bottom: 13px;
     font-family: "Avenir Next W02" !important;
 
-        @include phone-screen{
-            position: relative;
-            white-space: pre-line;
-            padding-bottom:1px;
-            with:100%
-        }
+    @include phone-screen {
+      position: relative;
+      white-space: pre-line;
+      padding-bottom: 1px;
+      with: 100%;
     }
+  }
 
-    h1:before {
-        background-color: $logo-red;
-        content: '';
-        display: block;
-        height: 3px;
-        width: 40%;
-        margin-bottom: 5px;
-        @include phone-screen{
-            with:60%
-        }
-       
+  h1:before {
+    background-color: $logo-red;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 40%;
+    margin-bottom: 5px;
+    @include phone-screen {
+      with: 60%;
     }
-    h1:after {
-        background-color: $logo-red;
-        content: '';
-        display: block;
-        position:absolute; 
-        right:0; 
-        bottom:0rem;
-        height: 3px;
-        width: 40%;
-        margin-bottom: 0.25em;
-        @include phone-screen{
-            with:60%;
-            // position:absolute; 
-            // right:0; 
-            bottom:-1rem;
-        }
-
-        
+  }
+  h1:after {
+    background-color: $logo-red;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0rem;
+    height: 3px;
+    width: 40%;
+    margin-bottom: 0.25em;
+    @include phone-screen {
+      with: 60%;
+      // position:absolute;
+      // right:0;
+      bottom: -1rem;
     }
-    
+  }
 }
-
-

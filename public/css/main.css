@@ -73,7 +73,7 @@
 }
 
 .mainPhoto {
-  background: url("./images/greyAirplainHangar.png") no-repeat center center;
+  background: url("./images/plainAirport.jpg") no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 33rem;
@@ -118,6 +118,12 @@
   background-color: #f7f7f8;
   animation: shadow linear;
   animation-timeline: scroll();
+}
+@media screen and (max-width: 900px) {
+  .headerInner {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }
 @media screen and (max-width: 37.5em) {
   .headerInner {
@@ -404,7 +410,6 @@ a {
 }
 
 .fullPage {
-  margin-top: 0.5rem;
   background-color: #fff;
   margin-top: 0;
 }
@@ -412,6 +417,12 @@ a {
 .portada {
   margin-left: 6.5rem;
   margin-right: 6.5rem;
+}
+@media screen and (max-width: 1230px) {
+  .portada {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 @media screen and (max-width: 37.5em) {
   .portada {
@@ -427,6 +438,13 @@ a {
   border-radius: 5px;
   color: rgb(30, 29, 27);
   margin-top: 0;
+}
+@media screen and (max-width: 900px) {
+  .containerTopCont {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 37.5em) {
   .containerTopCont {
@@ -465,6 +483,11 @@ a {
   align-items: center;
   font-family: "AvenirNext" !important;
   font-weight: 100;
+}
+@media screen and (max-width: 900px) {
+  .aobContactContainer {
+    margin-left: 3rem;
+  }
 }
 @media screen and (max-width: 37.5em) {
   .aobContactContainer {
@@ -623,67 +646,88 @@ a {
   font-size: 1.1rem;
   padding-bottom: 2rem;
 }
+@media screen and (max-width: 900px) {
+  .companyList p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
 @media screen and (max-width: 37.5em) {
   .companyList p {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 }
-.companyList img, .companyList iframe {
+.companyList img {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin: 1rem;
   object-fit: cover;
   padding: 3rem;
 }
-@media screen and (max-width: 37.5em) {
-  .companyList img, .companyList iframe {
-    padding: 0;
-    margin: 0;
-    margin-top: 1rem;
-  }
-}
-@media screen and (min-width: 100rem) {
-  .companyList img, .companyList iframe {
-    margin-right: 5rem;
-    margin-left: 5rem;
+@media screen and (max-width: 900px) {
+  .companyList img {
+    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
   }
 }
 .companyList iframe {
   height: 22rem;
   padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   object-fit: cover;
+  margin-right: 2rem;
 }
 @media screen and (max-width: 37.5em) {
   .companyList iframe {
-    margin: 0;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 100rem) {
-  .companyList iframe {
-    margin-right: 7rem;
-    margin-left: 7rem;
+    margin: 1rem;
+    width: 90%;
+    margin-right: 0.5rem;
   }
 }
 
 .aboutContainer {
-  width: 100%;
+  margin: auto;
+  background-color: #f8f7f7;
+}
+@media screen and (max-width: 37.5em) {
+  .aboutContainer {
+    background-color: #ffffff;
+    padding-top: 0;
+    margin-top: 0rem;
+    margin: 0;
+    margin-right: 0rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .aboutContainer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .aboutContainer {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 .aboutContainer p {
-  width: 100%;
   background-color: #f7f7f8;
   font-family: "AvenirNext";
   font-size: 17px;
   line-height: 1.8rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media screen and (max-width: 37.5em) {
   .aboutContainer p {
     padding-right: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5;
     padding-left: 1rem;
     padding-bottom: 1rem;
   }
@@ -696,8 +740,11 @@ a {
 @media screen and (max-width: 37.5em) {
   .aboutContainer .textSmall {
     display: relative;
-    padding-top: 0;
     margin-top: 0;
+  }
+  .aboutContainer .textSmall p {
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 @media screen and (min-width: 37.5em) {
@@ -723,19 +770,93 @@ a {
   font-weight: 600;
 }
 
+.aircraftTypesCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  background-color: #f7f7f8;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.aircraftTypesCont .aircraftTypesHeading {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.aircraftTypesCont .aircraftTypesHeading img {
+  margin-right: 0.5rem;
+}
+.aircraftTypesCont h2 {
+  color: #A52323;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.aircraftTypesCont p {
+  padding-top: 0.6rem;
+  padding-bottom: 0;
+  font-family: "AvenirNext";
+  font-size: 17px;
+  line-height: 1.8rem;
+}
+@media screen and (max-width: 1230px) {
+  .aircraftTypesCont {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .aircraftTypesCont {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .aircraftTypesCont {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 .aboutUsPhoto {
   background-color: #f7f7f8;
+  height: 20rem;
   display: flex;
+  grid-template-columns: repeat(3, 1fr);
   padding-top: 0.3rem;
   padding-bottom: 1.5rem;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: space-around;
 }
 .aboutUsPhoto img {
+  flex: 1;
   height: 18rem;
   width: 22rem;
-  place-self: center;
+  flex-shrink: 1;
+}
+@media screen and (max-width: 900px) {
+  .aboutUsPhoto img {
+    width: 18rem;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .aboutUsPhoto .aboutUs2 {
+    display: none;
+    width: 24rem;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .aboutUsPhoto {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .aboutUsPhoto {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 @media screen and (max-width: 37.5em) {
   .aboutUsPhoto {
@@ -746,17 +867,8 @@ a {
 }
 @media screen and (min-width: 100rem) {
   .aboutUsPhoto {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-}
-@media screen and (max-width: 100rem) {
-  .aboutUsPhoto {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  .aboutUsPhoto img {
-    max-width: 20rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
@@ -765,6 +877,9 @@ a {
   color: #143264;
 }
 
+.sparesContainer img {
+  max-height: 30rem;
+}
 @media screen and (max-width: 37.5em) {
   .sparesContainer {
     flex-direction: column-reverse;
@@ -784,8 +899,26 @@ a {
   }
 }
 
+.batteryContainer .comingSoon p {
+  text-align: center;
+}
+.batteryContainer .batteryPart2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.batteryContainer img {
+  width: 20rem;
+}
+@media screen and (max-width: 37.5em) {
+  .batteryContainer {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}
+
 .inquiries {
-  margin: 3rem;
+  margin: 2rem;
   padding: 3rem;
   font-family: "AvenirNext";
   margin-bottom: 1rem;
@@ -794,15 +927,19 @@ a {
 }
 @media screen and (max-width: 37.5em) {
   .inquiries {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    padding-top: 1.1rem;
+    padding-right: 1rem;
     padding-left: 1rem;
+    font-size: 0.9rem;
   }
 }
 
 .contacts {
-  max-width: 48rem;
+  max-width: 55rem;
   font-family: "AvenirNext";
   display: flex;
   flex-wrap: wrap;
@@ -867,12 +1004,23 @@ a {
   margin-top: 2rem;
   /* Media queries */
 }
+@media screen and (max-width: 37.5em) {
+  .all {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
 .all .title {
   margin-top: 2rem;
   font-size: 2.6rem;
   font-weight: bold;
   padding: 1.5% 0;
   color: #143264;
+}
+@media screen and (max-width: 37.5em) {
+  .all .title {
+    font-size: 1.6rem;
+  }
 }
 .all .title-info {
   padding-bottom: 2%;
@@ -883,10 +1031,12 @@ a {
   width: 80%;
   padding: 2%;
 }
-.all .input-group, .all .textarea-group {
+.all .input-group,
+.all .textarea-group {
   padding: 1% 0;
 }
-.all input, .all textarea {
+.all input,
+.all textarea {
   color: inherit;
   width: 100%;
   background-color: transparent;
@@ -895,12 +1045,14 @@ a {
   padding: 1.5%;
   font-size: 1rem;
 }
-.all input:focus, .all textarea:focus {
+.all input:focus,
+.all textarea:focus {
   background-color: transparent;
   outline: transparent;
   border-bottom: 2px solid #56bbdc;
 }
-.all input::placeholder, .all textarea::placeholder {
+.all input::placeholder,
+.all textarea::placeholder {
   color: transparent;
 }
 .all label {
@@ -911,12 +1063,14 @@ a {
   cursor: auto;
   transition: 0.3s ease all;
 }
-.all input:focus ~ label, .all input:not(:placeholder-shown) ~ label {
+.all input:focus ~ label,
+.all input:not(:placeholder-shown) ~ label {
   top: -4em;
   color: rgb(237, 237, 237);
   font-size: 15px;
 }
-.all textarea:focus ~ label, .all textarea:not(:placeholder-shown) ~ label {
+.all textarea:focus ~ label,
+.all textarea:not(:placeholder-shown) ~ label {
   top: -5.5em;
   color: rgb(186, 186, 186);
   font-size: 15px;
@@ -934,12 +1088,19 @@ a {
   border-radius: 5px;
   font-family: inherit;
   font-size: 18px;
+  font-weight: 400;
   background-color: #143264;
   color: whitesmoke;
   box-shadow: 0 0 5px #212121;
 }
 .all button:hover {
-  background-color: #56bbdc;
+  background-color: whitesmoke;
+  font-weight: 700;
+  color: #143264;
+  cursor: pointer;
+}
+.all button:active {
+  background-color: #A52323;
   color: whitesmoke;
   cursor: pointer;
 }
@@ -955,7 +1116,7 @@ a {
 }
 @media screen and (max-width: 500px) {
   .all .title {
-    font-size: 40px;
+    font-size: 1.6rem;
     padding-top: 6%;
   }
   .all .title-info {
@@ -965,17 +1126,21 @@ a {
     padding: 6% 4%;
     padding-top: 15%;
   }
-  .all .input-group, .all .textarea-group {
+  .all .input-group,
+  .all .textarea-group {
     padding: 3% 0;
   }
-  .all input, .all textarea {
+  .all input,
+  .all textarea {
     font-size: 15px;
   }
-  .all input:focus ~ label, .all input:not(:placeholder-shown) ~ label {
+  .all input:focus ~ label,
+  .all input:not(:placeholder-shown) ~ label {
     top: -3.5em;
     left: 0.1em;
   }
-  .all textarea:focus ~ label, .all textarea:not(:placeholder-shown) ~ label {
+  .all textarea:focus ~ label,
+  .all textarea:not(:placeholder-shown) ~ label {
     top: -8.5em;
     left: 0.2em;
   }

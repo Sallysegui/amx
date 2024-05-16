@@ -48,16 +48,16 @@
     @media screen and (max-width: 37.5em ) {@content};
 };
 @mixin tablet-screen {
-    @media screen and (max-width: 44em) {@content};
+    @media screen and (max-width: 1230px) {@content};
 };
 @mixin phoneLand-screen {
-    @media screen and (max-width: 56.25em) {@content};
+    @media screen and (max-width: 900px) {@content};
 };
 @mixin laptop-screen {
     @media screen and (max-width:75em) {@content};
 };
 @mixin desktop-screen {
-    @media screen and (min-width: 86em) {@content};
+    @media screen and (min-width:  1366px) {@content};
 };
 
     // @media screen and (min-width: 1520px){

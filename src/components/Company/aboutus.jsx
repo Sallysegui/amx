@@ -2,8 +2,9 @@
 import { keyframes } from "@emotion/react";
 import { Reveal } from "react-awesome-reveal";
 import AboutUsPhoto from "./abouUsPhotos";
-import  { useState } from "react";
-import PropTypes from 'prop-types';
+import { useState } from "react";
+import PropTypes from "prop-types";
+// import AircraftTypes from "./aircraftTypes";
 
 const customAnimation = keyframes`
   from {
@@ -17,68 +18,53 @@ const customAnimation = keyframes`
   }
 `;
 
-const paragraph = "Situated in Vienna, we are an independent aviation MRO specialising in Bombardier and Embraer Business Aviation aircraft. Established by aviation professionals with extensive experience in engineering and quality assurance, sales and marketing, flight support and operations within the Business Aviation market, AMX Support continues to grow in to one of Europe’s leading MRO’s. Our aviation specialists are dedicated to providing an exceptional service with a rewarding customer experience 7 days a week. Fly with confidence, and with AMX Support we keep you flying!"
+const paragraph =
+  "Situated in Vienna, we are an independent aviation MRO specialising in Bombardier and Embraer Business Aviation aircraft. Established by aviation professionals with extensive experience in engineering and quality assurance, sales and marketing, flight support and operations within the Business Aviation market, AMX Support continues to grow in to one of Europe’s leading MRO’s. Our aviation specialists are dedicated to providing an exceptional service with a rewarding customer experience 7 days a week. Fly with confidence, and with AMX Support we keep you flying!";
 const ReadMore = ({ children }) => {
- 
   const text = children;
   const [isReadMore, setIsReadMore] = useState(true);
   const toggleReadMore = () => {
-      setIsReadMore(!isReadMore);
+    setIsReadMore(!isReadMore);
   };
   ReadMore.propTypes = {
     children: PropTypes.node.isRequired,
-    };
+  };
   return (
-      <p className="textSmall">
-          {isReadMore ? text.slice(0, 213) : text}
-          <span
-              onClick={toggleReadMore}
-              className="read-or-hide"
-          >
-              {isReadMore ? "...read more" : " show less"}
-          </span>
-      </p>
+    <p className="textSmall">
+      {isReadMore ? text.slice(0, 213) : text}
+      <span onClick={toggleReadMore} className="read-or-hide">
+        {isReadMore ? "...read more" : " show less"}
+      </span>
+    </p>
   );
 };
 
-
-const AboutUs = () =>{
-
-    return(
-        <div className="aboutContainer" >
-        
-            <Reveal keyframes={customAnimation}  triggerOnce>
-            <div className="longText">
-                <p>
-                {/* Situated in the classical music heart of Europe, we are an independent aviation MRO 
-                specialising in Bombardier and Embraer Business Aviation aircraft. Established by 
-                aviation professionals with extensive experience in engineering and quality assurance, 
-                sales and marketing, flight support and operations within the Business Aviation market,
-                 AMX Support continues to grow in to one of Europe’s leading MRO’s. Our aviation specialists 
-                 are dedicated to providing an exceptional service with a rewarding customer experience 7 
-                 days a week.  */}
-                 
-                Situated in Vienna, known to be the city of music and classical music heart of Europe,
-                AMX Support is an independent aviation MRO specialising in Bombardier and Embraer Business
-                Aviation aircraft. Established by aviation professionals with extensive experience in 
-                engineering and quality assurance, sales and marketing, flight support and operations 
-                within the Business Aviation market, AMX Support continues to grow in to one of Europe’s
-                leading MRO’s. Our aviation specialists are dedicated to providing exceptional service 
-                with a rewarding customer experience 7 days a week.<span>Fly with confidence, and with AMX 
-                Support we keep you flying!</span>
-                 
-                 
-                 
-                 
-                </p>
-            </div>
-            <ReadMore>
-              {paragraph}
-            </ReadMore>
-            
-            </Reveal>
-            <AboutUsPhoto/>
-        </div>)
-
-}
-export default AboutUs
+const AboutUs = () => {
+  return (
+    <div className="aboutContainer">
+      <Reveal keyframes={customAnimation} triggerOnce>
+        <div className="longText">
+          <p>
+            Situated in Vienna, known to be the city of music and classical
+            music heart of Europe, AMX Support is an independent aviation MRO
+            specialising in Bombardier and Embraer Business Aviation aircraft.
+            Established by aviation professionals with extensive experience in
+            engineering and quality assurance, sales and marketing, flight
+            support and operations within the Business Aviation market, AMX
+            Support continues to grow in to one of Europe’s leading MRO’s. Our
+            aviation specialists are dedicated to providing exceptional service
+            with a rewarding customer experience 7 days a week.
+            <span>
+              {" "}
+              Fly with confidence, and with AMX Support we keep you flying!
+            </span>
+          </p>
+        </div>
+        <ReadMore>{paragraph}</ReadMore>
+      </Reveal>
+      <AboutUsPhoto />
+      {/* <AircraftTypes /> */}
+    </div>
+  );
+};
+export default AboutUs;

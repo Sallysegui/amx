@@ -9,7 +9,11 @@
   color: $top-text-color;
   margin-top: 0;
 //   position:absolute;
-    
+@include phoneLand-screen{
+    justify-content: space-between;
+    margin:0;
+    padding: 0;
+ }
   
   @include phone-screen {
     margin:0;
@@ -58,6 +62,9 @@
     // letter-spacing: .03571em;
     font-family: "AvenirNext" !important;
     font-weight: 100;
+    @include phoneLand-screen{
+     margin-left: 3rem;
+     }
     @include phone-screen {
         margin:0;
         padding: 0;
@@ -137,20 +144,11 @@
         border-radius: 10px;
         background-color: rgb(70, 70, 70);
         transform-origin: 3px;
-        // transition: all linear;
 
     }
 
  
 }
-
-
-
-// .menu-container
-
-// .hamburgerStyleOpen {  
-//     display: inline;
-// }
 
 .hamburgerStyleClose {
    
@@ -166,8 +164,6 @@
         transform:  rotate(0);
     }
 }
-
-
 
 
 .hamburgerStyleOpen{
@@ -186,22 +182,3 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-// .burger1 {
-//     transform: ${isOpen ? 'rotate(45deg)' : 'rotate(0)'};
-// }
-// .burger2 {
-//     transform: ${ isOpen ? 'translateX(100%)' : 'translateX(0)'};
-//     opacity: ${ isOpen ? 0 : 1};
-// }
-// .burger3 {
-//     transform: ${ isOpen ? 'rotate(-45deg)' : 'rotate(0)'};
-// }

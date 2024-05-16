@@ -19,6 +19,7 @@ const ContactForm = () => {
     // Add your form submission logic here
     console.log(formData);
     try {
+      alert("Email sent!");
       const response = await axios.post('https://testsendback.onrender.com/api/test', formData);
       // const response = await axios.post('http://localhost:3000/api/test', formData);
       console.log(response.data);
@@ -28,7 +29,7 @@ const ContactForm = () => {
         phoneNumber: '',
         message: ''
       });
-      alert("Email sent!");
+      // alert("Email sent!");
      
       
       // Optionally, you can handle success or display a message to the user
@@ -55,7 +56,7 @@ const ContactForm = () => {
             placeholder="Your Name"
             required
           />
-          <label placeholder="Name">Name</label>
+          <label placeholder="Name">Name *</label>
         </div>
         <div className="form-group">
           <input
@@ -66,7 +67,7 @@ const ContactForm = () => {
             placeholder="e-mail"
             required
           />
-          <label placeholder="e-mail">E-mail</label>
+          <label placeholder="e-mail">E-mail *</label>
         </div>
         <div className="form-group">
           <input
@@ -75,7 +76,6 @@ const ContactForm = () => {
             value={formData.phoneNumber}
             onChange={handleChange}
             placeholder="Your Phone Number"
-            required
           />
           <label placeholder="Phone">Phone Number</label>
         </div>
@@ -87,7 +87,7 @@ const ContactForm = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <label placeholder="message">Message</label>
+          <label placeholder="message">Message *</label>
         </div>
         <div className="button-div">
           <button type="submit">Submit</button>

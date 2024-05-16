@@ -22,10 +22,7 @@ const Contact = () =>{
 
     <div className="bitMargin"></div>
             <ContactUs/>
-            {/* <ContactFormTest/> */}
-            {/* <ContactForm/> */}
             <ContactFormTwo/>
-            {/* < Address /> */}
             </div>
             <Footer/>
          

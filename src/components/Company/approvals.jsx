@@ -35,7 +35,8 @@ const Approvals = () => {
           <p>
             We are an EASA approved Part 145 Maintenance Organisation
             (AT.145.089) and additionally hold approvals to maintain aircraft
-            operating under Aruba, Cayman Islands, and Isle of Man authorities.
+            operating under Aruba, Cayman Islands, Isle of Man, Kazakhstan and
+            San Marino authorities.
           </p>
           {/* </div> */}
         </div>

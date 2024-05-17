@@ -1,7 +1,7 @@
 
 import { keyframes } from "@emotion/react";
 import { Reveal } from "react-awesome-reveal";
-import baseMaintenance from '../../assets/baseMaintenance.jpeg';
+import baseMaintenance from '../../assets/baseMaintenance.jpg';
 
 const customAnimation = keyframes`
   from {

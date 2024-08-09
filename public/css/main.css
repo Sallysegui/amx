@@ -42,6 +42,14 @@
     right: 4rem;
   }
 }
+@keyframes slideRightPhone {
+  from {
+    right: 3rem;
+  }
+  to {
+    right: 5rem;
+  }
+}
 @keyframes slideFadeLeft {
   from {
     margin-left: 30%;
@@ -73,7 +81,7 @@
 }
 
 .mainPhoto {
-  background: url("./images/plainAirport.jpg") no-repeat center center;
+  background: url("./images/planeMainFixed.jpg") no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 33rem;
@@ -85,11 +93,13 @@
     height: 20rem;
     margin-top: 6rem;
     padding-top: 0rem;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 100rem) {
   .mainPhoto {
-    height: 38rem;
+    height: 35rem;
   }
 }
 
@@ -147,7 +157,12 @@
 }
 @media screen and (max-width: 37.5em) {
   .flying {
-    font-size: 2rem;
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    animation: 1.5s ease-in fadeIn;
   }
 }
 
@@ -902,6 +917,9 @@ a {
 .batteryContainer .comingSoon p {
   text-align: center;
 }
+.batteryContainer .comingSoon p span {
+  font-weight: 600;
+}
 .batteryContainer .batteryPart2 {
   display: flex;
   flex-direction: row;
@@ -1361,6 +1379,30 @@ section:hover {
 }
 
 .impressum span {
+  font-weight: 600;
+}
+.impressum .termsLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.impressum .termsLink .textTerms {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+.impressum .termsLink .linkContainer {
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.impressum img {
+  height: 2rem;
+  text-align: center;
+}
+
+.seeInfopage {
   font-weight: 600;
 }
 

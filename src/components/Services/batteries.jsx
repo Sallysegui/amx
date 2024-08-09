@@ -26,7 +26,7 @@ const customAnimationImg = keyframes`
 `;
 const BatteryShop = () => {
   return (
-    <div className="batteryContainer companyList" id="bateryShop">
+    <div className="batteryContainer companyList" id="batteryshop">
       <Reveal keyframes={customAnimation} triggerOnce>
         <div className="columCompany part1">
           <h2>Battery Shop</h2>

@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import axios from 'axios';
+import { useState } from "react";
+import axios from "axios";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phoneNumber: '',
-    message: ''
+    name: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -19,35 +19,39 @@ const ContactForm = () => {
     // Add your form submission logic here
     console.log(formData);
     try {
-      alert("Email sent!");
-      const response = await axios.post('https://testsendback.onrender.com/api/test', formData);
-      // const response = await axios.post('http://localhost:3000/api/test', formData);
+      alert("Currently inoperative");
+      ///////////////////////////////////////////////////////////
+      /////uncomment this to make it work
+      // const response = await axios.post(
+      //   "https://testsendback.onrender.com/api/test",
+      //   formData
+      // );
+
       console.log(response.data);
       setFormData({
-        name: '',
-        email: '',
-        phoneNumber: '',
-        message: ''
+        name: "",
+        email: "",
+        phoneNumber: "",
+        message: "",
       });
       // alert("Email sent!");
-     
-      
+
       // Optionally, you can handle success or display a message to the user
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error("Error sending email:", error);
       // Optionally, you can handle errors or display an error message to the user
     }
-
   };
 
-  return (<div className='all'>
-    <div className="title">
-      <h2>Contact Us</h2>
-    </div>
-    <div className="title-info">We will get back to you soon!</div>
-    
-    <form onSubmit={handleSubmit} className="form">
-        <div className='form-group'>
+  return (
+    <div className="all">
+      <div className="title">
+        <h2>Contact Us</h2>
+      </div>
+      <div className="title-info">We will get back to you soon!</div>
+
+      <form onSubmit={handleSubmit} className="form">
+        <div className="form-group">
           <input
             type="text"
             name="name"
@@ -92,21 +96,29 @@ const ContactForm = () => {
         <div className="button-div">
           <button type="submit">Submit</button>
         </div>
-    </form>
-</div>);
+      </form>
+    </div>
+  );
 };
 
 const ContactInfo = () => {
-  return (<section>
-    {/* <div className="contact-info">
+  return (
+    <section>
+      {/* <div className="contact-info">
       <h2>Contact Info</h2> */}
       <div className="info">
         <i className="fas fa-map-marker-alt"></i>
-        <span>AMX Support GmbH<br/>
-        Niki Lauda Allee<br/>
-        Objekt 235 Hangar 6<br/>
-        Vienna International Airport,<br/>
-        Austria<br/></span>
+        <span>
+          AMX Support GmbH
+          <br />
+          Niki Lauda Allee
+          <br />
+          Objekt 235 Hangar 6<br />
+          Vienna International Airport,
+          <br />
+          Austria
+          <br />
+        </span>
       </div>
       {/* <div className="info">
         <i className="fas fa-envelope"></i>
@@ -116,19 +128,18 @@ const ContactInfo = () => {
         <i className="fas fa-phone-alt"></i>
         <span>+43 (0)1 386 0 888 </span>
       </div> */}
-    {/* </div> */}
-  </section>);
+      {/* </div> */}
+    </section>
+  );
 };
 
 const ContactFormTwo = () => {
   return (
     <div className="contact-container">
-     
       <ContactForm />
       <ContactInfo />
     </div>
   );
 };
 
-
-export default ContactFormTwo
+export default ContactFormTwo;

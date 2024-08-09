@@ -35,15 +35,14 @@ const AircraftTypes = () => {
             <img src={planeIcon} alt="" />
             <h2>Aircraft Types</h2>
           </div>
-
+          <p>Bombardier Challenger 300/350 (BD-100-1A10)</p>
+          <p>Bombardier Challenger 604/605/650 (CL-600-2B16)</p>
+          <p>Bombardier Challenger 850 / CRJ-200 (CL-600-2B19)</p>
           <p>
-            Bombardier Global Express/XRS/5000/5500/6000/6500 (BD700-1A10/1A11)
+            Bombardier Global Express/XRS/5000/5500/6000/6500 (BD-700-1A10/1A11)
           </p>
-          <p>Bombardier Global 7500 (BD700-2A10)</p>
-          <p>Bombardier Challenger 300/350 (BD100-1A10)</p>
-          <p>Bombardier Challenger 604/605/650 (CL-604-2B16)</p>
-          <p>Bombardier Challenger 850 / CRJ-200 (CL-604-2B19)</p>
-          <p>Embraer Legacy 600/650 (ERJ-135)</p>
+          <p>Bombardier Global 7500 (BD-700-2A10)</p>
+          <p>Embraer Legacy 600/650 (EMB-135)</p>
 
           {/* </div> */}
         </div>

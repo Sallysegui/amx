@@ -8,6 +8,7 @@ import Careers from "./components/Careers/careers";
 import WhyAmx from "./components/Footer/whyAmx";
 import Terms from "./components/Footer/terms";
 import Impressum from "./components/impressum/impressum";
+import TermsAndConditions from "./components/Footer/termAndCondition";
 
 const Routes = () => {
   return (
@@ -21,6 +22,10 @@ const Routes = () => {
         <Route path="/whyamx" component={WhyAmx} />
         <Route path="/terms" component={Terms} />
         <Route path="/impressum" component={Impressum} />
+        <Route
+          path="/termsandconditions/:address"
+          component={TermsAndConditions}
+        />
       </Switch>
     </Router>
   );

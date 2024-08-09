@@ -14,9 +14,11 @@ const MenuServices = () => {
       className="menu-button-container"
     >
       <button className="menu-trigger">
-        <a href="/services">
+        {/* <a href="/services"> */}
+        <HashLink to="/services#top">
           <span>SERVICES</span>
-        </a>
+        </HashLink>
+        {/* </a> */}
         {/* <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/df/df7789f313571604c0e4fb82154f7ee93d9989c6.jpg" alt="User avatar" /> */}
       </button>
       <nav
@@ -26,31 +28,31 @@ const MenuServices = () => {
         <ul>
           <li>
             {" "}
-            <HashLink smooth to="/services#aogres">
+            <HashLink smooth to="/services#aogresponse">
               AOG Response
             </HashLink>
           </li>
           <li>
             {" "}
-            <HashLink to="/services#lineMainte" smooth>
+            <HashLink to="/services#linemaintenance" smooth>
               Line Maintenance
             </HashLink>
           </li>
           <li>
             {" "}
-            <HashLink to="/services#baseMainte" smooth>
+            <HashLink to="/services#basemaintenance" smooth>
               Base Maintenance
             </HashLink>
           </li>
 
           <li>
             {" "}
-            <HashLink smooth to="/services#boroscope">
+            <HashLink smooth to="/services#engborescope">
               Engine Borescope
             </HashLink>
           </li>
           <li>
-            <HashLink to="/services#bateryShop">Battery Shop</HashLink>
+            <HashLink to="/services#batteryshop">Battery Shop</HashLink>
           </li>
         </ul>
       </nav>

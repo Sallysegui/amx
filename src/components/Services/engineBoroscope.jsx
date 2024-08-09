@@ -26,7 +26,7 @@ const customAnimationImg = keyframes`
 `;
 const EngineBoroscope = () => {
   return (
-    <div className="borosContainer companyList" id="boroscope">
+    <div className="borosContainer companyList" id="engborescope">
       <Reveal keyframes={customAnimationImg} delay={200} triggerOnce>
         <div className="columCompany part2 boroscopePhotoCont">
           <img src={boroscope} alt="plane engine photo" />

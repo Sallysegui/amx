@@ -40,7 +40,7 @@ const Footer = () => {
             </HashLink>
           </div>
           <div className="footerList">
-            <HashLink smooth to="/careers">
+            <HashLink smooth to="/careers#top">
               <p>Careers</p>
             </HashLink>
           </div>
@@ -49,12 +49,12 @@ const Footer = () => {
       <div className="footerColumn">
         <div>
           <div className="footerList">
-            <HashLink smooth to="/services/#aogres">
+            <HashLink smooth to="/services/#aogresponse">
               <p className="aogFooter">AOG Response</p>
             </HashLink>
           </div>
           <div className="footerList">
-            <HashLink smooth to="/impressum">
+            <HashLink smooth to="/impressum#top">
               <p className="impressum">Impressum</p>
             </HashLink>
           </div>

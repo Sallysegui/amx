@@ -27,7 +27,7 @@ const customAnimationImg = keyframes`
 `;
 const AogResponse = () =>{
     return(
-        <div className="aboutContainer companyList" id="aogres"  >
+        <div className="aboutContainer companyList" id="aogresponse"  >
         <Reveal keyframes={customAnimation}  triggerOnce>
         <div className='columCompany part1' >
    

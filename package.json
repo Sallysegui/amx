@@ -1,5 +1,6 @@
 {
   "name": "amxweb",
+  "homepage": "www.amxsupport.com",
   "private": true,
   "version": "0.0.0",
   "type": "commonjs",
@@ -35,6 +36,7 @@
     "react-dom": "^18.2.0",
     "react-ga4": "^2.1.0",
     "react-icons": "^5.0.1",
+    "react-pdf": "^9.1.0",
     "react-router-dom": "^5.3.4",
     "react-router-hash-link": "^2.4.3",
     "route": "^0.2.5",

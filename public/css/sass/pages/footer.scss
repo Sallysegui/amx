@@ -176,4 +176,36 @@
   span {
     font-weight: 600;
   }
+
+  // .terms {
+  //   display: flex;
+  //   background-color: greenyellow;
+  // }
+  .termsLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .textTerms {
+      display: flex;
+      align-items: center;
+      height: 2rem;
+    }
+    .linkContainer {
+      width: 3rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  img {
+    height: 2rem;
+
+    text-align: center;
+  }
+}
+
+.seeInfopage {
+  font-weight: 600;
 }

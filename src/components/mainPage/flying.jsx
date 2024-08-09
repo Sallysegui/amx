@@ -1,12 +1,9 @@
-const Flying = () =>{
-    return(
-        <>
-            <div className='flying'>
-                We keep you flying
-            </div>
-        </>
-    )
-}
+const Flying = () => {
+  return (
+    <>
+      <div className="flying">We go the extra mile in maintenance for you</div>
+    </>
+  );
+};
 
-
-export default Flying
+export default Flying;

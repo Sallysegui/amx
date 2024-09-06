@@ -22,10 +22,10 @@ const ContactForm = () => {
       alert("Currently inoperative");
       ///////////////////////////////////////////////////////////
       /////uncomment this to make it work
-      // const response = await axios.post(
-      //   "https://testsendback.onrender.com/api/test",
-      //   formData
-      // );
+      const response = await axios.post(
+        "https://testsendback.onrender.com/api/test",
+        formData
+      );
 
       console.log(response.data);
       setFormData({

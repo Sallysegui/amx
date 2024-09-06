@@ -19,14 +19,14 @@ const ContactUs = () => {
         {/* <p className="secondContact"> */}
         <p className="contactTitle">For Spares:</p>
         {/* <img className='contactIcon' src="https://si.nccdn.net/pictograms-gray/48/icon_02.png"></img> */}
-        <p className="phone">+43 1 386 0 888 (option 2)</p>
+        <p className="phone">+43 (0) 1 386 0 888 (option 2)</p>
         {/* <img className='contactIcon' src="https://si.nccdn.net/pictograms-gray/48/icon_04.png"></img> */}
         <p className="email">spares@amxsupport.com</p>
 
         {/* <p className="thirdContact"> */}
         <p className="contactTitle">For general enquiries:</p>
         {/* <img className='contactIcon' src="https://si.nccdn.net/pictograms-gray/48/icon_02.png"></img> */}
-        <p className="phone">+43 1 386 0 888</p>
+        <p className="phone">+43 (0) 1 386 0 888</p>
         {/* <img className='contactIcon' src="https://si.nccdn.net/pictograms-gray/48/icon_04.png"></img> */}
         <p className="email">team@amxsupport.com</p>
       </div>

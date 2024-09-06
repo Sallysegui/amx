@@ -21,17 +21,14 @@ const Impressum = () => {
           <span>Responsible</span>
           <p>AMX Support GmbH - Aircraft Maintenance</p>
           <p>Managing Director: Michael Vrablik</p>
-          <p>Hegelgasse 8 / Top 14 1010 Wien Austria</p>
-          <p>
-            Entry in commercial register - Aircraft Mechanic - Location:
-            Flughafenstrasse 1, 4063 Hoersching
-          </p>
-          <p>Niki Lauda Allee Hangar 6, Floor 2 1300 Schwechat Austria</p>
+          <p>Hegelgasse 8 / Top 14 1010 Wien, Austria</p>
+          <p>Flughafenstrasse 1, 4063 H&#246;rsching, Austria</p>
+          <p>Niki Lauda Allee, Hangar 6 Floor 2 1300 Schwechat, Austria</p>
           {/* <p>1010 Vienna</p> */}
           <p>Phone: +43 (0) 664 604 34 100</p>
           <p>E-Mail: team@amxsupport.com</p>
           <br />
-          {/* <span>Register Entry</span> */}
+          {/* <span>Register Entry</span> */}{" "}
           {/* <p>
             Entry in commercial register - Aircraft Mechanic - Location:
             Flughafenstrasse 1, 4063 Hoersching

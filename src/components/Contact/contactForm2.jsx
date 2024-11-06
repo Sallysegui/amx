@@ -19,13 +19,15 @@ const ContactForm = () => {
     // Add your form submission logic here
     console.log(formData);
     try {
-      alert("Currently inoperative");
+      //alert("Currently inoperative");
       ///////////////////////////////////////////////////////////
       /////uncomment this to make it work
       const response = await axios.post(
-        "https://testsendback.onrender.com/api/test",
+        // "https://testsendback.onrender.com/api/test",
+        "http://localhost:3000/api/test",
         formData
       );
+      alert("message sent!");
 
       console.log(response.data);
       setFormData({
@@ -39,6 +41,7 @@ const ContactForm = () => {
       // Optionally, you can handle success or display a message to the user
     } catch (error) {
       console.error("Error sending email:", error);
+
       // Optionally, you can handle errors or display an error message to the user
     }
   };

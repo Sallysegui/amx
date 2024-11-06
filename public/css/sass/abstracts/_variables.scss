@@ -1,32 +1,27 @@
 // COLORS
 
 $logo-blue: #143264;
-$logo-red: #A52323;
-$top-background:#fff;
-$top-text-color:rgb(30, 29, 27);
-$flying:#4a68a0;
+$logo-red: #a52323;
+$top-background: #fff;
+$top-text-color: rgb(30, 29, 27);
+$flying: #4a68a0;
 // $flying:$logo-blue;
-$nice-white:#fff;
-$menu-color:rgb(30, 29, 27);
-$grey-blueish:#f7f7f8;
-$loght-grey:#f7f7f8d3;
-$celestial-blue:#4D9DE0;
-$gosh-white:#F7F7FF;
+$nice-white: #fff;
+$menu-color: rgb(30, 29, 27);
+$grey-blueish: #f7f7f8;
+$loght-grey: #f7f7f8d3;
+$celestial-blue: #4d9de0;
+$gosh-white: #f7f7ff;
 //$menu-color:rgb(105, 96, 0);
 
-
-
-
-
 @font-face {
-    font-family: "bodoniBold";
-    src: url('fonts/bodoni/BodoniFLF-BoldItalic.ttf') format('truetype');
-
+  font-family: "bodoniBold";
+  src: url("fonts/bodoni/BodoniFLF-BoldItalic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "AvenirNext";
-    src: url('fonts/Avenir/AvenirNext-Regular.ttf') format('truetype');
+  font-family: "AvenirNext";
+  src: url("fonts/Avenir/AvenirNext-Regular.ttf") format("truetype");
 }
 // $gutter-main: 1.5rem;
 // // GRID

@@ -9,6 +9,7 @@ import WhyAmx from "./components/Footer/whyAmx";
 import Terms from "./components/Footer/terms";
 import Impressum from "./components/impressum/impressum";
 import TermsAndConditions from "./components/Footer/termAndCondition";
+import StarlinkMain from "./components/Starlink/stralinkMain";
 
 const Routes = () => {
   return (
@@ -26,6 +27,7 @@ const Routes = () => {
           path="/termsandconditions/:address"
           component={TermsAndConditions}
         />
+        <Route path="/starlink/installation" component={StarlinkMain} />
       </Switch>
     </Router>
   );

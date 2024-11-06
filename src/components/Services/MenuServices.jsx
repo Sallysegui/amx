@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { useRef } from "react";
 import { HashLink } from "react-router-hash-link";
+import starlinklogo from "/Starlinkogo.png";
 
 const MenuServices = () => {
   const dropdownRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
   const onClick = () => setIsActive(true);
   const onClickB = () => setIsActive(false);
+
   return (
     <div
       onMouseEnter={onClick}
@@ -42,6 +44,18 @@ const MenuServices = () => {
             {" "}
             <HashLink to="/services#basemaintenance" smooth>
               Base Maintenance
+            </HashLink>
+          </li>
+          {/* <li>
+            {" "}
+            <HashLink to="/starlink" smooth>
+              Starlink
+            </HashLink>
+          </li> */}
+          <li className="starlinkservices">
+            {" "}
+            <HashLink to="/starlink/installation#top" smooth>
+              <img src={starlinklogo} alt="Starlink Logo" />
             </HashLink>
           </li>
 

@@ -1,38 +1,74 @@
-.navstyleOpen{
+.menuPlusStarCont {
+  display: flex;
+  justify-content: space-between;
+}
+.starLinkTopContainer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  // background-color: lightseagreen;
+  margin-right: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26rem;
+  img {
+    height: 1rem;
+  }
+  @include phone-screen {
+    background-color: white;
+    // border-top: solid 0.1rem #a52323;
+    // border-bottom: solid 0.1rem #a52323;
+    width: 100%;
+
+    margin: 0;
+    padding: 0.5rem;
+    padding-top: 0.6rem;
+    img {
+      height: 0.8rem;
+    }
+  }
+}
+
+.navstyleOpen {
   @include phone-screen {
     display: none;
   }
 }
 
-.navstyleClose{
+.navstyleClose {
   @include phone-screen {
     margin-top: 0.2em;
     display: flex;
-    height:70em;
+    height: 70em;
     z-index: 40;
     background-color: $nice-white;
-
   }
 }
-
-.menu-container{
+.navStarlinkOpen {
+  display: none;
+}
+.navStarlinkClose {
   display: flex;
-  margin:0.5rem;
+}
+.menu-container {
+  display: flex;
+  margin: 0.5rem;
   gap: 1rem;
   // margin-bottom: 0.3rem;
   // flex-direction: column;
-  
+
   @include phone-screen {
-    margin:0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 0.4rem;
     // height: 50px;
-    background-color:$nice-white;
+    background-color: $nice-white;
 
     * {
-      display:flex;
+      display: flex;
       // padding: 1rem;
       // position: fixed;
       width: 100%;
@@ -40,33 +76,23 @@
       // font-size: 5em;
       list-style-type: none;
       background-color: $nice-white;
-     
-      
 
-      span{
+      span {
         padding: 1rem;
         font-size: 5em;
         color: $logo-blue;
         // background-color: $logo-blue;
-        
       }
     }
-  
-    
   }
- animation: fadeIn ease-in 1.5s;
- @include phone-screen {
-  animation: fadeIn ease-in 0.3s;
- }
+  animation: fadeIn ease-in 1.5s;
+  @include phone-screen {
+    animation: fadeIn ease-in 0.3s;
+  }
 }
 .menu-button-container {
-
-
   position: relative;
-
-
 }
-
 
 ///The dropdown menu itself.
 .menu {
@@ -77,7 +103,7 @@
   right: 0;
   width: 10rem;
   // box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-  
+
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
@@ -87,8 +113,6 @@
   @include phone-screen {
     background-color: $nice-white;
   }
-
-  
 }
 
 .menu.active {
@@ -103,16 +127,23 @@
   margin: 0;
   :hover {
     color: $logo-red;
+    /////////////////////////////change hovering over stalink////////////////////////////////////////
+    // img {
+    //   padding: 6px;
+    //   // background-color: $logo-red;
+    //   border: 2px solid $logo-red;
+    //   max-width: 85%;
+    //   max-height: 85%;
+    // }
   }
-  @include phone-screen{
+
+  @include phone-screen {
     display: none;
   }
-  
 }
 
 .menu li {
   border-bottom: 1px solid #dddddd;
- 
 }
 
 .menu li a {
@@ -123,21 +154,19 @@
   // color: $logo-blue;
   padding: 15px 20px;
   display: block;
- 
+
   // :hover {
   //   color: $logo-red;
   // }
 }
 
-
 ///////////////////downtown trigger
-/// 
-/// 
+///
+///
 .menu-trigger {
-  
   background: inherit;
   //////////////
-  
+
   border-radius: 90px;
   margin-bottom: 0.2rem;
   cursor: pointer;
@@ -152,7 +181,7 @@
     color: $logo-red;
   }
   &::before {
-    content: ""; 
+    content: "";
     position: absolute;
     width: 100%;
     // width:3rem;
@@ -163,22 +192,21 @@
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transition: all 0.4s ease-in-out 0s; 
-    transition: all 0.4s ease-in-out 0s; 
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
   }
-  
 }
 
 .menu-trigger:hover {
   // box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-  /////////////////////////////////////////// 
+  ///////////////////////////////////////////
   color: $logo-blue;
 
   &::before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-  }   
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
 }
 
 .menu-trigger span {
@@ -195,12 +223,14 @@
   color: #3f3f3f;
   // color:$logo-blue ;
   text-shadow: 2px $logo-blue;
-  
 }
 
 a {
   text-decoration: none;
 }
-// .menu-trigger img {
-//   border-radius: 90px;
+
+// .starlinkservices img {
+//   max-width: 70%;
+//   max-height: 70%;
+//   display: block;
 // }

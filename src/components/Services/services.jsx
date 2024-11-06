@@ -5,7 +5,7 @@ import LineMaintenace from "./lineMaintenace";
 import BaseMaintenace from "./baseMaintenace";
 import EngineBoroscope from "./engineBoroscope";
 import Footer from "../Footer/footer";
-import BatteryShop from "./batteries";
+import BatteryShop from "./batteries2";
 const Services = () => {
   return (
     <div className="fullPage">

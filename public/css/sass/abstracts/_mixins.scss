@@ -1,77 +1,89 @@
 @mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 @mixin absCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @mixin middle {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; 
-  }
-  
-@mixin zero {
-    margin: 0px;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-  
+@mixin zero {
+  margin: 0px;
+  border: 0;
+  padding: 0;
+}
+
 @mixin basebackground {
-    max-width: $grid-width;
-    background-color: #f7f7f7;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: $grid-width;
+  background-color: #f7f7f7;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @mixin small-phone-screen {
-    @media (min-width: 1rem) {@content};
-};
+  @media (min-width: 1rem) {
+    @content;
+  }
+}
 @mixin medium-phone-screen {
-    @media screen and (max-width: 18em) {@content};
-};
+  @media screen and (max-width: 18em) {
+    @content;
+  }
+}
 @mixin big-phone-screen {
-    @media screen and (max-width: 28em) {@content};
-};
+  @media screen and (max-width: 28em) {
+    @content;
+  }
+}
 @mixin phone-screen {
-    @media screen and (max-width: 37.5em ) {@content};
-};
+  @media screen and (max-width: 37.5em) {
+    @content;
+  }
+}
 @mixin tablet-screen {
-    @media screen and (max-width: 1230px) {@content};
-};
+  @media screen and (max-width: 1230px) {
+    @content;
+  }
+}
 @mixin phoneLand-screen {
-    @media screen and (max-width: 900px) {@content};
-};
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
 @mixin laptop-screen {
-    @media screen and (max-width:75em) {@content};
-};
+  @media screen and (max-width: 75em) {
+    @content;
+  }
+}
 @mixin desktop-screen {
-    @media screen and (min-width:  1366px) {@content};
-};
+  @media screen and (min-width: 1366px) {
+    @content;
+  }
+}
 
-    // @media screen and (min-width: 1520px){
-        //     background-color: pink;
-        // }
+// @media screen and (min-width: 1520px){
+//     background-color: pink;
+// }
 
-
- // @media screen and (min-width: 1520px){
-        //     padding: 8rem;
-        // }
+// @media screen and (min-width: 1520px){
+//     padding: 8rem;
+// }
 //@include desktop-screen
 
 // @mixin desktop-screen {
 //     @media (min-width: 112.5em) {@content};
 // };
-
-

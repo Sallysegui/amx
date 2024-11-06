@@ -1,12 +1,3 @@
-// .boroscopePhotoCont {
-//     img{
-//         // height: 25rem ;
-//     width: 20rem;
-//     margin-left: 10rem;
-
-// }
-
-// }
 .lineContainer {
   @include phone-screen {
     flex-direction: column-reverse;
@@ -20,24 +11,30 @@
 }
 
 .batteryContainer {
+  span {
+    display: block;
+
+    width: 100%;
+    text-align: center;
+  }
   // background-color: aqua;
-  .comingSoon {
-    p {
-      text-align: center;
-      span {
-        font-weight: 600;
-      }
-    }
-  }
-  .batteryPart2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  img {
-    width: 20rem;
-  }
-  // max-height: 20rem;
+  // .comingSoon {
+  //   p {
+  //     text-align: center;
+  //     span {
+  //       font-weight: 600;
+  //     }
+  //   }
+  // }
+  // .batteryPart2 {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: center;
+  // }
+  // img {
+  //   width: 20rem;
+  // }
+  // // max-height: 20rem;
 
   @include phone-screen {
     flex-direction: column;

@@ -1,0 +1,26 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 19 | /   @include phone-screen {
+ * 20 | |     padding-top: 1rem;
+ * 21 | |     // padding-left: 1rem;
+ * 22 | |     // padding-right: 1rem;
+ * 23 | |     margin-top: 2.2rem;
+ * 24 | |     background-color: $grey-blueish;
+ * 25 | |     padding-left: 1rem;
+ * 26 | |     padding-right: 1rem;
+ * 27 | |     margin-left: 0.5rem;
+ * 28 | |     margin-right: 0.5rem;
+ * 29 | \   }
+ *    '
+ *   public/css/sass/pages/starlink.scss 19:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502  \250c    @include phone-screen {\a 20 \2502  \2502      padding-top: 1rem;\a 21 \2502  \2502      // padding-left: 1rem;\a 22 \2502  \2502      // padding-right: 1rem;\a 23 \2502  \2502      margin-top: 2.2rem;\a 24 \2502  \2502      background-color: $grey-blueish;\a 25 \2502  \2502      padding-left: 1rem;\a 26 \2502  \2502      padding-right: 1rem;\a 27 \2502  \2502      margin-left: 0.5rem;\a 28 \2502  \2502      margin-right: 0.5rem;\a 29 \2502  \2514    }\a    \2575 \a   public/css/sass/pages/starlink.scss 19:3  root stylesheet";
+}

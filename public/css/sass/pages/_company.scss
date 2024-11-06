@@ -10,14 +10,17 @@
   gap: 6rem;
 
   @include phone-screen {
-    margin-top: 0;
-    padding-top: 0;
+    padding-top: 1rem;
     gap: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 }
-
+.gapBeforeWelcome {
+  @include phone-screen {
+    padding-top: 2.5rem;
+  }
+}
 .companyList {
   // background-color: rgba(222, 168, 201, 0.851);
   display: flex;

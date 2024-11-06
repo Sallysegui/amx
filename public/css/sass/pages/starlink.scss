@@ -1,0 +1,180 @@
+.starlinkMain {
+  display: flex;
+  flex-direction: column;
+  // height: 50rem;
+
+  // @include phone-screen {
+  //   background-color: pink;
+  // }
+  > * {
+    flex: 1;
+  }
+}
+.starlinkIntro {
+  margin-top: 6rem;
+
+  background-color: #f7f7f8;
+  display: flex;
+  flex-direction: column;
+  @include phone-screen {
+    padding-top: 1rem;
+    // padding-left: 1rem;
+    // padding-right: 1rem;
+    margin-top: 2.2rem;
+    background-color: $grey-blueish;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  > * {
+    flex: 1;
+  }
+
+  p {
+    // background-color: yellow;
+    padding-top: 0.5rem;
+    padding-left: 4rem;
+    padding-right: 3rem;
+    // font-family: 'AvenirNext' !important;
+
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+    spam {
+      font-weight: 700;
+    }
+    @include phone-screen {
+      padding-top: 0rem;
+      // padding-left: 1rem;
+      // padding-right: 1rem;
+      margin-top: 0.5rem;
+      // background-color: rgb(224, 188, 232);
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  .starlinkLogo {
+    padding-top: 3rem;
+    // background-color: plum;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    img {
+      width: 20%;
+      @include phone-screen {
+        width: 30%;
+      }
+    }
+  }
+}
+
+.starlinkInfoContainer {
+  background-color: $grey-blueish;
+
+  margin-top: 5rem;
+  height: 30rem;
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  @include phone-screen {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    // background-color: purple;
+    height: 100%;
+  }
+
+  > * {
+    flex: 1;
+  }
+  .aboutStarlink {
+    flex-grow: 1;
+    height: 100%;
+    // width: 50%;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+    // align-self:centre;
+    align-content: center;
+    @include phone-screen {
+      display: flex;
+      flex: 1 1;
+      flex-direction: column;
+      background-color: inherit;
+      font-size: 1.5rem;
+      font-weight: 200;
+    }
+
+    h2 {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      // margin: auto;
+
+      text-align: center;
+
+      color: $logo-red;
+      font-size: 1.3rem;
+    }
+    p {
+      padding-top: 1.5rem;
+      padding-left: 4rem;
+      padding-right: 3rem;
+      // font-family: 'AvenirNext' !important;
+
+      line-height: 1.8rem;
+      font-size: 1.1rem;
+      padding-bottom: 2rem;
+      @include phoneLand-screen {
+        font-size: 1rem;
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+      }
+    }
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+
+    height: 30rem;
+    // }
+    @include phone-screen {
+      max-width: 100%;
+      height: auto;
+      padding: 0.5rem;
+    }
+
+    // @include phoneLand-screen {
+    //   // font-size: 1rem;
+    //   padding: 0.5rem;
+    //   padding-top: 1rem;
+    //   padding-right: 2rem;
+    // }
+    // @media screen and (min-width:100rem) {
+    //     margin-right: 5rem;
+    //     margin-left: 5rem;
+
+    //  }
+    //  @media screen and (max-width:100rem) {
+    //     margin-right: 0rem;
+    //     margin-left: 0rem;
+
+    //  }
+  }
+}
+
+// .starlinkLogo {
+//   height: 3rem;
+//   margin-top: 3rem;
+// }

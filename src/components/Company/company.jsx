@@ -21,6 +21,7 @@ const Company = () => {
         <div className="supportMenu"></div>
 
         <div className="bitMargin"></div>
+        <div className="gapBeforeWelcome"></div>
         <Welcome />
         <AboutUs />
         <div className="companyContainer">

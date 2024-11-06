@@ -1,7 +1,7 @@
 import { keyframes } from "@emotion/react";
 import { Reveal } from "react-awesome-reveal";
 import boroscope from "../../assets/boroscope0457.png";
-
+import { Link } from "react-router-dom";
 const customAnimation = keyframes`
   from {
     opacity: 0;
@@ -39,7 +39,10 @@ const EngineBoroscope = () => {
           <p>
             We have factory trained engineers and industry leading equipment to
             perform routine and non-routine Engine Borescope inspections.
-            Contact us today for a quote.
+            <Link smooth to="/contact#top">
+              &nbsp;Contact us&nbsp;
+            </Link>
+            today for a quote.
           </p>
         </div>
       </Reveal>

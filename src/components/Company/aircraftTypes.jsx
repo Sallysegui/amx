@@ -41,7 +41,7 @@ const AircraftTypes = () => {
           <p>
             Bombardier Global Express/XRS/5000/5500/6000/6500 (BD-700-1A10/1A11)
           </p>
-          <p>Bombardier Global 7500 (BD-700-2A10)</p>
+          <p>Bombardier Global 7500 (BD-700-2A12)</p>
           <p>Embraer Legacy 600/650 (EMB-135)</p>
 
           {/* </div> */}

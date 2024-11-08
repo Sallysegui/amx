@@ -31,8 +31,8 @@ const StarlinkMain = () => {
               Together with Starlink, our highly experienced team can upgrade
               your aircraft with minimal downtime to get you connected.
               Currently we are supporting this modification on Bombardier Global
-              Express/XRS/5000/5500/6000/6500 (BD-700-1A10/1A11) business jets
-              with more aircraft types to come in the future.
+              Express/XRS/5000/5500/6000/6500/7500 (BD-700-1A10/1A11/2A12)
+              business jets with more aircraft types to come in the future.
               <Link smooth to="/contact#top">
                 &nbsp;Contact us&nbsp;
               </Link>
